@@ -1,0 +1,51 @@
+= Run ML Workbench from Docker
+
+Instead of installing the Workbench on your machine, you can also run the ML workbench from a Docker container.
+
+== Run Workbench and TigerGraph server in one container
+To help you get started quickly, we provide a “sandbox” docker container that has the TigerGraph database, GDPS, and ML Workbench pre-installed.
+The “Cora” dataset used for tutorials is also preloaded into the database.
+
+To try it out, make sure you have Docker running and run:
+
+[.wrap,console]
+----
+docker run -it -p 14022:22 -p 8000:8000 -p 8888:8888 -p 9000:9000 -p 14240:14240  --name tgsandbox --ulimit nofile=1000000:1000000 -v ~/tgsandbox:/home/tigergraph/tgsandbox tigergraphml/sandbox
+----
+
+Here is a breakdown of the options in the docker run command above
+
+* `-it`: run the container interactively and allocate a pseudo-TTY.
+* `-p`: map a port of the host (14022) to a port of the container (22).
+* `--name`: name of the container. Can be any name you like.
+* `--ulimit`: the limit of number of open file descriptors per process.
+* -v: mount a folder on the host (`~/tgsandbox`) to a folder in the container (`/home/tigergraph/tgsandbox`).
+This allows you to keep your files after the container is removed.
+If you are using Windows, change the path using Windows file system conventions.
+For example, `c:\tgsandbox instead of ~/tgsandbox`.
+
+
+== Run Workbench by itself
+You can the Workbench by itself in a Docker container, and connect to a TigerGraph server later.
+
+[NOTE]
+====
+If the TigerGraph server you are connecting to is also run in a container, running the ML workbench by itself in a container on the same machine will produce communication issues between the workbench and the server.
+
+If you want to run both the ML workbench and the TigerGraph in Docker containers on the same machine, replace the Docker image with the following:
+====
+
+=== Prerequisites
+* Docker Desktop is installed on your computer.
+
+=== Procedure
+. Run the following command to pull the Workbench image, bind ports, map a shared data folder, and start a container from the image:
++
+[.wrap,console]
+----
+$ docker run --name mlworkbench -it -p 8888:8888 -v ~/tmp:/home/tigergraph tigergraphml/mlworkbench <1>
+----
+. Visit `http://localhost:8888`,
+
+
+

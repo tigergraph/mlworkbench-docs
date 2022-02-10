@@ -1,0 +1,23 @@
+= Install TigerGraph ML Workbench
+
+You can install the TigerGraph ML Workbench directly on your computer.
+
+== Prerequisites
+Hardware and software requirements
+
+== Procedure
+
+. Download the installation bash script.
+* Linux: https://tigergraph-public-data.s3.us-west-1.amazonaws.com/ml-workbench/MLWorkbench-0.9.0-Linux-x86_64.sh
+* MacOS: https://tigergraph-public-data.s3.us-west-1.amazonaws.com/ml-workbench/MLWorkbench-0.9.0-MacOSX-x86_64.sh
+. Run the installation script.
+In your terminal, run `bash <path_to_installation_script>`.
+You will be asked to review the terms and conditions, as well as choose a location to install the workbench.
+. Close the current shell session.
+In a new terminal tab, run `jupyter lab` to start the jupyter lab server.
+You will see a URL you can use to visit the server in a browser.
+
+
+== Next steps
+
+* Connect your workbench to a TigerGraph server

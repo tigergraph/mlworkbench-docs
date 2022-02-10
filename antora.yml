@@ -1,0 +1,8 @@
+title: TigerGraph ML Workbench
+version: 0.9
+start_page: overview:index.adoc
+nav:
+- modules/overview/nav.adoc
+- modules/getting-started/nav.adoc
+- modules/tutorials/nav.adoc
+- modules/reference/nav.adoc

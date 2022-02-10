@@ -1,0 +1,30 @@
+= Connect workbench to a TigerGraph Server
+:experimental:
+
+Connecting your ML workbench to a TigerGraph server gives you access to the graph data stored in your TigerGraph database.
+This allows you to develop Graph Neural Network (GNN) models with production scale graph data.
+
+== Prerequisites
+
+== Procedure
+
+. From your terminal, run `jupyter lab`.
+This takes you to the jupyter lab server in your browser.
+On the left pane of the page, click on the TigerGraph logo to open the workbench tab.
+. Click btn:[Add Server] and filled in the relevant server and host information.
+* Server IP is the IP address of the TigerGraph server.
+If you are connecting to a cluster, provide the IP address of the m1 machine of the cluster.
+* Host OS is the OS of the host machine that is running the workbench, not the OS of the server.
+* GDPS port is the port to serve the Graph Data Processing Service (GDPS).
+. Click btn:[Submit].
+This adds a server to the list of servers in your workbench tab.
+. Click btn:[GDPS] on the server you just added.
+If you haven't connected to the server with the workbench before, you will be prompted to install GDPS on the server.
+Follow the prompts to provide the necessary information about the server to install the GDPS.
+After the installation is complete, your workbench is now connected to the TigerGraph server, and you are ready to start using your graph data to develop GNN models.
+
+== Next steps
+
+With the tutorials loaded and the Cora dataset loaded into your TigerGraph database, you are ready to start working through the tutorials.
+
+Open the notebook and make sure to change the connection details such as the database URL and credentials are updated to your database.

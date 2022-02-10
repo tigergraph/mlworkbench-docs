@@ -1,0 +1,31 @@
+= Frequently Asked Questions (FAQ)
+
+== I have my TigerGraph DB setup with multiple nodes. How should I deploy GDPS with my setup?
+If you have your TigerGraph DB setup in a distributed fashion, you will only need to deploy GDPS on the leader’s node.
+
+== Can I use Workbench to train a GNN using GPU?
+Yes, ML Workbench supports both CPU and GPUs for training a GNN.
+
+== Can I use a 3rd party ML Framework to train a GNN?
+ML Workbench is compatible with some of the most popular Graph ML frameworks such as PyTorch Geometric and DGL.
+Compatibility with TensorFlow will be available in the upcoming release.
+
+== Does Workbench offer in-DB GNN training?
+No.
+Currently, the training will happen outside TigerGraph Database. Our team is actively working on bringing both GNN training and inference within TigerGraph
+
+== I have TigerGraph DB setup with AWS, would ML Workbench still work with a 3rd party Cloud provider?
+Yes, whether you have your TigerGraph DB setup with your own on-prem servers, or with a 3rd party Cloud such as AWS or GCP, ML Workbench will be compatible with these setups.
+One needs to deploy the GDPS component onto the same box as the TigerGraph DB, and ML Workbench will be able to communicate with your setup
+
+== Does ML Workbench work with TigerGraph Cloud?
+This is an upcoming feature of ML Workbench.
+As for our preview release, ML Workbench is only compatible with TigerGraph on-prem solutions.
+
+== The data set used in your example notebooks forms a homogeneous graph? Can we train GNN using heterogeneous graph data?
+This is an upcoming feature of ML Workbench, As for our preview release, ML Workbench supports homogeneous graphs only.
+
+== Can I leverage the existing algorithms in Graph Data Science Library to generate graph features that would be appropriate for GNN training?
+Yes.
+You can directly leverage our existing graph algorithms, or you can customize your own feature and export them for GNN training.
+One caveat is that these features will need to be pre-populated prior to loading to your ML dev pipelines.

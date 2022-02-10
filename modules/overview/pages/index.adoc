@@ -1,0 +1,57 @@
+= TigerGraph ML Workbench
+:fn-pintrest: footnote:[Ying, Rex et al. “Graph Convolutional Neural Networks for Web-Scale Recommender Systems”, Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, 2018.]
+:fn-amazon: footnote:[Ankit Gandhi, Aakankasha, Sivaramakrishnan Kaveri, Vineet Chaoji, “Spatio-temporal multi-graph networks for demand forecasting in online marketplaces”]
+:fn-astrazeneca: footnote:[Benedek Rozemberczki, Stephen Bonner, Andriy Nikolov, Michael Ughetto, Sebastian Nilsson, Eliseo Papa, “A Unified View of Relational Deep Learning for Drug Pair Scoring”, CoRR, November 2021.]
+:fn-repurposing: footnote:[Hsieh, K., Wang, Y., Chen, L. et al. “Drug repurposing for COVID-19 using graph neural network and harmonizing multiple evidence”, Sci Rep 11, 23179, 2021.]
+:fn-finance: footnote:[Mark Weber, Giacomo Domeniconi, Jie Chen, Daniel Karl I. Weidele, Claudio Bellei, Tom Robinson, and Charles E. Leiserson, “Anti-Money Laundering in Bitcoin: Experimenting with Graph Convolutional Networks for Financial Forensics”, In Proceedings of ACM Conference (KDD ’19 Workshop on Anomaly Detection in Finance), 2019.]
+
+TigerGraph ML workbench is a development framework for data scientists and AI/ML practitioners to easily develop Graph Neural Network (GNN) models with production scale graph data stored in TigerGraph.
+It provides robust and efficient data pipelines at the Python level to stream graph data from the TigerGraph database to the user’s existing ML system, performs common data processing functions such as train/validation/test on graph data sets, and various subgraph sampling methods.
+
+TigerGraph ML workbench is designed to work with your existing ML framework and infrastructure.
+It is compatible with other popular ML frameworks such as PyTorch Geometric, DGL, and TensorFlow, and it can be plugged into your existing on-prem infrastructure, or in the Cloud with Amazon SageMaker and GCP.
+
+== High-level architecture
+
+The TigerGraph Machine Learning Workbench contains three major components: the Graph Data Processing Service (GDPS), TGML, our python client for GDPS, and TigerLab, a JupyterLab-based IDE.
+
+image::mlworkbench-architecture.png[]
+
+The Graph Data Processing Service (GDPS)::
+GDPS runs on the same machine as the core TigerGraph database and performs common graph machine learning operations such as sampling the graph data, performing feature extraction, and other data preparation, as well as data caching and sending the data to your ML development environment. It also contains REST endpoints for the tgml package to call in order to perform these operations.
+
+TGML::
+TGML is a Python package is installed on the computer or server where you want to perform your machine learning training.
+The `tgml` package has basic utilities, such as vertex train/validation/test set splitting capabilities, as well as graph data loaders for both PyTorch Geometric and Deep Graph Library (DGL).
+As `tgml` is a Python package, it can be installed anywhere Python is used.
+
+TigerLab::
+TigerLab is a JupyterLab-based development environment with some TigerGraph specific utilities and components, such as a server manager and link to GraphStudio.
+In addition, all Python libraries such as PyTorch Geometric, DGL, and TGML come pre-installed, so you don’t have to worry about setting up the right Python environment.
+
+== Graph Neural Networks and its Applications
+
+GNNs tend to outperform other machine learning techniques when there are well-defined relationships between data as it directly models the connectivity of your graph data.
+From recent research, Graph Neural Network has proven its success across various business domains and applications.
+With TigerGraph ML Workbench, you can now easily explore the potentials of GNN for your domains.
+Below are some papers and resources to spark ideas in a range of applications and industries:
+
+Recommendation Engines::
+Pinterest introduced PinSAGE{fn-pintrest}, an architecture that can serve real-time recommendations to their users, resulting in a 10-30% improvement compared to other deep learning methods when evaluated in A/B testing.
+
+Supply Chain::
+Amazon released a GNN architecture{fn-amazon} that incorporates temporal information with GNNs for demand forecasting.
+The method models interactions between products and their sellers on Amazon in a graph, resulting in a 16% improvement over other state-of-the-art forecasting methods.
+
+Healthcare::
+AstraZeneca has used graph neural networks like GraphSAGE to generate knowledge graph embeddings for predicting possible drug-drug interactions such as possible synergies between drugs, as well as possible polypharmacy side effects{fn-astrazeneca}.
+Additionally, the possibility of repurposing drugs to treat COVID has been studied using a drug repurposing knowledge graph and GNNs{fn-repurposing}.
+
+Financial Institutions::
+GCNs have been studied for predicting money-laundering behavior in Bitcoin transaction networks, and have been shown to perform admirably compared to other approaches{fn-finance}.
+
+If you are interested in learning more about the fundamental research on different variations of Graph Neural Network, here is a list of helpful publications:
+
+* link:https://arxiv.org/abs/1609.02907[Graph Convolutional Neural Networks]
+* link:https://arxiv.org/abs/1710.10903[Graph Attention Network]
+* link:https://arxiv.org/abs/1706.02216[GraphSage]
