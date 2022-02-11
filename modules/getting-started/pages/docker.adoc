@@ -6,7 +6,15 @@ Instead of installing the Workbench on your machine, you can also run the ML wor
 To help you get started quickly, we provide a “sandbox” docker container that has the TigerGraph database, GDPS, and ML Workbench pre-installed.
 The “Cora” dataset used for tutorials is also preloaded into the database.
 
-To try it out, make sure you have Docker running and run:
+=== Prerequisites
+* You machine needs to meet the xref:tigergraph-server:installation:hw-and-sw-requirements.adoc[].
+** Make sure you are allocating enough CPU and memory to your Docker containers.
+It is recommended that you allocate at least 8 CPUs and 16 GB of memory to your Docker containers.
+* Docker is running on your machine.
+
+=== Procedure
+
+Run the following command to pull the Workbench image, bind ports, map a shared data folder, and start a container from the image
 
 [.wrap,console]
 ----
@@ -26,7 +34,7 @@ For example, `c:\tgsandbox instead of ~/tgsandbox`.
 
 
 == Run Workbench by itself
-You can the Workbench by itself in a Docker container, and connect to a TigerGraph server later.
+You can the Workbench by itself in a Docker container, and xref:connect-to-server.adoc[connect to a TigerGraph server] later.
 
 [NOTE]
 ====
@@ -36,7 +44,7 @@ If you want to run both the ML workbench and the TigerGraph in Docker containers
 ====
 
 === Prerequisites
-* Docker Desktop is installed on your computer.
+* Docker Desktop is installed on your computer and running on your machine.
 
 === Procedure
 . Run the following command to pull the Workbench image, bind ports, map a shared data folder, and start a container from the image:
@@ -45,7 +53,10 @@ If you want to run both the ML workbench and the TigerGraph in Docker containers
 ----
 $ docker run --name mlworkbench -it -p 8888:8888 -v ~/tmp:/home/tigergraph tigergraphml/mlworkbench <1>
 ----
-. Visit `http://localhost:8888`,
+. Visit http://localhost:8888 in your broswer to access the Jupyter lab server.
 
+== Next steps
+
+* xref:connect-to-server.adoc[Connect your Workbench to a TigerGraph server]
 
 

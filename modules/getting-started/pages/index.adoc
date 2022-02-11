@@ -1,0 +1,8 @@
+= Getting started
+
+The following steps will guide you through some key aspects of TigerGraph ML Workbench.
+At the conclusion of the Getting Started sequence, you’ll have reached an excellent starting point for further, more detail-driven activities.
+
+. xref:installation.adoc[] or xref:docker.adoc[]
+. xref:connect-to-server.adoc[]
+. xref:tutorials:train-your-first-model.adoc[]

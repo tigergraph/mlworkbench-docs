@@ -1,0 +1,21 @@
+= Module `tgml.featurizer`
+
+== Class `PageRank`
+[,python]
+----
+class PageRank (graph: TigerGraph, result_attr: str = 'pagerank', timeout: int = 16000)
+----
+
+=== Parameters
+`graph` : TigerGraph::
+Connection to the TigerGraph database.
+`result_attr` : str optional::
+Page
+`timeout` : int optional::
+The timeout limit for running
+
+=== Methods
+[,python]
+----
+def run (self, max_change: float = 0.001, max_iter: int = 25, damping: float = 0.85)
+----

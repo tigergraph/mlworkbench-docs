@@ -1,4 +1,29 @@
 = Tutorials
+:experimental:
 
 Our tutorials are all written in Jupyter notebooks in the Workbench itself.
-Here we provide a list of walkthroughs of the tutorial materials.
+Here we provide a list of walk-throughs of the tutorial materials.
+
+== Access tutorials
+
+To access the built-in tutorials, from the Jupyter Lab server page, click menu:File[New Launcher > TigerGraph ML Tutorial].
+
+The dropdown menu gives you a list of tutorials:
+
+* Data ingestion.
+This notebook walks you through how to load the example Cora dataset into your TigerGraph database.
+** The dataset contains 2708 machine learning papers and 10556 citation links between the papers.
+** Each publication in the dataset is described by a 0/1-valued word vector indicating the absence/presence of the corresponding word from a dictionary.
+** The dictionary consists of 1433 unique words.
+** Each paper is classified into one of seven classes based on the topic.
+* Data processing.
+* Data loaders.
+* Graph Convolutional Network (GCN).
+This tutorial walks through the training of link:https://arxiv.org/pdf/1609.02907.pdf[Graph Convolutional Networks (GCN)] with TigerGraph.
+* GraphSAGE.
+This tutorial walks through the training of link:https://arxiv.org/abs/1706.02216[GraphSAGE] models with TigerGraph.
+* Graph Attention Network.
+This tutorial walks through the training of link:https://arxiv.org/abs/1710.10903[Graph Attention Networks] with TigerGraph.
+
+== Tutorial walk-through
+

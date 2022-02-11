@@ -20,4 +20,4 @@ You will see a URL you can use to visit the server in a browser.
 
 == Next steps
 
-* Connect your workbench to a TigerGraph server
+* xref:connect-to-server.adoc[Connect your Workbench to a TigerGraph server]
