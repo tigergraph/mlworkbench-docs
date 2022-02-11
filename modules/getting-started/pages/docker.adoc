@@ -27,7 +27,7 @@ Run the following command to pull the Workbench image, bind ports, map a shared 
 
 [.wrap,console]
 ----
-docker run -it -p 14022:22 -p 8000:8000 -p 8888:8888 -p 9000:9000 -p 14240:14240  --name tgsandbox --ulimit nofile=1000000:1000000 -v ~/tgsandbox:/home/tigergraph/tgsandbox tigergraphml/sandbox
+$ docker run -it -p 14022:22 -p 8000:8000 -p 8888:8888 -p 9000:9000 -p 14240:14240 -p 6006:6006  --name tgsandbox --ulimit nofile=1000000:1000000 -v ~/tgsandbox:/home/tigergraph/tgsandbox tigergraphml/sandbox
 ----
 
 Here is a breakdown of the options in the docker run command above
@@ -65,7 +65,7 @@ If you want to run both the ML workbench and the TigerGraph in Docker containers
 +
 [.wrap,console]
 ----
-$ docker run --name mlworkbench -it -p 8888:8888 -v ~/tmp:/home/tigergraph tigergraphml/mlworkbench <1>
+$ docker run --name mlworkbench -it -p 8888:8888 -p 6006:6006 -v ~/tmp:/home/tigergraph tigergraphml/mlworkbench
 ----
 . Visit http://localhost:8888 in your browser to access the Jupyter lab server.
 
