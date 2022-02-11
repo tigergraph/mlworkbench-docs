@@ -33,6 +33,11 @@ This allows you to keep your files after the container is removed.
 If you are using Windows, change the path using Windows file system conventions.
 For example, `c:\tgsandbox instead of ~/tgsandbox`.
 
+=== Video walk-through
+Here is a video walk-through of running the sandbox image:
+
+video::7vnxNPWxoVQ[youtube,width=600,height=400]
+
 
 == Run Workbench by itself
 You can the Workbench by itself in a Docker container, and xref:connect-to-server.adoc[connect to a TigerGraph server] later.
