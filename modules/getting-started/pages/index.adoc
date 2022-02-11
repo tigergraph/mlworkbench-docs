@@ -3,6 +3,9 @@
 The following steps will guide you through some key aspects of TigerGraph ML Workbench.
 At the conclusion of the Getting Started sequence, you’ll have reached an excellent starting point for further, more detail-driven activities.
 
-. xref:installation.adoc[] or xref:docker.adoc[]
-. xref:connect-to-server.adoc[]
-. xref:tutorials:train-your-first-model.adoc[]
+. Getting TigerGraph ML Workbench
+* If you are new to TigerGraph, we recommend xref:docker.adoc#_run_workbench_and_tigergraph_server_in_one_container[running TigerGraph server and the Workbench together in a sandbox container].
+* If you are on Mac or Linux, you can also xref:installation.adoc[] directly on your machine.
+. xref:connect-to-server.adoc[].
+If you chose to run the Workbench from the sandbox image, you can skip this step.
+. xref:tutorials:index.adoc[Train your first model].

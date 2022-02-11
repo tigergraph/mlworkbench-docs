@@ -6,8 +6,8 @@ This reference describes the submodules, classes, and methods that are available
 
 `tgml` contains the following submodules:
 
-* `tgml.data`
-* `tgml.dataloaders`
-* `tgml.featurizer`
-* `tgml.metrics`
-* `tgml.utils`
+* xref:tgml-data.adoc[`tgml.data`]
+* xref:tgml-dataloaders.adoc[`tgml.dataloaders`]
+* xref:tgml-featurizer.adoc[`tgml.featurizer`]
+* xref:tgml-metrics.adoc[`tgml.metrics`]
+* xref:tgml-utils.adoc[`tgml.utils`]

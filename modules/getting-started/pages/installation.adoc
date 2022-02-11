@@ -3,7 +3,9 @@
 You can install the TigerGraph ML Workbench directly on your computer.
 
 == Prerequisites
-Hardware and software requirements
+* Supported OS:
+** macOS
+** Linux
 
 == Procedure
 

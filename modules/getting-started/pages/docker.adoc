@@ -2,8 +2,9 @@
 
 Instead of installing the Workbench on your machine, you can also run the ML workbench from a Docker container.
 
+[#_run_workbench_and_tigergraph_server_in_one_container]
 == Run Workbench and TigerGraph server in one container
-To help you get started quickly, we provide a “sandbox” docker container that has the TigerGraph database, GDPS, and ML Workbench pre-installed.
+To help you get started quickly, we provide a “sandbox” docker image that has the TigerGraph database, GDPS, and ML Workbench pre-installed.
 The “Cora” dataset used for tutorials is also preloaded into the database.
 
 === Prerequisites
@@ -53,10 +54,11 @@ If you want to run both the ML workbench and the TigerGraph in Docker containers
 ----
 $ docker run --name mlworkbench -it -p 8888:8888 -v ~/tmp:/home/tigergraph tigergraphml/mlworkbench <1>
 ----
-. Visit http://localhost:8888 in your broswer to access the Jupyter lab server.
+. Visit http://localhost:8888 in your browser to access the Jupyter lab server.
 
 == Next steps
 
-* xref:connect-to-server.adoc[Connect your Workbench to a TigerGraph server]
+* xref:connect-to-server.adoc[Connect your Workbench to a TigerGraph server] (Skip this step if you are using the sandbox image)
+* xref:tutorials:index.adoc#_train_your_first_model[Train your first model].
 
 

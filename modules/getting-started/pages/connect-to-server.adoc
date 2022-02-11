@@ -5,6 +5,11 @@ Connecting your ML Workbench to a TigerGraph server gives you access to the grap
 This allows you to develop Graph Neural Network (GNN) models with production scale graph data.
 
 == Prerequisites
+* TigerGraph ML Workbench is installed on your machine or running in a Docker container.
+* A running TigerGraph server.
+
+NOTE: Both the Workbench and the TigerGraph server cannot be running on different containers on the same machine.
+If you need to run both the server and the Workbench with Docker, use the xref:docker.adoc#_run_workbench_and_tigergraph_server_in_one_container[sandbox image] to create a container that has both the server and the Workbench instead.
 
 == Procedure
 
@@ -25,6 +30,4 @@ After the installation is complete, your Workbench is now connected to the Tiger
 
 == Next steps
 
-With the tutorials loaded and the Cora dataset loaded into your TigerGraph database, you are ready to start working through the tutorials.
-
-Open the notebook and make sure to change the connection details such as the database URL and credentials are updated to your database.
+With the tutorials loaded and the Cora dataset loaded into your TigerGraph database, you are ready to start working through the xref:tutorials:index.adoc[tutorials] and xref:tutorials:index.adoc#_train_your_first_model[train your first model].
