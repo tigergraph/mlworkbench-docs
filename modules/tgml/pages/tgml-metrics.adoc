@@ -1,1 +1,73 @@
 = Module `tgml.metrics`
+
+== Class `Accumulator`
+
+This class is used to declare objects that stores running sums and averages of an unordered list of numbers.
+
+- Call the `update()` method to add a value.
+- Get running average by accessing the `.mean` property, running sum by the `.total` property, and number of values by the `.length` property.
+
+=== Parameters
+None.
+The value of an instance defaults to 0 when you initiate it.
+
+For example
+
+    epoch_train_loss = Accumulator()
+
+=== Instance properties
+
+`.length` int::
+Returns the number of values in the accumulator.
+`.mean` float::
+Returns the number average value of the numbers in the accumulator.
+`.total` float::
+Returns the total
+
+=== Instance methods
+
+==== `.update()`
+[,python]
+----
+def update(self, value: float, length: int = 1) -> None
+----
+Add a value to the accumulator.
+
+===== Parameters
+
+`value` float required::
+The value to be added.
+
+`length` int optional::
+The input value is by default treated as a single value.
+If it is a sum of multiple values, the number of values can be specified by this
+length argument, so that the running sum is calculated correctly. Defaults to 1.
+
+== Class `Accuracy`
+
+This class is used to declare objects that calculate and track accuracy between predictions and true labels.
+
+- Call the update function to add predictions and labels.
+- Get accuracy score at any point by accessing the value property.
+
+=== Instance methods
+
+==== `.update()`
+
+[,python]
+----
+def update(self, preds, labels) -> None
+----
+Add predictions and labels to be compared.
+
+===== Args
+`preds`::
+Array of predicted labels.
+`labels`::
+Array of true labels.
+
+=== Instance properties
+
+`.value`::
+Return the accuracy score.
+
