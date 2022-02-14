@@ -2,18 +2,22 @@
 
 == Class `Accumulator`
 
-This class is used to declare objects that stores running sums and averages of an unordered list of numbers.
+This class is used to declare objects that store running sums and averages of a series of numbers.
 
-- Call the `update()` method to add a value.
-- Get running average by accessing the `.mean` property, running sum by the `.total` property, and number of values by the `.length` property.
+For each instance of the `Accumulator` class:
+
+- Call its `update()` method to add a value.
+- Get running average by accessing the `mean` property, running sum by the `total` property, and number of values by the `length` property.
 
 === Parameters
 None.
 The value of an instance defaults to 0 when you initiate it.
 
-For example
+For example:
 
     epoch_train_loss = Accumulator()
+
+In this case, the `total`, `mean`, and `length` property of `epoch_train_loss` are all 0.
 
 === Instance properties
 
