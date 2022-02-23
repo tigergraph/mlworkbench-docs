@@ -1,0 +1,18 @@
+= Advanced setup
+:description: Instructions for manually deploying GDPS to a TigerGraph server or cluster.
+
+This page covers procedures needed for advanced setups such as when you want to use the ML Workbench with an older version of JupyterLab than 3.0, or if you want to integrate GDPS with your own IDE.
+
+If you are running aversion of JupyterLab older than 3.0, such as the JupyterLab version on AWS SageMaker, you need to <<_install_gdps, install GDPS manually>> on your TigerGraph server.
+
+If you want to take advantage of Graph Data Processing Service without using JupyterLab at all, you'll need to <<_install_gdps, manually install GDPS>> on your TigerGraph server and <<_install_tgml,install the `tgml` Python package>> in your development environment.
+
+If the database is running on a cluster, you only need to deploy GDPS on the m1 machine.
+
+
+include::partial$deploy-gdps.adoc[]
+
+include::partial$install-tgml.adoc[]
+
+
+

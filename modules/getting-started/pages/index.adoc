@@ -1,11 +1,31 @@
 = Getting started
+:sectnums:
 
 The following steps will guide you through some key aspects of TigerGraph ML Workbench.
 At the conclusion of the Getting Started sequence, you’ll have reached an excellent starting point for further, more detail-driven activities.
 
-. Getting TigerGraph ML Workbench
-* If you are new to TigerGraph, we recommend xref:docker.adoc#_run_workbench_and_tigergraph_server_in_one_container[running TigerGraph server and the Workbench together in a sandbox container].
-* If you are on Mac or Linux, you can also xref:installation.adoc[] directly on your machine.
-. xref:connect-to-server.adoc[].
-If you chose to run the Workbench from the sandbox image, you can skip this step.
-. xref:tutorials:index.adoc[Train your first model].
+== Getting TigerGraph ML Workbench
+* If you are new to TigerGraph, we recommend xref:sandbox.adoc[running TigerGraph server and the Workbench together in a sandbox container].
+* If you are on Mac or Linux, you can also xref:installation.adoc[] directly on your machine as a standalone application.
+* If you already have your own Jupyter Lab server, either self-hosted or on a cloud machine learning environment, you can still integrate the Workbench with your JupyterLab.
+** xref:jupyterlab-server/self-hosted.adoc[Integrate the Workbench with your own JupyterLab server]
+** xref:jupyterlab-server/sagemaker.adoc[Integrate the Workbench with AWS Sagemaker]
+** Integrate the Workbench with Google Vertex AI
+* If you are not using JupyterLab at all, but still want to perform machine learning tasks with the graph data in your TigerGraph database through GDPS and `tgml`, you can xref:advanced-setup.adoc#_install_gdps[install GDPS manually] on the TigerGraph server and xref:advanced-setup.adoc#_install_tgml[install `tgml`] in your machine learning environment.
+
+
+== Deploy GDPS to TigerGraph Server
+NOTE: If you chose to run the Workbench from the sandbox image, you can skip this step as GDPS is already deployed onto the server.
+
+To complete the setup, you need to deploy GDPS onto your TigerGraph Database server so that ML Workbench can communicate with it
+
+* If you installed the ML Workbench and are launching JupyterLab from the `tigergraph-ml` environment, you can xref:deploy-gdps.adoc[deploy GDPS through the ML Workbench service manager] in the JupyterLab web interface.
+* If you are using JupyterLab and your JupyterLab version is 3.0 or later, you can xref:jupyterlab-server/self-hosted.adoc[install the Workbench's JupyterLab extension to deploy GDPS].
+* If you are using an older version JupyterLab (such as the xref:jupyterlab-server/sagemaker.adoc[JupyterLab on AWS SageMaker]), you'll need to xref:advanced-setup.adoc#_install_gdps[manually install GDPS] on your TigerGraph server.
+* If you are not using Jupyter notebook at all, you can still install GDPS manually on your TigerGraph server, and install `tgml` in your own environment and perform ML tasks in your preferred environment.
+** xref:advanced-setup.adoc#_install_gdps[Install GDPS manually]
+** xref:advanced-setup.adoc#_install_tgml[Install `tgml`]
+
+== xref:tutorials:index.adoc[Train your first model]
+Follow the tutorials and examples in our provided notebooks to train your first model.
+We have provided a video walk-through for training the GraphSAGE model.

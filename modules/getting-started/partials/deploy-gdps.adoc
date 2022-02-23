@@ -1,0 +1,36 @@
+[#_install_gdps]
+== Install GDPS
+. On the machine that hosts the TigerGraph server (or the Docker container running TigerGraph server),
+create a directory for GDPS and change into the directory:
+`mkdir -p tg_gdps && cd tg_gdps`.
+. Download the executable of GDPS compatible with your OS to the folder you just created.
+- MacOS: https://tg-mlworkbench.s3.us-west-1.amazonaws.com/gdps/start_gdps_mac
+- Linux: https://tg-mlworkbench.s3.us-west-1.amazonaws.com/gdps/start_gdps_linux
+. Run `chmod +x start_gdps_linux` to make the file executable.
+. Run `./start_gdps_linux` to start GDPS with the default configurations.
+
+
+=== GDPS configurations
+Below is a list of configurable options for the GDPS service:
+
+- `tg_host`: The IP address of the database host. Normally it is `http://localhost` since GDPS should run on the same machine as the database, which is also the default and you don't need to set it.
+- `tg_rest_port`: The port for RESTPP. Default: 9000.
+- `tg_gs_port`: The port for GSQL server. Default: 14240.
+- `tg_cluster_mode`: Whether tigergraph database is running on a cluster. Default: False.
+- `local_output_path`: Where GDPS can read the output files from the database. Default: /home/tigergraph/output.
+- `tg_output_path`: Where to generate temporary output files from the database. Normally this is the same as `local_output_path`, which is also the default and you don't need to set it.
+However, if the database is running in a container, this should be the path inside the container that is mounted to `local_output_path`.
+- `keep_tmp_files`: Whether to keep temporary files.
+Temporary files are generated in the temporary output folder while the service is running.
+We do not recommend keeping these files unless you are debugging. Default: False.
+- `tg_default_credentials`: Whether to use the default username and password of TigerGraph (`tigergraph`) to authenticate with the database.
+If true, `tigergraph` will be used as username and password and any authentication header will be ignored.
+Default: False.
+
+To configure GDPS, set the values for the configurations through environment variables before starting GDPS.
+
+For example, if you run the running the following line:
+
+    tg_host=http://127.0.0.1 local_output_path=/home/tigergraph/tmp
+
+you set `tg_host` to be `http://127.0.0.1` and `local_output_path` to be `/home/tigergraph/tmp` when you start GDPS.

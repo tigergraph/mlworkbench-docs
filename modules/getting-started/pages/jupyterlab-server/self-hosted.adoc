@@ -1,0 +1,27 @@
+= Integrate Workbench with Your Own JupyterLab Server
+
+If you are using JupyterLab on a self-hosted server, you can still take advantage of the ML Workbench by installing the ML Workbench JupyterLab extension and the Python package `tgml`.
+
+
+== Prerequisite
+* Your JupyterLab version is 3.0 or later.
+
+== Procedure
+
+. Navigate to JupyterLab web interface and open a terminal.
+. From the terminal, run `pip install tigergraph_mlworkbench`.
+This will install the ML Workbench Jupyter Lab extension.
+. From the terminal, run the following command to install the Python kernel for the ML Workbench:
++
+----
+$ conda env create -f https://raw.githubusercontent.com/tg-bill/tg-sagemaker-test/main/tigergraph-ml-cpu.yml && conda activate tigergraph-ml $$ python -m ipykernel install --user --name tigergraph-ml --display-name "Tigergraph Pytorch"
+----
++
+If you are going to use GPU for training, replace the yml file above with `tigergraph-ml-gpu.yml`.
+. Once installation finishes, refresh your browser.
+You should a small TigerGraph logo on the very left navigation bar and a new Python kernel called TigerGraph Pytorch on the launch page.
+. (Optional) Go to the Git extension on the left navigation panel and clone the repository https://github.com/tg-bill/mlworkbench-docs.git to download the tutorials.
+
+== Next steps
+
+xref:deploy-gdps.adoc[]

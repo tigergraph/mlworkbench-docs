@@ -1,0 +1,25 @@
+= Integrate Workbench with AWS SageMaker
+:description: Instructions for integrating ML Workbench with AWS SageMaker.
+:sectnums:
+:experimental:
+
+This guide walks you through integrating the ML Workbench with a notebook on AWS SageMaker.
+
+== Prerequisites
+* You have root-access to your notebook instance
+
+== Procedure
+. From the btn:[Notebook instances] page, click btn:[Open JupyterLab] to navigate to JupyterLab and open a terminal.
+. From the terminal, run the following command to install the Python kernel `conda_tigergraph-ml`:
++
+----
+conda env create -f https://raw.githubusercontent.com/tg-bill/tg-sagemaker-test/main/tigergraph-ml-cpu.yml && conda activate tigergraph-ml
+----
+If you are going to use GPU for training, replace the yml file above with `tigergraph-ml-gpu.yml`.
+. After the installation finishes, refresh your browser.
+You should see a new Python kernel named "conda_tigergraph-ml" on the launch page.
+This Python kernel includes all packages required for machine learning with TigerGraph.
+. (Optional) Go to the Git extension on the left navigation panel and clone the repo https://github.com/tg-bill/mlworkbench-docs.git to get all the tutorials.
+
+== Next steps
+Since AWS SageMaker runs an older version of JupyterLab, you need to install GDPS manually on the TigerGraph server to communicate with the database if GDPS is not already installed.

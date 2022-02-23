@@ -1,22 +1,26 @@
-= Connect Workbench to a TigerGraph Server
+= Deploy GDPS to TigerGraph Server
 :experimental:
 
-Connecting your ML Workbench to a TigerGraph server gives you access to the graph data stored in your TigerGraph database.
-This allows you to develop Graph Neural Network (GNN) models with production scale graph data.
+Deploying Graph Data Processing Service (GDPS) on the TigerGraph Server allows the ML Workbench to communicate with the server.
+This gives you access the graph data stored in your TigerGraph database from the Workbench and develop Graph Neural Network (GNN) models with production scale graph data.
+
+NOTE: This guide walks you through deploying GDPS through the ML Workbench JupyterLab extension.
+If you don't want to use JupyterLab as your IDE, or if you are using a version JupyterLab that's older than 3.0,
 
 == Prerequisites
 * TigerGraph ML Workbench is installed on your machine or running in a Docker container.
-* A running TigerGraph server.
+* A running TigerGraph instance with port 8000 accessible by the server running the ML Workbench.
+For a TigerGraph cluster, only the port 8000 on the m1 machine needs to be accessible.
 
-NOTE: Both the Workbench and the TigerGraph server cannot be running on different containers on the same machine.
-If you need to run both the server and the Workbench with Docker, use the xref:docker.adoc#_run_workbench_and_tigergraph_server_in_one_container[sandbox image] to create a container that has both the server and the Workbench instead.
+NOTE: The Workbench and the TigerGraph server cannot be running on different containers on the same machine.
+If you need to run both the server and the Workbench with Docker, use the xref:sandbox.adoc[sandbox image] to create a container that has both the server and the Workbench instead.
 
 == Procedure
 
 . From your terminal, run `jupyter lab`.
 This takes you to the jupyter lab server in your browser.
 On the left pane of the page, click on the TigerGraph logo to open the Workbench tab.
-. Click btn:[Add Server] and filled in the relevant server and host information.
+. Click btn:[Add Server] and fill in the relevant server and host information.
 * Server IP is the IP address of the TigerGraph server.
 If you are connecting to a cluster, provide the IP address of the m1 machine of the cluster.
 * Host OS is the OS of the host machine that is running the Workbench, not the OS of the server.

@@ -4,6 +4,7 @@ You can install the TigerGraph ML Workbench directly on your computer.
 
 == Prerequisites
 * Supported OS: macOS and Linux
+* Port 8888 needs to be open on the machine hosting the Jupyter server to access JupyterLab.
 
 == Procedure
 
@@ -25,4 +26,4 @@ video::7vnxNPWxoVQ[youtube,start=262,width=600,heigh=400]
 
 == Next steps
 
-* xref:connect-to-server.adoc[Connect your Workbench to a TigerGraph server]
+* xref:deploy-gdps.adoc[Connect your Workbench to a TigerGraph server]
