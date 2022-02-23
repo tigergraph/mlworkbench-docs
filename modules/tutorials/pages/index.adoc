@@ -4,6 +4,16 @@
 Our tutorials are all written in Jupyter notebooks in the Workbench itself.
 Here we provide a brief overview of the tutorial materials as well as a video walk-through of one of the model training tutorials.
 
+== Tutorial dataset
+All tutorials use the example data set "Cora".
+
+* The dataset contains 2708 machine learning papers and 10556 citation links between the papers.
+* Each publication in the dataset is described by a 0/1-valued word vector indicating the absence/presence of the corresponding word from a dictionary.
+* The dictionary consists of 1433 unique words.
+
+Follow the instructions in the notebook titled Data Ingestion to load the example dataset.
+
+
 == Access tutorials
 
 To access the built-in tutorials, from the Jupyter Lab server page, click menu:File[New Launcher > TigerGraph ML Tutorial].
@@ -13,9 +23,6 @@ The dropdown menu gives you a list of tutorials, including tutorials that walk y
 .Data loading and processing
 * Data ingestion.
 This notebook walks you through how to load the example Cora dataset into your TigerGraph database.
-** The dataset contains 2708 machine learning papers and 10556 citation links between the papers.
-** Each publication in the dataset is described by a 0/1-valued word vector indicating the absence/presence of the corresponding word from a dictionary.
-** The dictionary consists of 1433 unique words.
 * Data processing.
 This notebook demonstrates how to use xref:tgml:index.adoc[`tgml`] for common data processing tasks on graphs stored in TigerGraph.
 * Data loaders.
