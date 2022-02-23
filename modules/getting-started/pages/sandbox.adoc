@@ -43,5 +43,4 @@ video::7vnxNPWxoVQ[youtube,width=600,height=400]
 
 == Next steps
 
-* xref:deploy-gdps.adoc[Connect your Workbench to a TigerGraph server] (Skip this step if you are using the sandbox image)
 * xref:tutorials:index.adoc#_train_your_first_model[Train your first model].

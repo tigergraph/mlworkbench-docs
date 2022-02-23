@@ -1,5 +1,6 @@
 = Module `tgml.data`
 
+[#_class_tigergraph]
 == Class `TigerGraph`
 
 [.wrap,python]

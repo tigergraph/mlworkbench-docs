@@ -4,6 +4,6 @@
 After installing `tgml`, you are able to communicate with a TigerGraph server that has GDPS installed from any environment.
 
 . link:https://pytorch.org/[Install Pytorch].
-. `pip install tgml[pyg]` or `pip install tgml[dgl]` to install `tgm`l with pytorch-geometric or DGL support, depending on if you want to use PyTorch Geometric or DGL for the Graph Neural Network model.
+. Run `pip install "tgml[pyg]"` or `pip install "tgml[dgl]"` to install `tgml` with PyTorch-Geometric or Deep Graph Library (DGL) support, depending on if you want to use PyTorch Geometric or DGL for the Graph Neural Network model.
 
 After installing `tgml`, create a connection to your TigerGraph server with xref:tgml:tgml-data.adoc#_class_tigergraph[`tgml.data.TigerGraph()`] and start training your ML in the IDE of your choice.

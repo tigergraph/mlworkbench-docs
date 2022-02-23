@@ -6,7 +6,8 @@
 This guide walks you through integrating the ML Workbench with a notebook on AWS SageMaker.
 
 == Prerequisites
-* You have root-access to your notebook instance
+* A running AWS SageMaker notebook instance.
+* Port 8000 on TigerGraph instance is accessible by your notebook instance.
 
 == Install kernel
 . From the btn:[Notebook instances] page, click btn:[Open JupyterLab] to navigate to JupyterLab and open a terminal.
