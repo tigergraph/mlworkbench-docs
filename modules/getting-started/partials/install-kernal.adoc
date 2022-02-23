@@ -1,0 +1,22 @@
+. From the terminal, run the following command to install the `tigergraph-ml` Python kernel.
+Choose the appropriate command depending on whether you are using a CPU or GPU for training:
++
+[tabs]
+====
+For CPU::
++
+--
+[.wrap,console]
+----
+$ conda env create -f https://raw.githubusercontent.com/tg-bill/tg-sagemaker-test/main/tigergraph-ml-cpu.yml
+----
+--
+For GPU::
++
+--
+[.wrap,console]
+----
+$ conda env create -f https://raw.githubusercontent.com/tg-bill/tg-sagemaker-test/main/tigergraph-ml-gpu.yml
+----
+--
+====

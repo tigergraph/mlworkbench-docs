@@ -13,13 +13,7 @@ This guide walks you through integrating the ML Workbench with a notebook on Goo
 Click menu:File[New > Terminal] to open a terminal.
 . From the terminal, run `pip install tigergraph_mlworkbench`.
 This installs the ML Workbench JupyterLab extension.
-. From the terminal, run the following command to install the `tigergraph-ml` Python kernel:
-+
-[.wrap,console]
-----
-$ conda env create -f https://raw.githubusercontent.com/tg-bill/tg-sagemaker-test/main/tigergraph-ml-cpu.yml`
-----
-If you are using GPU for training, replace the yml file with `tigergraph-ml-gpu.yml`
+include::partial$install-kernal.adoc[]
 . Once installation finishes, refresh your browser.
 You should a small TigerGraph logo on the very left navigation bar and a new Python kernel called TigerGraph Pytorch on the launch page.
 . (Optional) Go to the Git extension on the left navigation panel and clone the repository https://github.com/tg-bill/mlworkbench-docs.git to download the tutorials.

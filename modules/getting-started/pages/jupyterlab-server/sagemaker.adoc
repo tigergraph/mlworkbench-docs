@@ -11,13 +11,7 @@ This guide walks you through integrating the ML Workbench with a notebook on AWS
 
 == Install kernel
 . From the btn:[Notebook instances] page, click btn:[Open JupyterLab] to navigate to JupyterLab and open a terminal.
-. From the terminal, run the following command to install the Python kernel `conda_tigergraph-ml`:
-+
-[.wrap,console]
-----
-conda env create -f https://raw.githubusercontent.com/tg-bill/tg-sagemaker-test/main/tigergraph-ml-cpu.yml && conda activate tigergraph-ml
-----
-If you are going to use GPU for training, replace the yml file above with `tigergraph-ml-gpu.yml`.
+include::partial$install-kernal.adoc[]
 . After the installation finishes, refresh your browser.
 You should see a new Python kernel named "conda_tigergraph-ml" on the launch page.
 This Python kernel includes all packages required for machine learning with TigerGraph.

@@ -10,7 +10,7 @@ At the conclusion of the Getting Started sequence, you’ll have reached an exce
 * If you already have your own Jupyter Lab server, either self-hosted or on a cloud machine learning environment, you can still integrate the Workbench with your JupyterLab.
 ** xref:jupyterlab-server/self-hosted.adoc[Integrate the Workbench with your own JupyterLab server]
 ** xref:jupyterlab-server/sagemaker.adoc[Integrate the Workbench with AWS Sagemaker]
-** Integrate the Workbench with Google Vertex AI
+** xref:jupyterlab-server/google-vertex-ai.adoc[Integrate the Workbench with Google Vertex AI]
 * If you are not using JupyterLab at all, but still want to perform machine learning tasks with the graph data in your TigerGraph database through Graph Data Processing Service (GDPS) and `tgml`, you can xref:advanced-setup.adoc#_install_gdps[install GDPS manually] on the TigerGraph server and xref:advanced-setup.adoc#_install_tgml[install `tgml`] in your machine learning environment.
 
 
