@@ -1,13 +1,13 @@
 = Getting started
 :sectnums:
 
-The following steps will guide you through some key aspects of TigerGraph ML Workbench.
+The following steps will guide you through some key aspects of setting up TigerGraph ML Workbench. There are several paths forward to get started with ML Workbench, and the options are presented below
 At the conclusion of the Getting Started sequence, you’ll have reached an excellent starting point for further, more detail-driven activities.
 
 == Getting TigerGraph ML Workbench
-* If you are new to TigerGraph, we recommend xref:sandbox.adoc[running TigerGraph server and the Workbench together in a sandbox container].
+* If you are new to TigerGraph, we recommend xref:sandbox.adoc[running TigerGraph server and the Workbench together in a sandbox container]. This method comes with a free version of TigerGraph DB preloaded with a sample data set, and ML Workbench preconfigured.
 * If you already have a running TigerGraph instance, you can xref:installation.adoc[install the ML Workbench] on your machine as a standalone application.
-* If you already have your own Jupyter Lab server, either self-hosted or on a cloud machine learning environment, you can still integrate the Workbench with your JupyterLab.
+* If you already have your own TigerGraph DB instance, and a Jupyter Lab server, either self-hosted or on a cloud machine learning environment, you can still integrate the Workbench with your JupyterLab.
 ** xref:jupyterlab-server/self-hosted.adoc[Integrate the Workbench with your own JupyterLab server]
 ** xref:jupyterlab-server/sagemaker.adoc[Integrate the Workbench with AWS Sagemaker]
 ** Integrate the Workbench with Google Vertex AI
