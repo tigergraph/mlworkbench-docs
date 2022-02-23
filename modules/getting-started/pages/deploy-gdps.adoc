@@ -4,8 +4,10 @@
 Deploying Graph Data Processing Service (GDPS) on the TigerGraph Server allows the ML Workbench to communicate with the server.
 This gives you access the graph data stored in your TigerGraph database from the Workbench and develop Graph Neural Network (GNN) models with production scale graph data.
 
-NOTE: This guide walks you through deploying GDPS through the ML Workbench JupyterLab extension.
-If you don't want to use JupyterLab as your IDE, or if you are using a version JupyterLab that's older than 3.0,
+TigerLab, the JupyterLab-based IDE that comes with the Workbench, offers a service manager feature that allows you to deploy GDPS through a web interface.
+If you are using your own JupyterLab-based IDE, you'll need to xref:jupyterlab-server/self-hosted.adoc[install the ML Workbench JupyterLab extension] before going through this guide.
+
+NOTE: If you don't want to use JupyterLab as your IDE, or if you are using a version JupyterLab that's older than 3.0, see xref:advanced-setup.adoc[] for instructions to deploy GDPS manually.
 
 == Prerequisites
 * TigerGraph ML Workbench is installed on your machine or running in a Docker container.
