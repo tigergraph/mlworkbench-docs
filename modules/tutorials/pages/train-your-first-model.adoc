@@ -1,7 +1,0 @@
-= Train your first model
-:experimental:
-
-After setting up your Workbench and connecting it to your TigerGraph server, it is time to train your first model.
-
-From the top ribbon of the Jupyter Lab page, click menu:File[New Launcher], and from the launcher page, click btn:[TigerGraph ML Tutorial].
-
