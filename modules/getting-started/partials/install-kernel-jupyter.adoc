@@ -1,0 +1,25 @@
+. From JupyterLab, click menu:File[New > Terminal] to open a new terminal.
+. From the terminal, run the following command to install the `tigergraph-ml` Python kernel.
+Choose the appropriate command depending on whether you are using a CPU or GPU for training:
++
+[tabs]
+====
+For CPU::
++
+--
+[.wrap,console]
+----
+$ conda env create -f https://raw.githubusercontent.com/tg-bill/tg-sagemaker-test/main/tigergraph-ml-cpu.yml && conda activate tigergraph-ml && python -m ipykernel install --user --name tigergraph-ml --display-name "TigerGraph Pytorch"
+----
+--
+For GPU::
++
+--
+[.wrap,console]
+----
+$ conda env create -f https://raw.githubusercontent.com/tg-bill/tg-sagemaker-test/main/tigergraph-ml-gpu.yml && conda activate tigergraph-ml && python -m ipykernel install --user --name tigergraph-ml --display-name "TigerGraph Pytorch"
+----
+--
+====
+You should see a new Python kernel named "TigerGraph Pytorch" on the launch page.
+This Python kernel includes all packages required for machine learning with TigerGraph.
