@@ -16,7 +16,11 @@ Additionally, it can be plugged into your existing on-prem infrastructure, or in
 
 The TigerGraph Machine Learning Workbench contains three major components: the Graph Data Processing Service (GDPS), TGML, our python client for GDPS, and TigerLab, a JupyterLab-based IDE.
 
+.High-level production architecture
 image::mlworkbench-architecture.png[]
+
+.Architecture flow diagram
+image::mlworkbench-architecture-flow.png[]
 
 The Graph Data Processing Service (GDPS)::
 GDPS runs on the same machine as the core TigerGraph database and performs common graph machine learning operations such as sampling the graph data, performing feature extraction, and other data preparation, as well as data caching and sending the data to your ML development environment.
