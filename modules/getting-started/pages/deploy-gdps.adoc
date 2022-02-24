@@ -4,18 +4,15 @@
 Deploying Graph Data Processing Service (GDPS) on the TigerGraph Server allows the ML Workbench to communicate with the server.
 This gives you access the graph data stored in your TigerGraph database from the Workbench and develop Graph Neural Network (GNN) models with production scale graph data.
 
-TigerLab, the JupyterLab-based IDE that comes with the Workbench, offers a server manager feature that allows you to deploy GDPS through a web interface.
+Our JupyterLab extension that comes with the Workbench offers a server manager feature that allows you to deploy GDPS through a web interface.
 If you are using your own JupyterLab-based IDE, you'll need to xref:jupyterlab-server/self-hosted.adoc[install the ML Workbench JupyterLab extension] before going through this guide.
 
 NOTE: If you don't want to use JupyterLab as your IDE, or if you are using a version JupyterLab that's older than 3.0, see xref:advanced-setup.adoc[] for instructions to deploy GDPS manually.
 
 == Prerequisites
-* TigerGraph ML Workbench is installed on your machine or running in a Docker container.
+* TigerGraph ML Workbench is installed on your machine.
 * A running TigerGraph instance with port 8000 accessible by the server running the ML Workbench.
 For a TigerGraph cluster, only the port 8000 on the m1 machine needs to be accessible.
-
-NOTE: The Workbench and the TigerGraph server cannot be running on different containers on the same machine.
-If you need to run both the server and the Workbench with Docker, use the xref:sandbox.adoc[sandbox image] to create a container that has both the server and the Workbench instead.
 
 == Procedure
 
@@ -25,14 +22,14 @@ On the left pane of the page, click on the TigerGraph logo to open the Workbench
 . Click btn:[Add Server] and fill in the relevant server and host information.
 * Server IP is the IP address of the TigerGraph server.
 If you are connecting to a cluster, provide the IP address of the m1 machine of the cluster.
-* Host OS is the OS of the host machine that is running the Workbench, not the OS of the server.
+* Host OS is the OS of the host machine that is running the database. If the database is running in a container, it is the OS of the machine that hosts the container, not the OS inside the container.
 * GDPS port is the port to serve the Graph Data Processing Service (GDPS).
 . Click btn:[Submit].
 This adds a server to the list of servers in your Workbench tab.
 . Click btn:[GDPS] on the server you just added.
-If you haven't connected to the server with the Workbench before, you will be prompted to install GDPS on the server.
+If there is no GDPS running on the database server, you will be prompted to install GDPS on the server.
 Follow the prompts to provide the necessary information about the server to install the GDPS.
-After the installation is complete, your Workbench is now connected to the TigerGraph server, and you are ready to start using your graph data to develop GNN models.
+After the installation is complete, your Workbench is now able to connect to the TigerGraph server, and you are ready to start using your graph data to develop GNN models.
 
 == Next steps
 

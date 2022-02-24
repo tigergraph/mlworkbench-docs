@@ -1,6 +1,6 @@
 :experimental:
 . From JupyterLab, click menu:File[New > Terminal] to open a new terminal.
-. From the terminal, run the following command to install the `tigergraph-ml` Python kernel.
+. From the terminal, run the following command to install the `tigergraph-torch` Python kernel.
 Choose the appropriate command depending on whether you are using a CPU or GPU for training:
 +
 [tabs]
@@ -10,7 +10,7 @@ For CPU::
 --
 [.wrap,console]
 ----
-$ conda env create -f https://raw.githubusercontent.com/tg-bill/tg-sagemaker-test/main/tigergraph-ml-cpu.yml && conda activate tigergraph-ml && python -m ipykernel install --user --name tigergraph-ml --display-name "TigerGraph Pytorch"
+$ conda env create -f https://raw.githubusercontent.com/TigerGraph-DevLabs/mlworkbench-docs/main/conda_envs/tigergraph-torch-cpu.yml && conda activate tigergraph-torch-cpu && python -m ipykernel install --user --name tigergraph-torch-cpu --display-name "TigerGraph Pytorch (cpu)"
 ----
 --
 For GPU::
@@ -18,7 +18,7 @@ For GPU::
 --
 [.wrap,console]
 ----
-$ conda env create -f https://raw.githubusercontent.com/tg-bill/tg-sagemaker-test/main/tigergraph-ml-gpu.yml && conda activate tigergraph-ml && python -m ipykernel install --user --name tigergraph-ml --display-name "TigerGraph Pytorch"
+$ conda env create -f https://raw.githubusercontent.com/TigerGraph-DevLabs/mlworkbench-docs/main/conda_envs/tigergraph-torch-gpu.yml && conda activate tigergraph-torch-gpu && python -m ipykernel install --user --name tigergraph-torch-gpu --display-name "TigerGraph Pytorch (gpu)"
 ----
 --
 ====
