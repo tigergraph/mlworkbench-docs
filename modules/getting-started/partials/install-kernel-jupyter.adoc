@@ -1,3 +1,4 @@
+:experimental:
 . From JupyterLab, click menu:File[New > Terminal] to open a new terminal.
 . From the terminal, run the following command to install the `tigergraph-ml` Python kernel.
 Choose the appropriate command depending on whether you are using a CPU or GPU for training:
