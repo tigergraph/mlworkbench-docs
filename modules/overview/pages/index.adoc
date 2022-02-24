@@ -14,7 +14,11 @@ Additionally, it can be plugged into your existing on-prem infrastructure, or in
 
 == High-level architecture
 
-The TigerGraph Machine Learning Workbench contains three major components: the Graph Data Processing Service (GDPS), TGML, our python client for GDPS, and TigerLab, a JupyterLab-based IDE.
+The TigerGraph Machine Learning Workbench contains three major components:
+
+* the Graph Data Processing Service (GDPS)
+* TGML, the Python client for GDPS
+* TigerLab, a JupyterLab-based IDE
 
 .High-level production architecture
 image::mlworkbench-architecture.png[]
