@@ -15,14 +15,19 @@ This will install the ML Workbench Jupyter Lab extension.
 +
 [.wrap,console]
 ----
-$ conda env create -f https://raw.githubusercontent.com/tg-bill/tg-sagemaker-test/main/tigergraph-ml-cpu.yml && conda activate tigergraph-ml && python -m ipykernel install --user --name tigergraph-ml --display-name "TigerGraph Pytorch"
+$ conda env create -f https://raw.githubusercontent.com/TigerGraph-DevLabs/mlworkbench-docs/main/conda_envs/tigergraph-torch-cpu.yml && conda activate tigergraph-torch-cpu && python -m ipykernel install --user --name tigergraph-torch-cpu --display-name "TigerGraph Pytorch (cpu)"
 ----
 +
-If you are using a GPU for training, replace the yml file above with `tigergraph-ml-gpu.yml`.
+If you are using a GPU for training, replace the all the "cpu" above with "gpu":
++
+[.wrap,console]
+----
+$ conda env create -f https://raw.githubusercontent.com/TigerGraph-DevLabs/mlworkbench-docs/main/conda_envs/tigergraph-torch-gpu.yml && conda activate tigergraph-torch-gpu && python -m ipykernel install --user --name tigergraph-torch-gpu --display-name "TigerGraph Pytorch (gpu)"
+----
++
 . Once installation finishes, refresh your browser.
-You should a small TigerGraph logo on the very left navigation bar and a new Python kernel called TigerGraph Pytorch on the launch page.
-. (Optional) Go to the Git extension on the left navigation panel and clone the repository https://github.com/tg-bill/mlworkbench-docs.git to download the tutorials.
+You should see a small TigerGraph logo on the very left navigation bar and a new Python kernel called TigerGraph Pytorch on the launch page.
 
 == Next steps
 
-With the ML Workbench JupyterLab extension and the `tigergraph-ml` kernel installed, the next step is to xref:deploy-gdps.adoc[deploy GDPS] on your TigerGraph instance so the Workbench can communicate with your TigerGraph database.
+With the ML Workbench JupyterLab extension and the `TigerGraph Pytorch` kernel installed, the next step is to xref:deploy-gdps.adoc[deploy GDPS] on your TigerGraph instance so the Workbench can communicate with your TigerGraph database.

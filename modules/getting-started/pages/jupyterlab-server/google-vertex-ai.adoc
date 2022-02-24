@@ -15,9 +15,8 @@ Click menu:File[New > Terminal] to open a terminal.
 This installs the ML Workbench JupyterLab extension.
 include::partial$install-kernel.adoc[]
 . Once installation finishes, refresh your browser.
-You should a small TigerGraph logo on the very left navigation bar and a new Python kernel called TigerGraph Pytorch on the launch page.
-. (Optional) Go to the Git extension on the left navigation panel and clone the repository https://github.com/tg-bill/mlworkbench-docs.git to download the tutorials.
+You should see a small TigerGraph logo on the very left navigation bar and a new Python kernel called TigerGraph Pytorch on the launch page.
 
 == Next steps
 
-With the ML Workbench JupyterLab extension and the `tigergraph-ml` kernel installed, the next step is to xref:deploy-gdps.adoc[deploy GDPS] on your TigerGraph instance so the Workbench can communicate with your TigerGraph database.
+With the ML Workbench JupyterLab extension and the `tigergraph-torch` kernel installed, the next step is to xref:deploy-gdps.adoc[deploy GDPS] on your TigerGraph instance so the Workbench can communicate with your TigerGraph database.

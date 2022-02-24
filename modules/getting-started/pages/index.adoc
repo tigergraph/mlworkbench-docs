@@ -21,8 +21,8 @@ NOTE: If you chose to run the Workbench from the sandbox image, you can skip thi
 
 To complete the setup, you need to deploy GDPS onto your TigerGraph Database server so that ML Workbench can communicate with it
 
-* If you installed the ML Workbench and are launching JupyterLab from the `tigergraph-ml` environment, you can xref:deploy-gdps.adoc[deploy GDPS through the ML Workbench server manager] in the JupyterLab web interface.
-* If you are using JupyterLab and your JupyterLab version is 3.0 or later, you can xref:jupyterlab-server/self-hosted.adoc[install the Workbench's JupyterLab extension as well as the `tigergraph-ml` Python kernel], and then xref:deploy-gdps.adoc[deploy GDPS] through the ML Workbench server manager.
+* If you installed the ML Workbench and are launching JupyterLab from the `mlworkbench` environment, you can xref:deploy-gdps.adoc[deploy GDPS through the ML Workbench server manager] in the JupyterLab web interface.
+* If you are using JupyterLab and your JupyterLab version is 3.0 or later, you can xref:jupyterlab-server/self-hosted.adoc[install the Workbench's JupyterLab extension as well as the `tigergraph-torch` Python kernel], and then xref:deploy-gdps.adoc[deploy GDPS] through the ML Workbench server manager.
 * If you are using an older version JupyterLab (such as the xref:jupyterlab-server/sagemaker.adoc[JupyterLab on AWS SageMaker]), you'll need to xref:advanced-setup.adoc#_install_gdps[manually install GDPS] on your TigerGraph server.
 * If you are not using Jupyter notebook at all, you can still install GDPS manually on your TigerGraph server, and install `tgml` in your own environment and perform ML tasks in your preferred environment.
 ** xref:advanced-setup.adoc#_install_gdps[Install GDPS manually]

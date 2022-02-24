@@ -6,14 +6,14 @@ create a directory for GDPS and change into the directory:
 . Download the executable of GDPS compatible with your OS to the folder you just created.
 - MacOS: https://tg-mlworkbench.s3.us-west-1.amazonaws.com/gdps/start_gdps_mac
 - Linux: https://tg-mlworkbench.s3.us-west-1.amazonaws.com/gdps/start_gdps_linux
-. Run `chmod +x start_gdps_linux` to make the file executable.
-. Run `./start_gdps_linux` to start GDPS with the default configurations.
+. Run `chmod +x start_gdps_linux` or `chmod +x start_gdps_mac` to make the file executable.
+. Run `./start_gdps_linux` or `./start_gdps_mac` to start GDPS with the default configurations.
 
 
 === GDPS configurations
 Below is a list of configurable options for the GDPS service:
 
-- `tg_host`: The IP address of the database host. Normally it is `http://localhost` since GDPS should run on the same machine as the database, which is also the default and you don't need to set it.
+- `tg_host`: The IP address of the database host. Normally it is `http://localhost` since GDPS should run on the same machine as the database, which is also the default and you don't need to set it. In case where the database is running on a https server, `https://localhost` won't work and you will need to use the full address of the server. 
 - `tg_rest_port`: The port for RESTPP. Default: 9000.
 - `tg_gs_port`: The port for GSQL server. Default: 14240.
 - `tg_cluster_mode`: Whether tigergraph database is running on a cluster. Default: False.
@@ -31,6 +31,6 @@ To configure GDPS, set the values for the configurations through environment var
 
 For example, if you run the running the following line:
 
-    tg_host=http://127.0.0.1 local_output_path=/home/tigergraph/tmp
+    tg_host=http://127.0.0.1 local_output_path=/home/tigergraph/tmp ./start_gdps_linux
 
 you set `tg_host` to be `http://127.0.0.1` and `local_output_path` to be `/home/tigergraph/tmp` when you start GDPS.

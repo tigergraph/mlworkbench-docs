@@ -13,7 +13,7 @@ This guide walks you through integrating the ML Workbench with a notebook on AWS
 . From the btn:[Notebook instances] page, click btn:[Open JupyterLab] to navigate to JupyterLab and open a terminal.
 include::partial$install-kernel.adoc[]
 . After the installation finishes, refresh your browser.
-You should see a new Python kernel named "conda_tigergraph-ml" on the launch page.
+You should see a new Python kernel named "conda_tigergraph-torch-cpu" or "conda_tigergraph-torch-gpu" on the launch page.
 This Python kernel includes all packages required for machine learning with TigerGraph.
 
 Having installed the kernel, the next step is to deploy GDPS on your TigerGraph instance.
@@ -22,6 +22,6 @@ Since AWS SageMaker runs an older version of JupyterLab, you need to install GDP
 include::partial$deploy-gdps.adoc[]
 
 == Next steps
-Go to the Git extension on the left navigation panel and clone the https://github.com/tg-bill/mlworkbench-docs.git[repository that contains the tutorials].
+Go to the Git extension on the left navigation panel and clone the https://github.com/TigerGraph-DevLabs/mlworkbench-docs[repository that contains the tutorials].
 You are now ready to start following the xref:tutorials:index.adoc[tutorials and train your first model].
 
