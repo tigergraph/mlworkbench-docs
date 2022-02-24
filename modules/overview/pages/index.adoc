@@ -9,7 +9,8 @@ TigerGraph ML workbench is a development framework for data scientists and AI/ML
 It provides robust and efficient data pipelines at the Python level to stream graph data from the TigerGraph database to the user’s existing ML system, performs common data processing functions such as train/validation/test on graph data sets, and various subgraph sampling methods.
 
 TigerGraph ML workbench is designed to work with your existing ML framework and infrastructure.
-It is compatible with other popular ML frameworks such as PyTorch Geometric, DGL, and TensorFlow, and it can be plugged into your existing on-prem infrastructure, or in the Cloud with Amazon SageMaker and GCP.
+It is compatible with other popular ML frameworks such as PyTorch Geometric and DGL.
+Additionally, it can be plugged into your existing on-prem infrastructure, or in the Cloud with Amazon SageMaker and GCP.
 
 == High-level architecture
 
@@ -18,7 +19,8 @@ The TigerGraph Machine Learning Workbench contains three major components: the G
 image::mlworkbench-architecture.png[]
 
 The Graph Data Processing Service (GDPS)::
-GDPS runs on the same machine as the core TigerGraph database and performs common graph machine learning operations such as sampling the graph data, performing feature extraction, and other data preparation, as well as data caching and sending the data to your ML development environment. It also contains REST endpoints for the tgml package to call in order to perform these operations.
+GDPS runs on the same machine as the core TigerGraph database and performs common graph machine learning operations such as sampling the graph data, performing feature extraction, and other data preparation, as well as data caching and sending the data to your ML development environment.
+It also contains REST endpoints for the tgml package to call in order to perform these operations.
 
 TGML::
 TGML is a Python package is installed on the computer or server where you want to perform your machine learning training.

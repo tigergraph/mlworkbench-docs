@@ -26,10 +26,14 @@ $ docker run -it -p 14022:22 -p 8000:8000 -p 8888:8888 -p 9000:9000 -p 14240:142
 Here is a breakdown of the options in the docker run command above
 
 * `-it`: run the container interactively and allocate a pseudo-TTY.
+If you'd rather run the container non-interactively, use `-d` instead.
+You can use `docker logs` to retrieve the URL for JupyterLab.
 * `-p`: map a port of the host (14022) to a port of the container (22).
-* `--name`: name of the container. Can be any name you like.
+Port 22 is for the SSH server; ports 9000 and 14240 are for the database; port 8000 is for GDPS; port 8888 is for the ML Workbench; port 6006 for Tensorboard.
+* `--name`: name of the container.
+The command sets the name to `tgsandbox`, but you can change this to another name.
 * `--ulimit`: the limit of number of open file descriptors per process.
-* -v: mount a folder on the host (`~/tgsandbox`) to a folder in the container (`/home/tigergraph/tgsandbox`).
+* `-v`: mount a folder on the host (`~/tgsandbox`) to a folder in the container (`/home/tigergraph/tgsandbox`).
 This allows you to keep your files after the container is removed.
 If you are using Windows, change the path using Windows file system conventions.
 For example, `c:\tgsandbox instead of ~/tgsandbox`.
