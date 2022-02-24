@@ -16,13 +16,13 @@ It is recommended that you allocate at least 8 CPUs and 16 GB of memory to your 
 
 == Procedure
 
-Run the following command to pull the Workbench image, bind ports, map a shared data folder, and start a container from the image
-
+. Run the following command to pull the Workbench image, bind ports, map a shared data folder, and start a container from the image
++
 [.wrap,console]
 ----
 $ docker run -it -p 14022:22 -p 8000:8000 -p 8888:8888 -p 9000:9000 -p 14240:14240 -p 6006:6006  --name tgsandbox --ulimit nofile=1000000:1000000 -v ~/tgsandbox:/home/tigergraph/tgsandbox tigergraphml/sandbox
 ----
-
++
 Here is a breakdown of the options in the docker run command above
 
 * `-it`: run the container interactively and allocate a pseudo-TTY.
@@ -39,8 +39,26 @@ However, the folder on the host (~/tgsandbox) has to be writable by the user ins
 Normally, this can be ensured by making the folder public, e.g., `chmod 777  ~/tgsandbox`.
 If you are using Windows, change the path using Windows file system conventions.
 For example, `c:\tgsandbox instead of ~/tgsandbox`.
-
++
 After the container has started up, go to the URL in your terminal to access the JupyterLab IDE.
+. If you want shell access to your Docker container, run the following command:
++
+[.wrap,console]
+----
+$ ssh -p 14022 tigergraph@localhost
+----
+When prompted for the password for user `tigergraph`, enter `tigergraph`.
++
+Alternatively, if you don't have access to `ssh`, you can get shell access through `docker exec`:
++
+[.wrap,console]
+----
+$ docker exec -it $(docker ps | grep tgsandbox | awk '{print $1}') /bin/sh
+----
+. If you turn off the sandbox container and start the container again, JupyterLab starts automatically as soon as the container starts.
+However, JupyterLab generates a new token everytime it restarts.
+You can retrieve the URL with the token by running `docker logs tgsandbox`, or click the container in the Docker Desktop UI to retrieve the URL from the latest terminal output.
+
 
 == Video walk-through
 Here is a video walk-through of running the sandbox image:
