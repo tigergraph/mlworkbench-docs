@@ -63,7 +63,7 @@ You can retrieve the URL with the token by running `docker logs tgsandbox`, or c
 == Video walk-through
 Here is a video walk-through of running the sandbox image:
 
-video::7vnxNPWxoVQ[youtube,width=600,height=400]
+video::7vnxNPWxoVQ[youtube,width=700,height=400]
 
 
 == Next steps

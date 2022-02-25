@@ -21,7 +21,7 @@ You will see a URL you can use to visit the server in a browser. Or if you would
 == Video walk-through
 Here is a video walk-through of the installation process:
 
-video::7vnxNPWxoVQ[youtube,start=262,width=600,heigh=400]
+video::7vnxNPWxoVQ[youtube,start=262,width=700,heigh=400]
 
 
 == Next steps

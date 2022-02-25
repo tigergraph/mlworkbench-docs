@@ -12,6 +12,9 @@ TigerGraph ML Workbench is designed to work with your existing ML framework and 
 It is compatible with other popular ML frameworks such as PyTorch Geometric and Deep Graph Library (GDL).
 Additionally, it can be plugged into your existing on-prem infrastructure, or in the Cloud with Amazon SageMaker and Google Vertex AI.
 
+.TigerGraph ML Workbench Overview
+video::NoQXzVNu99A[youtube, height=400, width=700]
+
 == High-level architecture
 
 The TigerGraph ML Workbench contains three major components:

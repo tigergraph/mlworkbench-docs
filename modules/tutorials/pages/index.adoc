@@ -44,5 +44,5 @@ You can use any of the training notebooks to guide yourself through the training
 Here we provide a video walk-through of the GraphSAGE tutorial:
 
 .GraphSAGE Tutorial Walk-through
-video::ohwYjB_TydM[youtube,width=640,height=480]
+video::ohwYjB_TydM[youtube,width=700,height=400]
 
