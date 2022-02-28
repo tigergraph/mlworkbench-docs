@@ -13,7 +13,7 @@ It is compatible with other popular ML frameworks such as PyTorch Geometric and 
 Additionally, it can be plugged into your existing on-prem infrastructure, or in the Cloud with Amazon SageMaker and Google Vertex AI.
 
 .TigerGraph ML Workbench Overview
-video::NoQXzVNu99A[youtube, height=400, width=700]
+video::3ZSYqYFkTTY[youtube, height=400, width=700]
 
 == High-level architecture
 
