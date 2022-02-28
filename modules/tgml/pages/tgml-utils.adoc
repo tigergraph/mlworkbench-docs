@@ -1,6 +1,9 @@
 = Module `tgml.utils`
 
 == Functions
+
+=== `split_vertices()`
+
 [.wrap,python]
 ----
 def split_vertices (graph: TigerGraph, timeout: int = 16000, **split_ratios) ‑> None
