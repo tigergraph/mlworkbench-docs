@@ -1,6 +1,6 @@
 = Module `tgml.dataloaders`
 
-== Class `tgml.dataloaders`
+== Class `EdgeLoader`
 
 [,python]
 ----
