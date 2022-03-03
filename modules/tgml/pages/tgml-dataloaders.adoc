@@ -115,6 +115,17 @@ AWS access key secret for cloud storage. Defaults to None.
 
 == Class `NeighborLoader`
 
+
+----
+class NeighborLoader( graph: TigerGraph, tmp_id: str = 'tmp_id',
+    v_in_feats: str = '', v_out_labels: str = '', v_extra_feats: str = '',
+    local_storage_path: str = './tmp', cloud_storage_path: str = None,
+    buffer_size: int = 4, output_format: str = 'PyG', batch_size: int = None,
+    num_batches: int = 1, num_neighbors: int = 10, num_hops: int = 2, cache_id:
+    str = None, shuffle: bool = False, filter_by: str = None,
+    aws_access_key_id: str = None, aws_secret_access_key: str = None)
+----
+
 A data loader that performs neighbor sampling as introduced in the paper https://arxiv.org/abs/1706.02216[Inductive Representation Learning on Large Graphs].
 
 Specifically, it first chooses `batch_size` number of vertices as seeds, then picks `num_neighbors` number of neighbors of each seed at random, then `num_neighbors neighbors` of each neighbor, and repeat for `num_hops`.
