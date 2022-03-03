@@ -115,7 +115,7 @@ AWS access key secret for cloud storage. Defaults to None.
 
 == Class `NeighborLoader`
 
-
+[.wrap,python]
 ----
 class NeighborLoader( graph: TigerGraph, tmp_id: str = 'tmp_id',
     v_in_feats: str = '', v_out_labels: str = '', v_extra_feats: str = '',
