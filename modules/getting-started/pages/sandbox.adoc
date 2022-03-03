@@ -20,7 +20,7 @@ It is recommended that you allocate at least 8 CPUs and 16 GB of memory to your 
 +
 [.wrap,console]
 ----
-$ docker run -it -p 14022:22 -p 8000:8000 -p 8888:8888 -p 9000:9000 -p 14240:14240 -p 6006:6006  --name tgsandbox --ulimit nofile=1000000:1000000 -v ~/tgsandbox:/home/tigergraph/tgsandbox tigergraphml/sandbox
+$ docker run -it -p 14022:22 -p 8000:8000 -p 8888:8888 -p 9000:9000 -p 14240:14240 -p 6006:6006  --name tgsandbox --ulimit nofile=1000000:1000000 -v ~/tgsandbox:/home/tigergraph/tgsandbox/save tigergraphml/sandbox
 ----
 +
 Here is a breakdown of the options in the docker run command above

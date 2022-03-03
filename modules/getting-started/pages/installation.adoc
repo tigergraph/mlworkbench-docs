@@ -1,6 +1,7 @@
 = Install TigerGraph ML Workbench
+:description: Instructions for installing the ML Workbench
 
-You can install the TigerGraph ML Workbench directly on your computer.
+This page provides the instructions to install TigerGraph ML Workbench.
 
 == Prerequisites
 * Supported OS: macOS and Linux

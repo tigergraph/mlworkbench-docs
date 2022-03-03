@@ -115,13 +115,17 @@ AWS access key secret for cloud storage. Defaults to None.
 
 == Class `NeighborLoader`
 
-A data loader that performs neighbor sampling as introduced in the Inductive Representation Learning on Large Graphs paper.
+A data loader that performs neighbor sampling as introduced in the paper https://arxiv.org/abs/1706.02216[Inductive Representation Learning on Large Graphs].
 
-Specifically, it first chooses `batch_size` number of vertices as seeds, then picks `num_neighbors` number of neighbors of each seed at random, then `num_neighbors neighbors` of each neighbor, and repeat for `num_hops`. This generates one subgraph. As you loop through this data loader, all vertices will be chosen as seeds and you will get all subgraphs expanded from those seeds.
+Specifically, it first chooses `batch_size` number of vertices as seeds, then picks `num_neighbors` number of neighbors of each seed at random, then `num_neighbors neighbors` of each neighbor, and repeat for `num_hops`.
+This generates one subgraph.
+As you loop through this data loader, all vertices are chosen as seeds, and you will get all subgraphs expanded from those seeds.
 
 If you want to limit seeds to certain vertices, the boolean attribute provided to `filter_by` will be used to indicate which vertices can be included as seeds.
 
-NOTE: For the first time you initialize the loader on a graph in TigerGraph, the initialization might take half a minute as it installs the corresponding query to the database and optimizes it. However, the query installation only needs to be done once, so it will take no time when you initialize the loader on the same TG graph again. For the data loader to work, the Graph Data Processing Service has to be running on the TigerGraph server.
+NOTE: When you first initialize the loader on a graph in TigerGraph, the initialization might take half a minute as it installs the corresponding query to the database and optimizes it.
+However, the query installation only needs to be done once, so it will take no time when you initialize the loader on the same TG graph again.
+For the data loader to work, the Graph Data Processing Service has to be running on the TigerGraph server.
 
 There are two ways to use the data loader. See here for examples.
 
@@ -177,7 +181,41 @@ AWS access key for cloud storage. Defaults to None.
 `aws_secret_access_key` : str, optional::
 AWS access key secret for cloud storage. Defaults to None.
 
+=== Instance methods
+
+==== `.inference()`
+
+[,python]
+----
+def inference(self) -> None
+----
+
+Sets the loader to inference mode.
+This also resets the loader to clear any job or data left from training, and start the workers for getting inference data.
+
+===== Parameters
+None.
+
+==== `.fetch()`
+
+[,python]
+----
+def fetch(self, input_vertices: Union[dict, List[dict]])
+----
+
+Fetch the specific data instances for inference or prediction.
+
+===== Parameters
+
+`input_vertices`:: The data instances to fetch. The parameter can be of type `dict` or list of `dict`.
+If it is a single
+dictionary, then it is regarded as a single data instance, while a list of dictionaries are regarded as multiple instances.
+Each dict should have two keys, `id` and `type` for vertex id
+and type, respectively. For example, `{"id": "57", "type": "Paper"}`.
+
+
 == Class `VertexLoader`
+
 
 [,python]
 ----

@@ -13,8 +13,8 @@ create a directory for GDPS and change into the directory:
 === GDPS configurations
 Below is a list of configurable options for the GDPS service:
 
-- `tg_host`: The IP address of the database host. Normally it is `http://localhost` since GDPS should run on the same machine as the database, which is also the default and you don't need to set it. In case where the database is running on a https server, `https://localhost` won't work and you will need to use the full address of the server. 
-- `tg_rest_port`: The port for RESTPP. Default: 9000.
+- `tg_host`: The IP address of the database host. Normally it is `\http://localhost` since GDPS should run on the same machine as the database. If the database is running on an HTTPS server, you need to use the full address of the server (`\https://localhost` does not work).
+- `tg_rest_port`: The port for TigerGraph's xref:3.5@tigergraph-server:API:index.adoc[RESTPP server]. Default: 9000.
 - `tg_gs_port`: The port for GSQL server. Default: 14240.
 - `tg_cluster_mode`: Whether tigergraph database is running on a cluster. Default: False.
 - `local_output_path`: Where GDPS can read the output files from the database. Default: /home/tigergraph/output.

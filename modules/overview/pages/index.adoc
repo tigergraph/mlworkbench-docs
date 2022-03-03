@@ -5,7 +5,7 @@
 :fn-repurposing: footnote:[Hsieh, K., Wang, Y., Chen, L. et al. “Drug repurposing for COVID-19 using graph neural network and harmonizing multiple evidence”, Sci Rep 11, 23179, 2021.]
 :fn-finance: footnote:[Mark Weber, Giacomo Domeniconi, Jie Chen, Daniel Karl I. Weidele, Claudio Bellei, Tom Robinson, and Charles E. Leiserson, “Anti-Money Laundering in Bitcoin: Experimenting with Graph Convolutional Networks for Financial Forensics”, In Proceedings of ACM Conference (KDD ’19 Workshop on Anomaly Detection in Finance), 2019.]
 
-TigerGraph ML Workbench is a development framework for data scientists and AI/ML practitioners to easily develop Graph Neural Network (GNN) models with production-scale graph data stored in TigerGraph.
+TigerGraph ML Workbench is a R&D platform for data scientists and AI/ML practitioners to develop Graph Neural Network (GNN) models with production-scale graph data stored in TigerGraph.
 It provides robust and efficient data pipelines at the Python level to stream graph data from the TigerGraph database to the user’s ML system, performs common data processing tasks such as training, validation and testing on graph data sets, and various subgraph sampling methods.
 
 TigerGraph ML Workbench is designed to work with your existing ML framework and infrastructure.
@@ -30,16 +30,16 @@ image::mlworkbench-architecture.png[]
 image::mlworkbench-architecture-flow.png[]
 
 The Graph Data Processing Service (GDPS)::
-GDPS runs on the same machine as the core TigerGraph database and performs common graph machine learning operations such as sampling the graph data, performing feature extraction, and other data preparation, as well as data caching and sending the data to your ML development environment.
+GDPS runs on the same machine as the core TigerGraph database and performs graph machine learning operations such as sampling graph data, feature extraction, data preparation, as well as data caching and sending data to your ML development environment.
 It also contains REST endpoints for the `tgml` package to call in order to perform these operations.
 
 TGML::
 TGML is a Python package installed on the computer or server where you want to perform your machine learning training.
-The `tgml` package has basic utilities, such as vertex training/validation/test set splitting capabilities, as well as graph data loaders for both PyTorch Geometric (PyG) and Deep Graph Library (DGL).
+The `tgml` package provides utilities such as vertex set splitting for training, validation, and testing, as well as graph data loaders for both PyTorch Geometric (PyG) and Deep Graph Library (DGL).
 As `tgml` is a Python package, it can be installed anywhere Python is used.
 
 TigerLab::
-TigerLab is a JupyterLab-based development environment with some TigerGraph specific utilities and components, such as a server manager and link to GraphStudio.
+TigerLab is a JupyterLab-based development environment with TigerGraph specific utilities and components, such as a server manager and link to GraphStudio.
 In addition, all Python libraries such as PyTorch Geometric, DGL, and TGML come pre-installed, so you don’t have to worry about setting up the right Python environment.
 
 == Graph neural networks and their applications
