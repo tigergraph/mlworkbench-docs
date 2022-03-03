@@ -4,6 +4,7 @@
 :fn-astrazeneca: footnote:[Benedek Rozemberczki, Stephen Bonner, Andriy Nikolov, Michael Ughetto, Sebastian Nilsson, Eliseo Papa, “A Unified View of Relational Deep Learning for Drug Pair Scoring”, CoRR, November 2021.]
 :fn-repurposing: footnote:[Hsieh, K., Wang, Y., Chen, L. et al. “Drug repurposing for COVID-19 using graph neural network and harmonizing multiple evidence”, Sci Rep 11, 23179, 2021.]
 :fn-finance: footnote:[Mark Weber, Giacomo Domeniconi, Jie Chen, Daniel Karl I. Weidele, Claudio Bellei, Tom Robinson, and Charles E. Leiserson, “Anti-Money Laundering in Bitcoin: Experimenting with Graph Convolutional Networks for Financial Forensics”, In Proceedings of ACM Conference (KDD ’19 Workshop on Anomaly Detection in Finance), 2019.]
+:description: Overview of the TigerGraph ML Workbench.
 
 TigerGraph ML Workbench is a R&D platform for data scientists and AI/ML practitioners to develop Graph Neural Network (GNN) models with production-scale graph data stored in TigerGraph.
 It provides robust and efficient data pipelines at the Python level to stream graph data from the TigerGraph database to the user’s ML system, performs common data processing tasks such as training, validation and testing on graph data sets, and various subgraph sampling methods.
