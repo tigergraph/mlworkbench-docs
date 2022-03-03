@@ -129,8 +129,11 @@ For the data loader to work, the Graph Data Processing Service has to be running
 
 There are two ways to use the data loader. See here for examples.
 
-* First, it can be used as an iterator, which means you can loop through it to get every batch of data. If you load all edges at once (num_batches=1), there will be only one batch (of all the edges) in the iterator.
-* Second, you can access the data property of the class directly. If there is only one batch of data to load, it will give you the batch directly instead of an iterator, which might make more sense in that case. If there are multiple batches of data to load, it will return the loader again.
+* First, it can be used as an iterator, which means you can loop through it to get every batch of data.
+If you load all edges at once (`num_batches=1`), there will be only one batch (of all the edges) in the iterator.
+* Second, you can access the data property of the class directly.
+If there is only one batch of data to load, it gives you the batch directly instead of an iterator.
+If there are multiple batches of data to load, it returns the loader again.
 
 It can either stream data directly from the server or cache data on the cloud.
 Set `cloud_storage_path` to turn on cloud cache.
@@ -183,6 +186,7 @@ AWS access key secret for cloud storage. Defaults to None.
 
 === Instance methods
 
+[#_inference]
 ==== `.inference()`
 
 [,python]
@@ -191,9 +195,13 @@ def inference(self) -> None
 ----
 
 Sets the loader to inference mode.
-This also resets the loader to clear any job or data left from training, and start the workers for getting inference data.
+This allows the loader to fetch data for specific vertices so that users can do predictions and inferences on those vertices
+It also resets the loader to clear any job or data left from training, and start the workers for getting inference data.
 
 ===== Parameters
+None.
+
+===== Return value
 None.
 
 ==== `.fetch()`
@@ -204,15 +212,19 @@ def fetch(self, input_vertices: Union[dict, List[dict]])
 ----
 
 Fetch the specific data instances for inference or prediction.
+This method only works if the loader has been set to inference mode by calling the <<_inference,`inference()`>> method.
 
 ===== Parameters
 
-`input_vertices`:: The data instances to fetch. The parameter can be of type `dict` or list of `dict`.
+`input_vertices`: dict or list of dict:: The data instances to fetch. The parameter can be of type `dict` or list of `dict`.
 If it is a single
 dictionary, then it is regarded as a single data instance, while a list of dictionaries are regarded as multiple instances.
 Each dict should have two keys, `id` and `type` for vertex id
-and type, respectively. For example, `{"id": "57", "type": "Paper"}`.
+and type, respectively.
+For example, `{"id": "57", "type": "Paper"}`.
 
+===== Return value
+A PyG or DGL graph (depending on the `output_format` parameter of the loader) containing the input vertices.
 
 == Class `VertexLoader`
 

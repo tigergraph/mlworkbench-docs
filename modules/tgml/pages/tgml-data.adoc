@@ -22,7 +22,7 @@ NOTE: For the first time you initialize this class on a graph in TigerGraph, the
 However, the query installation only needs to be done once, so it will take no time when you initialize the class on the same TG graph again.
 For the connection to work, the Graph Data Processing Service (GDPS) has to be running on the TigerGraph server.
 
-== Arguments
+== Parameters
 
 `host` : str, optional::
 Address of the server. Defaults to `http://localhost`.

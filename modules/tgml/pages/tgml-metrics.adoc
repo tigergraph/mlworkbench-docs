@@ -64,7 +64,7 @@ def update(self, preds, labels) -> None
 ----
 Add predictions and labels to be compared.
 
-===== Args
+===== Parameters
 `preds`::
 Array of predicted labels.
 `labels`::
