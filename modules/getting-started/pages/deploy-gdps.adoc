@@ -1,5 +1,6 @@
 = Deploy GDPS to TigerGraph Server
 :experimental:
+:description: Instructions for deploying Graph Data Processing Service to a TigerGraph server.
 
 Deploying Graph Data Processing Service (GDPS) on the TigerGraph Server allows the ML Workbench to communicate with the server.
 This gives you access to the graph data stored in your TigerGraph database from the Workbench and develop Graph Neural Network (GNN) models with production scale graph data.
