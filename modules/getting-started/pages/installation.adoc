@@ -9,7 +9,7 @@ This page provides the instructions to install TigerGraph ML Workbench.
 
 == Procedure
 
-. link:https://www.tigergraph.com/ml-workbench/[Download] the installation bash script from https://www.tigergraph.com/ml-workbench.
+. link:https://www.tigergraph.com/ml-workbench/[Sign up] for the ML Workbench Preview release. An email will be sent to you which contains a link to our installation script. Choose the version of the package based on your OS. 
 Choose the version of the package based on your OS.
 . Run the installation script.
 In your terminal, run `bash <path_to_installation_script>`.
