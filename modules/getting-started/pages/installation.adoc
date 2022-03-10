@@ -6,6 +6,8 @@ This page provides the instructions to install TigerGraph ML Workbench.
 == Prerequisites
 * Supported OS: macOS and Linux
 * Port 8888 needs to be open on the machine hosting the Jupyter server to access JupyterLab.
+* Required packages
+** git
 
 == Procedure
 
