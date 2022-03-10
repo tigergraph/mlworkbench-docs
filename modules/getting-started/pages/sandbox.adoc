@@ -16,13 +16,10 @@ It is recommended that you allocate at least 8 CPUs and 16 GB of memory to your 
 
 == Procedure
 
-. Run the following command to pull the Workbench image, bind ports, map a shared data folder, and start a container from the image
-+
-[.wrap,console]
-----
-$ docker run -it -p 14022:22 -p 8000:8000 -p 8888:8888 -p 9000:9000 -p 14240:14240 -p 6006:6006  --name tgsandbox --ulimit nofile=1000000:1000000 -v ~/tgsandbox:/home/tigergraph/tgsandbox/save tigergraphml/sandbox
-----
-+
+. visit our website at https://www.tigergraph.com/ml-workbench/ and sign up to download ML Workbench
+. Once the sign up process is complete, you will be receiving an email with instructions to download and setup ML Workbench
+. Run the docker command that is listed in the email to pull the Workbench image, bind ports, map a shared data folder, and start a container from the image
+
 Here is a breakdown of the options in the docker run command above
 
 * `-it`: run the container interactively and allocate a pseudo-TTY.
