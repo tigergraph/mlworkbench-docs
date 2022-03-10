@@ -6,11 +6,14 @@ This page provides the instructions to install TigerGraph ML Workbench.
 == Prerequisites
 * Supported OS: macOS and Linux
 * Port 8888 needs to be open on the machine hosting the Jupyter server to access JupyterLab.
+* Required packages
+** git
 
 == Procedure
 
-. link:https://www.tigergraph.com/ml-workbench/[Download] the installation bash script from https://www.tigergraph.com/ml-workbench.
-Choose the version of the package based on your OS.
+. Download the installation bash script.
+* Linux: https://tg-mlworkbench.s3.us-west-1.amazonaws.com/jupyterlab/MLWorkbench-0.9.0-Linux-x86_64.sh
+* MacOS: https://tg-mlworkbench.s3.us-west-1.amazonaws.com/jupyterlab/MLWorkbench-0.9.0-MacOSX-x86_64.sh
 . Run the installation script.
 In your terminal, run `bash <path_to_installation_script>`.
 You will be asked to review the terms and conditions, as well as choose a location to install the workbench.
