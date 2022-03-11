@@ -16,31 +16,10 @@ It is recommended that you allocate at least 8 CPUs and 16 GB of memory to your 
 
 == Procedure
 
-. Run the following command to pull the Workbench image, bind ports, map a shared data folder, and start a container from the image
-+
-[.wrap,console]
-----
-$ docker run -it -p 14022:22 -p 8000:8000 -p 8888:8888 -p 9000:9000 -p 14240:14240 -p 6006:6006  --name tgsandbox --ulimit nofile=1000000:1000000 -v ~/tgsandbox:/home/tigergraph/tgsandbox/save tigergraphml/sandbox
-----
-+
-Here is a breakdown of the options in the docker run command above
-
-* `-it`: run the container interactively and allocate a pseudo-TTY.
-If you'd rather run the container non-interactively, use `-d` instead.
-You can use `docker logs` to retrieve the URL for JupyterLab.
-* `-p`: map a port of the host (14022) to a port of the container (22).
-Port 22 is for the SSH server; ports 9000 and 14240 are for the database; port 8000 is for GDPS; port 8888 is for the ML Workbench; port 6006 for Tensorboard.
-* `--name`: name of the container.
-The command sets the name to `tgsandbox`, but you can change this to another name.
-* `--ulimit`: the limit of number of open file descriptors per process.
-* `-v`: mount a folder on the host (`~/tgsandbox`) to a folder in the container (`/home/tigergraph/tgsandbox`).
-These two folders are synced and hence allow you to save any file even after the container is removed. 
-However, the folder on the host (~/tgsandbox) has to be writable by the user inside the container. 
-Normally, this can be ensured by making the folder public, e.g., `chmod 777  ~/tgsandbox`.
-If you are using Windows, change the path using Windows file system conventions.
-For example, `c:\tgsandbox instead of ~/tgsandbox`.
-+
-After the container has started up, go to the URL in your terminal to access the JupyterLab IDE.
+. link:https://info.tigergraph.com/ml-workbench-download[Sign up] for the Workbench preview release.
+You will receive an email after signing up that contains the instructions to start a Docker container from the sandbox image.
+After the container has started up, JupyterLab will provide you with a URL in your terminal to access the JupyterLab IDE.
+Visit the URL in your browser. 
 . If you want shell access to your Docker container, run the following command:
 +
 [.wrap,console]
