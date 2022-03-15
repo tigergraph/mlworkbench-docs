@@ -4,4 +4,5 @@ If you already have an existing Jupyter server in your own environment, you can 
 
 ** xref:jupyterlab-server/sagemaker.adoc[]
 ** xref:jupyterlab-server/google-vertex-ai.adoc[]
+** xref:jupyterlab-server/azure-machine-learning.adoc[]
 ** xref:jupyterlab-server/self-hosted.adoc[]

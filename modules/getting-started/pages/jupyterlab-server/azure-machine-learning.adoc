@@ -1,0 +1,24 @@
+= Integrate Workbench with Azure Machine Learning
+:sectnums:
+:description:  Instructions for integrating ML Workbench with Azure Machine Learning.
+
+This guide walks you through integrating the ML Workbench with a Compute Instance on Azure Machine Learning (AML).
+
+== Prerequisite
+* An Azure Machine Learning Workspace with a running compute instance.
+
+== Procedure
+
+. From Azure ML Studio, find your compute instance, and open the JupyterLab instance running on it.
+. Open a terminal in the Jupyter Lab instance.
+. From the terminal, run `pip install tigergraph_mlworkbench`.
+This installs the ML Workbench JupyterLab extension.
+include::partial$install-kernel.adoc[]
+. Once installation finishes, refresh your browser.
+You should see a small TigerGraph logo on the very left navigation bar and a new Python kernel called TigerGraph Pytorch on the launch page.
+
+== Next steps
+
+With the ML Workbench JupyterLab extension and the `tigergraph-torch` kernel installed, the next step is to xref:deploy-gdps.adoc[deploy GDPS] on your TigerGraph instance so the Workbench can communicate with your TigerGraph database.
+
+After you complete the setup, you can https://docs.microsoft.com/en-us/azure/machine-learning/how-to-set-up-vs-code-remote?tabs=studio[connect to your Azure Machine Learning compute instance in Visual Studio Code].
