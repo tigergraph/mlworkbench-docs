@@ -1,36 +1,106 @@
 [#_install_gdps]
 == Install GDPS
-. On the machine that hosts the TigerGraph server (or the Docker container running TigerGraph server),
-create a directory for GDPS and change into the directory:
+
+Before you install GDPS, make sure that port 8000 is open on your machine or Docker container.
+
+To install GDPS, follow these steps:
+
+. On the machine that hosts the TigerGraph server (or the Docker container running the TigerGraph Server image),
+create a directory for GDPS and navigate to it:
+
 `mkdir -p tg_gdps && cd tg_gdps`.
-. Download the executable of GDPS compatible with your OS to the folder you just created.
+[start = 2]
+. Download GDPS for your operating system to the folder you just created.
 - MacOS: https://tg-mlworkbench.s3.us-west-1.amazonaws.com/gdps/start_gdps_mac
 - Linux: https://tg-mlworkbench.s3.us-west-1.amazonaws.com/gdps/start_gdps_linux
-. Run `chmod +x start_gdps_linux` or `chmod +x start_gdps_mac` to make the file executable.
-. Run `./start_gdps_linux` or `./start_gdps_mac` to start GDPS with the default configurations.
+. Run `chmod +x` on the file you downloaded to make it executable.
+. Run the executable to start GDPS with the default configurations.
 
+.Install process on Docker container
+[source.wrap,bash]
+----
+:~$ mkdir -p tg_gdps && cd tg_gdps
+
+:~/tg_gdps$ wget https://tg-mlworkbench.s3.us-west-1.amazonaws.com/gdps/start_gdps_linux --no-check-certificate
+
+--2022-03-29 22:08:02--  https://tg-mlworkbench.s3.us-west-1.amazonaws.com/gdps/start_gdps_linux
+Resolving tg-mlworkbench.s3.us-west-1.amazonaws.com (tg-mlworkbench.s3.us-west-1.amazonaws.com)... 52.219.193.58
+Connecting to tg-mlworkbench.s3.us-west-1.amazonaws.com (tg-mlworkbench.s3.us-west-1.amazonaws.com)|52.219.193.58|:443... connected.
+WARNING: cannot verify tg-mlworkbench.s3.us-west-1.amazonaws.com's certificate, issued by ‘CN=Amazon,OU=Server CA 1B,O=Amazon,C=US’:
+  Unable to locally verify the issuer's authority.
+HTTP request sent, awaiting response... 200 OK
+Length: 49905264 (48M) [binary/octet-stream]
+Saving to: ‘start_gdps_linux’
+
+start_gdps_linux    100%[===================>]  47.59M  7.40MB/s    in 6.7s
+
+2022-03-29 22:08:09 (7.12 MB/s) - ‘start_gdps_linux’ saved [49905264/49905264]
+
+:~/tg_gdps$ chmod +x start_gdps_linux
+
+:~/tg_gdps$ ./start_gdps_linux
+
+INFO:     Started server process [36]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:uvicorn.error:Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+----
+
+Test that the install is working by opening a new terminal instance and running `curl \http://0.0.0.0:8000/ping`.
+The response on a working install will be `{"message":"GDPS is running"}`.
 
 === GDPS configurations
-Below is a list of configurable options for the GDPS service:
+Here is a list of configurable options for the GDPS service:
 
-- `tg_host`: The IP address of the database host. Normally it is `\http://localhost` since GDPS should run on the same machine as the database. If the database is running on an HTTPS server, you need to use the full address of the server (`\https://localhost` does not work).
-- `tg_rest_port`: The port for TigerGraph's xref:3.5@tigergraph-server:API:index.adoc[RESTPP server]. Default: 9000.
-- `tg_gs_port`: The port for GSQL server. Default: 14240.
-- `tg_cluster_mode`: Whether tigergraph database is running on a cluster. Default: False.
-- `local_output_path`: Where GDPS can read the output files from the database. Default: /home/tigergraph/output.
-- `tg_output_path`: Where to generate temporary output files from the database. Normally this is the same as `local_output_path`, which is also the default and you don't need to set it.
+|===
+|Option |Definition |Default
+
+|`tg_host`
+|The IP address of the database host.
+|Normally it is `\http://localhost` since GDPS should run on the same machine as the database.
+
+If the database is running on an HTTPS server, use the full address of the server. `\https://localhost` will not work in this case.
+
+|`tg_rest_port`
+|The port for TigerGraph's xref:3.5@tigergraph-server:API:index.adoc[RESTPP server].
+|`9000`
+
+|`tg_gs_port`
+|The port for the GSQL server.
+|`14240`
+
+|`tg_cluster_mode`
+|Whether the TigerGraph database is running on a cluster.
+|`False`
+
+|`local_output_path`
+| Where GDPS can read the output files from the database.
+|`/home/tigergraph/output`
+
+|`tg_output_path`
+|Where to generate temporary output files from the database.
+|Normally this is the same as `local_output_path`, which is also the default.
 However, if the database is running in a container, this should be the path inside the container that is mounted to `local_output_path`.
-- `keep_tmp_files`: Whether to keep temporary files.
+
+|`keep_tmp_files`
+|Whether to keep temporary files.
 Temporary files are generated in the temporary output folder while the service is running.
-We do not recommend keeping these files unless you are debugging. Default: False.
-- `tg_default_credentials`: Whether to use the default username and password of TigerGraph (`tigergraph`) to authenticate with the database.
-If true, `tigergraph` will be used as username and password and any authentication header will be ignored.
-Default: False.
+We do not recommend keeping these files unless you are debugging.
+|`False`
+
+|`tg_default_credentials`
+|Whether to use the default TigerGraph username and password (`tigergraph:tigergraph`) to authenticate with the database.
+If true, any authentication header will be ignored.
+|`False`
+
+|===
 
 To configure GDPS, set the values for the configurations through environment variables before starting GDPS.
 
-For example, if you run the running the following line:
+For example, if you run the following line:
 
     tg_host=http://127.0.0.1 local_output_path=/home/tigergraph/tmp ./start_gdps_linux
 
-you set `tg_host` to be `http://127.0.0.1` and `local_output_path` to be `/home/tigergraph/tmp` when you start GDPS.
+you set `tg_host` to be `\http://127.0.0.1` and `local_output_path` to be `/home/tigergraph/tmp` when you start GDPS.
