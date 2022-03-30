@@ -2,6 +2,7 @@
 == Install GDPS
 
 Before you install GDPS, make sure that port 8000 is open on your machine or Docker container.
+For Docker containers, make sure that port 8000 is mapped to an appropriate port that the Workbench can connect to. 
 
 To install GDPS, follow these steps:
 
