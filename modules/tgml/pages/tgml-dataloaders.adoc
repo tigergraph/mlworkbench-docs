@@ -175,7 +175,7 @@ S3 path used for cloud caching. If not None, cloud caching will be used. Default
 `buffer_size` : int, optional::
 Number of data batches to prefetch and store in memory. Defaults to 4.
 `output_format` : str, optional::
-Format of the output data of the loader. Only "PyG" is supported. Defaults to "PyG".
+Format of the output data of the loader. Accepted values are `PyG` or `DGL`. Defaults to `PyG`.
 `batch_size` : int, optional::
 Number of vertices as seeds in each batch. Defaults to None.
 `num_batches` : int, optional::
