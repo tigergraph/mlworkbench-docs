@@ -10,7 +10,7 @@ For CPU::
 --
 [.wrap,console]
 ----
-$ conda env create -f https://raw.githubusercontent.com/TigerGraph-DevLabs/mlworkbench-docs/main/conda_envs/tigergraph-torch-cpu.yml && conda activate tigergraph-torch-cpu && python -m ipykernel install --user --name tigergraph-torch-cpu --display-name "TigerGraph Pytorch (cpu)"
+$ conda env create -f https://raw.githubusercontent.com/TigerGraph-DevLabs/mlworkbench-docs/0.9/conda_envs/tigergraph-torch-cpu.yml && conda activate tigergraph-torch-cpu && python -m ipykernel install --user --name tigergraph-torch-cpu --display-name "TigerGraph Pytorch (cpu)"
 ----
 --
 For GPU::
@@ -18,7 +18,7 @@ For GPU::
 --
 [.wrap,console]
 ----
-$ conda env create -f https://raw.githubusercontent.com/TigerGraph-DevLabs/mlworkbench-docs/main/conda_envs/tigergraph-torch-gpu.yml && conda activate tigergraph-torch-gpu && python -m ipykernel install --user --name tigergraph-torch-gpu --display-name "TigerGraph Pytorch (gpu)"
+$ conda env create -f https://raw.githubusercontent.com/TigerGraph-DevLabs/mlworkbench-docs/0.9/conda_envs/tigergraph-torch-gpu.yml && conda activate tigergraph-torch-gpu && python -m ipykernel install --user --name tigergraph-torch-gpu --display-name "TigerGraph Pytorch (gpu)"
 ----
 --
 ====
