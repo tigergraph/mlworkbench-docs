@@ -8,7 +8,7 @@ For CPU::
 --
 [.wrap,console]
 ----
-$ conda env create -f https://raw.githubusercontent.com/TigerGraph-DevLabs/mlworkbench-docs/main/conda_envs/tigergraph-torch-cpu.yml
+$ conda env create -f https://raw.githubusercontent.com/TigerGraph-DevLabs/mlworkbench-docs/0.9/conda_envs/tigergraph-torch-cpu.yml
 ----
 --
 For GPU::
@@ -16,7 +16,7 @@ For GPU::
 --
 [.wrap,console]
 ----
-$ conda env create -f https://raw.githubusercontent.com/TigerGraph-DevLabs/mlworkbench-docs/main/conda_envs/tigergraph-torch-gpu.yml
+$ conda env create -f https://raw.githubusercontent.com/TigerGraph-DevLabs/mlworkbench-docs/0.9/conda_envs/tigergraph-torch-gpu.yml
 ----
 --
 ====
