@@ -2,6 +2,7 @@
 ** xref:sandbox.adoc[]
 ** xref:installation.adoc[]
 ** xref:jupyterlab-server/index.adoc[]
+*** xref:jupyterlab-server/azure.adoc[]
 *** xref:jupyterlab-server/sagemaker.adoc[]
 *** xref:jupyterlab-server/google-vertex-ai.adoc[]
 *** xref:jupyterlab-server/self-hosted.adoc[]
