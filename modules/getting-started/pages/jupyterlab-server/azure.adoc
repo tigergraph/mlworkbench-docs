@@ -1,4 +1,4 @@
-= Integrate TG ML Workbench with Azure ML
+= Integrate ML Workbench with Azure ML
 :sectnums:
 :description: Instructions for integrating ML Workbench with Azure ML
 :experimental:
