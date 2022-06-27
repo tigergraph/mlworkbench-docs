@@ -6,12 +6,25 @@
 :fn-finance: footnote:[Mark Weber, Giacomo Domeniconi, Jie Chen, Daniel Karl I. Weidele, Claudio Bellei, Tom Robinson, and Charles E. Leiserson, “Anti-Money Laundering in Bitcoin: Experimenting with Graph Convolutional Networks for Financial Forensics”, In Proceedings of ACM Conference (KDD ’19 Workshop on Anomaly Detection in Finance), 2019.]
 :description: Overview of the TigerGraph ML Workbench.
 
-TigerGraph ML Workbench is a R&D platform for data scientists and AI/ML practitioners to develop Graph Neural Network (GNN) models with production-scale graph data stored in TigerGraph.
-It provides robust and efficient data pipelines at the Python level to stream graph data from the TigerGraph database to the user’s ML system, performs common data processing tasks such as training, validation and testing on graph data sets, and various subgraph sampling methods.
+TigerGraph Machine Learning (ML) Workbench is a Jupyter-based Python development framework offered either as a fully-managed, on-cloud offering or as an integrated on-premises solution for direct integration with existing machine learning infrastructure.
 
-TigerGraph ML Workbench is designed to work with your existing ML framework and infrastructure.
-It is compatible with other popular ML frameworks such as PyTorch Geometric and Deep Graph Library (GDL).
-Additionally, it can be plugged into your existing on-prem infrastructure, or in the Cloud with Amazon SageMaker and Google Vertex AI.
+It is designed for data scientists and AI/ML practitioners to easily develop graph-based machine learning models with production-scale graph data stored in TigerGraph.
+It provides robust and efficient data pipelines at the Python level to interact with the TigerGraph database to perform common data processing functions such as:
+
+* data partitioning
+* subgraph sampling
+* graph feature generation
+* data batching and/or streaming for ML model development, training, and inference purposes.
+
+TigerGraph ML Workbench on Cloud also provides an end-to-end solution from development to deployment including a fully-managed Jupyter notebook instance with:
+
+* on-demand computation
+* distributed AutoML for hyperparameter tuning
+* ML pipeline management & orchestration
+* model deployment and serverless production serving.
+
+TigerGraph ML is designed to be infrastructure- and ML framework-agnostic, working on-prem or in a private cloud.
+It is compatible with other popular ML frameworks such as PyTorch Geometric, DGL, and TensorFlow. It can be plugged into your existing on-prem infrastructure, or in the Cloud with Amazon SageMaker, Google Vertex AI or Microsoft Azure.
 
 video::3ZSYqYFkTTY[youtube, height=400, width=700]
 

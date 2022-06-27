@@ -5,13 +5,15 @@
 
 This page walks you through running the TigerGraph ML Workbench in a Docker container.
 
-To help you get started quickly, we provide a “sandbox” docker image that has the TigerGraph database, GDPS, and ML Workbench pre-installed.
-The “Cora” dataset used for tutorials is also preloaded into the database.
+To help you get started quickly, we provide a “sandbox” Docker image that has the TigerGraph database, GDPS, and ML Workbench pre-installed.
+link:https://graphsandnetworks.com/the-cora-dataset/[The “Cora” dataset] used for tutorials is also preloaded into the database.
+
+Use this link to download Docker if needed: link:https://docs.docker.com/get-docker/[Get Docker]
 
 == Prerequisites
-* You machine needs to meet the xref:tigergraph-server:installation:hw-and-sw-requirements.adoc[].
+* You machine meets the xref:tigergraph-server:installation:hw-and-sw-requirements.adoc[].
 ** Make sure you are allocating enough CPU and memory to your Docker containers.
-It is recommended that you allocate at least 8 CPUs and 16 GB of memory to your Docker containers.
+TigerGraph recommends allocating at least 8 CPUs and 16 GB of memory.
 * Docker Desktop is running on your machine.
 
 == Procedure
@@ -20,17 +22,21 @@ It is recommended that you allocate at least 8 CPUs and 16 GB of memory to your 
 +
 [.wrap,console]
 ----
-$ docker run -it -p 14022:22 -p 8000:8000 -p 8888:8888 -p 9000:9000 -p 14240:14240 -p 6006:6006  --name tgsandbox --ulimit nofile=1000000:1000000 -v ~/tgsandbox:/home/tigergraph/tgsandbox/save tigergraphml/sandbox
+docker run -it -p 14022:22 -p 8888:8888 -p 9000:9000 -p 14240:14240 -p 6006:6006  --name tgsandbox --ulimit nofile=1000000:1000000 -v ~/tgsandbox:/home/tigergraph/tgsandbox/save tigergraphml/sandbox:1.0.0
 ----
 +
 --
-Here is a breakdown of the options in the docker run command above
+Here is a breakdown of the parameters in the previous command:
 
 * `-it`: run the container interactively and allocate a pseudo-TTY.
 If you'd rather run the container non-interactively, use `-d` instead.
 You can use `docker logs` to retrieve the URL for JupyterLab.
 * `-p`: map a port of the host (14022) to a port of the container (22).
-Port 22 is for the SSH server; ports 9000 and 14240 are for the database; port 8000 is for GDPS; port 8888 is for the ML Workbench; port 6006 for Tensorboard.
+** Port 22: SSH server
+** Ports 9000 and 14240: TigerGraph database
+** Port 8000: GDPS
+** Port 8888: ML Workbench
+** Port 6006: Tensorboard.
 * `--name`: name of the container.
 The command sets the name to `tgsandbox`, but you can change this to another name.
 * `--ulimit`: the limit of number of open file descriptors per process.

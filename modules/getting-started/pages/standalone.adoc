@@ -1,0 +1,26 @@
+= Get started with ML Workbench Sandbox Image
+:description: This page provides instructions on running the ML Workbench from a sandbox Docker image.
+:page-aliases: docker.adoc
+
+If you already have an existing TigerGraph solution locally, you can try out ML Workbench with your own database.
+
+== Setup
+
+Docker must be installed and running on your machine.
+
+In the console, run this command:
+
+[source, bash]
+----
+docker run -it -p 8888:8888 --name mlworkbench -v ~/mlworkbench:/home/tigergraph/save tigergraphml/mlworkbench:1.0.0
+----
+
+This command prints the link to the JupyterLab workbench in a format similar to `127.0.0.1:8888/lab?token=`. Use this link in your browser to access the workbench.
+
+[NOTE]
+If the Docker container is running remotely, open port 8888 on the remote machine to allow the connection. Then replace `127.0.0.1` in the returned address with the remote machine IP address.
+
+== Mac OS installer
+
+
+== Linux installer
