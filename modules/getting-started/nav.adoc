@@ -8,5 +8,4 @@
 *** xref:jupyterlab-server/sagemaker.adoc[]
 *** xref:jupyterlab-server/google-vertex-ai.adoc[]
 *** xref:jupyterlab-server/self-hosted.adoc[]
-
 ** xref:advanced-setup.adoc[]
