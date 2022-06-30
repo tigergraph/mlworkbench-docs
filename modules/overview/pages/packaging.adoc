@@ -1,112 +1,106 @@
 = Packaging
 
-TigerGraph ML Workbench comes in two flavors - Developer Edition and Enterprise Edition.
+TigerGraph ML Workbench comes in two fl avors - Developer Edition and Enterprise Edition.
 While both editions offer the same useful Python-level features for your data science needs, the Enterprise edition offers more powerful features to support production-level model training on enterprise-level data sets.
-The table below shows the key differences between the two editions.
+
+The tables below can help you compare the key differences between the two editions.
+
+== Feature Availability
+[cols="1,1,1"]
+|====
+| |Developer |Enterprise
+
+|Compatibility
+a|* TigerGraph Database
+* Amazon SageMaker, Azure ML, GCP Vertex
+* PyG, DGL ML Framework
+
+a|* TigerGraph Database
+* Amazon SageMaker, Azure ML, GCP Vertex
+* PyG, DGL ML Framework
+
+|Onboarding
+a|* ML Workbench Docker Images
+* MacOS and Linux Installers
+* pip install & conda install
+a|* ML Workbench Docker Images
+* MacOS and Linux Installers
+* pip install & conda install
 
 
-// to turn into an actual chart
-Developer:
+|Capabilities
+a|Python-level capabilities with pyTigerGraph:
 
-Compatibility:
-TigerGraph DB compatibility
-Amazon SageMaker, Azure ML, GCP Vertex compatibility
-PyG, DGL ML Framework compatibility
+* Graph data partitioning
+* Graph Data Loading & Export (HTTP)
+* Subgraph sampling
+* Data Batching
+* Graph feature generation
+* GNN: Homogeneous Graph Support
+* GNN: Node Prediction support
+* GNN: Heterogeneous Graph Support
+* GNN: Link Prediction Support
+* GNN Inference with real-time data
 
-Onboarding:
-ML Workbench Docker Images
-MacOS and Linux Installers
-pip install & conda install
+a|Python-level capabilities with pyTigerGraph:
 
-Built-in Capability:
-Python-level capabilities pyTigerGraph
-- Graph data partitioning
-- Graph Data Loading & Export (HTTP)
-- Subgraph sampling
-- Data Batching
-- Graph feature generation
-- GNN: Homogeneous Graph Support
-- GNN: Node Prediction support
-- GNN: Heterogeneous Graph Support
-- GNN: Link Prediction Support
-- GNN Inference with real-time data
+* Graph data partitioning
+* Graph Data Loading & Export (HTTP & Kafka)
+* Subgraph sampling
+* Data Batching
+* Graph feature generation
+* GNN: Homogeneous Graph Support
+* GNN: Node Prediction support
+* GNN: Heterogeneous Graph Support
+* GNN: Link Prediction Support
+* GNN Inference with real-time data
 
-Limitation:
-Limit to 2GB of data export
-No support for distributed parallel training
-Export via HTTP only
-Community support
+| Data Export Method
+| HTTP only
+| Reliable and efficient data export via both HTTP and Kafka
 
-Enterprise:
+| Data Export Size
+| Limited to 2GB
+| Unlimited
 
-Compatibility:
-TigerGraph DB compatibility
-Amazon SageMaker, Azure ML, GCP Vertex compatibility
-PyG, DGL ML Framework compatibility
+|Parallel Training
+|No
+|Yes
 
-Onboarding:
-ML Workbench Docker Images
-MacOS and Linux Installers
-pip install & conda install
+|Support
+|Community support
+a|* 10 hr Professional Service / Consulting on Solution Building
+* Standard support SLA with 12 x 5
+|====
 
-Built-in Capability:
-Python-level capabilities pyTigerGraph
-- Graph data partitioning
-- Graph Data Loading & Export (HTTP & Kafka)
-- Subgraph sampling
-- Data Batching
-- Graph feature generation
-- GNN: Homogeneous Graph Support
-- GNN: Node Prediction support
-- GNN: Heterogeneous Graph Support
-- GNN: Link Prediction Support
-- GNN Inference with real-time data
+== Customer Scenarios
 
-Enterprise-level features:
-- Data export via both HTTP and Kafka → more reliable and efficient
-- No size limit on data export → ready for enterprise level scale
-- Enabling end users to do distributed parallel training → shorten model training time significantly
-- 10 hr Professional Service / Consulting on Solution Building → learning the best practices from the experts
-- Standard support SLA with 12 x 5 → better support
+[cols="1,1,1"]
+|====
+| | Developer Edition | Enterprise Edition
 
-Customer Scenarios
+|Purpose
+a|* Learning Graph Databases
+* Learning Graph Data Science
+* Building proofs of concept
+| Production deployment of Graph ML Models
 
- Purpose
-Learning Graph Database
-Learning Graph Data Science
-Building POCs
-Production deployment of Graph ML Models
-Audience
-Students, Researcher, ML Practitioners
-Data Science teams for enterprise
-Infrastructure Readiness
-local machines / Internal ML infra (self managed)
-local machines / Internal ML Infra (self managed)
-Data Size
-small data set (<2GB)
-Production / Enterprise level data
-Performance
-Low requirement on training time
-Low requirement on model accuracy / predictability
-High requirement on training time / near real time
-High requirement on model accuracy / predictability
-Customer Success Benefits
-?
-?
-Price
-Free
-Similar to GraphStudio (price sensitive to DB size)
-Scenarios
-“I am a student eager to learn about Graph ML, and or a school project, I want a product ready for persisting a graph, and apply Graph ML methods to my graph data set”
+|Audience
+a| * Students
+* Researchers
+* ML Practitioners
+| Enterprise data science teams
 
-“I am new to both TigerGraph DB, and Graph ML, I want to get something running quickly”
+|Infrastructure Readiness
+|Local machines / Internal ML infra (self-managed)
+|Local machines / Internal ML Infra (self-managed)
 
+|Data Size
+|Small data set (<2GB)
+|Production / Enterprise level data
 
-“I am already an existing TigerGraph DB Customer, and I want to explore how Graph Data Science / ML can improve my business ”
-“I have done a POC with Graph ML, and I am ready to productionalize my model”
-
-“I am an existing customer with 1TB of data, and I want to train a Graph ML model efficiently for production use”
-
-“I have 4TB of data in my graph lake and I want to maximize the use of my graph data for ML purpose”
-
-
+|Performance requirements
+a| * Low requirements for training time
+* Low requirements for model accuracy / predictability
+a| * High requirements for training time (near real time)
+* High requirements for model accuracy / predictability

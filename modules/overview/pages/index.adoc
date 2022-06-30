@@ -28,33 +28,6 @@ It is compatible with other popular ML frameworks such as PyTorch Geometric, DGL
 
 video::3ZSYqYFkTTY[youtube, height=400, width=700]
 
-== High-level architecture
-
-The TigerGraph ML Workbench contains three major components:
-
-* Graph Data Processing Service (GDPS)
-* TGML, the Python client for GDPS
-* TigerLab, a JupyterLab-based IDE
-
-.High-level production architecture
-image::mlworkbench-architecture.png[]
-
-.Architecture flow diagram
-image::mlworkbench-architecture-flow.png[]
-
-The Graph Data Processing Service (GDPS)::
-GDPS runs on the same machine as the core TigerGraph database and performs graph machine learning operations such as sampling graph data, feature extraction, data preparation, as well as data caching and sending data to your ML development environment.
-It also contains REST endpoints for the `tgml` package to call in order to perform these operations.
-
-TGML::
-TGML is a Python package installed on the computer or server where you want to perform your machine learning training.
-The `tgml` package provides utilities such as vertex set splitting for training, validation, and testing, as well as graph data loaders for both PyTorch Geometric (PyG) and Deep Graph Library (DGL).
-As `tgml` is a Python package, it can be installed anywhere Python is used.
-
-TigerLab::
-TigerLab is a JupyterLab-based development environment with TigerGraph specific utilities and components, such as a server manager and link to GraphStudio.
-In addition, all Python libraries such as PyTorch Geometric, DGL, and TGML come pre-installed, so you don’t have to worry about setting up the right Python environment.
-
 == Graph neural networks and their applications
 
 GNNs tend to outperform other machine learning techniques when there are well-defined relationships between data as it directly models the connectivity of your graph data.
