@@ -8,12 +8,12 @@ At the conclusion of the Getting Started sequence, you’ll have reached an exce
 == Getting TigerGraph ML Workbench
 * If you are new to TigerGraph, we recommend xref:sandbox.adoc[running TigerGraph server and the Workbench together in a sandbox container].
 The sandbox image comes with a free version of TigerGraph preloaded with a sample data set, and ML Workbench preconfigured.
-* If you already have a running TigerGraph instance, you can xref:installation.adoc[install ML Workbench] on your machine as a standalone application.
+* If you already have a running TigerGraph instance, you can xref:.installation.adoc[install ML Workbench] on your machine as a standalone application.
 * If you already have your own TigerGraph instance and a JupyterLab server, either self-hosted or on a cloud machine learning environment, you can download our Python library and Jupyter extension to integrate the Workbench with your JupyterLab.
 ** xref:jupyterlab-server/self-hosted.adoc[Integrate the Workbench with your own JupyterLab server]
 ** xref:jupyterlab-server/sagemaker.adoc[Integrate the Workbench with AWS Sagemaker]
 ** xref:jupyterlab-server/google-vertex-ai.adoc[Integrate the Workbench with Google Vertex AI]
-* If you are not using JupyterLab at all, but still want to perform machine learning tasks with the graph data in your TigerGraph database through Graph Data Processing Service (GDPS) and `tgml`, you can xref:advanced-setup.adoc#_install_gdps[install GDPS manually] on the TigerGraph server and xref:advanced-setup.adoc#_install_tgml[install `tgml`] in your machine learning environment.
+* If you are not using JupyterLab at all, but still want to perform machine learning tasks with the graph data in your TigerGraph database, you can use pyTigerGraph.
 
 
 == Connect to TigerGraph Server through GDPS

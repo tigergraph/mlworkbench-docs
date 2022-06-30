@@ -6,7 +6,7 @@
 This page walks you through running the TigerGraph ML Workbench in a Docker container.
 
 To help you get started quickly, we provide a “sandbox” Docker image that has the TigerGraph database, GDPS, and ML Workbench pre-installed.
-link:https://graphsandnetworks.com/the-cora-dataset/[The “Cora” dataset] used for tutorials is also preloaded into the database.
+The link:https://graphsandnetworks.com/the-cora-dataset/[“Cora” dataset] and the link:https://www.imdb.com/interfaces/[IMDB datasets] used for tutorials are also preloaded into the database.
 
 Use this link to download Docker if needed: link:https://docs.docker.com/get-docker/[Get Docker]
 
@@ -42,14 +42,17 @@ The command sets the name to `tgsandbox`, but you can change this to another nam
 * `--ulimit`: the limit of number of open file descriptors per process.
 * `-v`: mount a folder on the host (`~/tgsandbox`) to a folder in the container (`/home/tigergraph/tgsandbox`).
 These two folders are synced and hence allow you to save any file even after the container is removed.
-However, the folder on the host (~/tgsandbox) has to be writable by the user inside the container.
+However, the folder on the host (`~/tgsandbox`) has to be writable by the user inside the container.
 Normally, this can be ensured by making the folder public, e.g., `chmod 777  ~/tgsandbox`.
 If you are using Windows, change the path using Windows file system conventions.
 For example, `c:\tgsandbox instead of ~/tgsandbox`.
 --
 +
-After the container has started up, JupyterLab will provide you with a URL in your terminal to access the JupyterLab IDE.
-Visit the URL in your browser.
+This command prints the link to the JupyterLab workbench in a format similar to `127.0.0.1:8888/lab?token=`. Use this link in your browser to access the workbench, which is a customized version of JupyterLab.
+
+[NOTE]
+If the Docker container is running remotely, open port 8888 on the remote machine to allow the connection. Then replace `127.0.0.1` in the returned address with the remote machine IP address.
+
 . If you want shell access to your Docker container, run the following command:
 +
 [.wrap,console]

@@ -6,7 +6,7 @@
 :fn-finance: footnote:[Mark Weber, Giacomo Domeniconi, Jie Chen, Daniel Karl I. Weidele, Claudio Bellei, Tom Robinson, and Charles E. Leiserson, “Anti-Money Laundering in Bitcoin: Experimenting with Graph Convolutional Networks for Financial Forensics”, In Proceedings of ACM Conference (KDD ’19 Workshop on Anomaly Detection in Finance), 2019.]
 :description: Overview of the TigerGraph ML Workbench.
 
-TigerGraph Machine Learning (ML) Workbench is a Jupyter-based Python development framework offered either as a fully-managed, on-cloud offering or as an integrated on-premises solution for direct integration with existing machine learning infrastructure.
+TigerGraph Machine Learning (ML) Workbench is a Jupyter-based Python development framework offered either as a fully-managed, on-cloud offering or as an integrated on-prem solution for direct integration with existing machine learning infrastructure.
 
 It is designed for data scientists and AI/ML practitioners to easily develop graph-based machine learning models with production-scale graph data stored in TigerGraph.
 It provides robust and efficient data pipelines at the Python level to interact with the TigerGraph database to perform common data processing functions such as:
