@@ -5,6 +5,7 @@
 :fn-repurposing: footnote:[Hsieh, K., Wang, Y., Chen, L. et al. “Drug repurposing for COVID-19 using graph neural network and harmonizing multiple evidence”, Sci Rep 11, 23179, 2021.]
 :fn-finance: footnote:[Mark Weber, Giacomo Domeniconi, Jie Chen, Daniel Karl I. Weidele, Claudio Bellei, Tom Robinson, and Charles E. Leiserson, “Anti-Money Laundering in Bitcoin: Experimenting with Graph Convolutional Networks for Financial Forensics”, In Proceedings of ACM Conference (KDD ’19 Workshop on Anomaly Detection in Finance), 2019.]
 :description: Overview of the TigerGraph ML Workbench.
+:figure-caption!:
 
 TigerGraph Machine Learning (ML) Workbench is a Jupyter-based Python development framework offered either as a fully-managed, on-cloud offering or as an integrated on-prem solution for direct integration with existing machine learning infrastructure.
 
@@ -23,10 +24,38 @@ TigerGraph ML Workbench on Cloud also provides an end-to-end solution from devel
 * ML pipeline management & orchestration
 * model deployment and serverless production serving.
 
-TigerGraph ML is designed to be infrastructure- and ML framework-agnostic, working on-prem or in a private cloud.
+TigerGraph ML Workbench is designed to be infrastructure- and ML framework-agnostic, working on-prem or in a private cloud.
 It is compatible with other popular ML frameworks such as PyTorch Geometric, DGL, and TensorFlow. It can be plugged into your existing on-prem infrastructure, or in the Cloud with Amazon SageMaker, Google Vertex AI or Microsoft Azure.
 
-video::3ZSYqYFkTTY[youtube, height=400, width=700]
+video::7CgBMPsckUs[youtube]
+
+== High-level architecture
+
+The TigerGraph ML Workbench contains three major components:
+
+* TigerLab, a JupyterLab-based IDE
+* pyTigerGraph[gds], the Python client for GDPS
+* User Defined Functions (UDFs) on TigerGraph DB
+
+.High level architecture
+image::high-level-architecture-v1.png[]
+
+
+=== TigerLab
+TigerLab is a JupyterLab-based development environment with TigerGraph specific utilities and components, such as a server manager and link to GraphStudio.
+In addition, all Python libraries such as PyTorch Geometric, DGL, and TGML come pre-installed, so you don’t have to worry about setting up the right Python environment.
+
+TigerLab is included in the xref:getting-started:sandbox.adoc[sandbox option] for getting started with ML Workbench.
+
+=== pyTigerGraph[gds]
+
+pyTigerGraph[gds] is a Python package installed on the computer or server that does the machine learning training.
+The `tgml` package provides utilities such as vertex set splitting for training, validation, and testing, as well as graph data loaders for both PyTorch Geometric (PyG) and Deep Graph Library (DGL).
+As `tgml` is a Python package, it can be installed anywhere Python is used.
+
+=== UDF on TigerGraph DB
+In order for pyTigerGraph[gds] to work with the TigerGraph Database, some of its functionality such as dataloading and the featurizer, require certain User Defined Functions (UDFs) to be installed on the TigerGraph Database instance.
+See xref:getting-started:install-udfs.adoc[the UDF page] to learn more about how to deploy these UDFs to your database.
 
 == Graph neural networks and their applications
 
