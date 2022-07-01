@@ -1,48 +1,32 @@
-= Tutorials
+= Resources
 :experimental:
 
-Our tutorials are all written in Jupyter notebooks in the Workbench itself.
-Here we provide a brief overview of the tutorial materials as well as a video walk-through of one of the model training tutorials.
+TigerGraph has a robust set of tutorials and training data sets available to learn ML Workbench.
 
-== Tutorial dataset
-All tutorials use the example data set "Cora".
+This section describes how to access these resources for your exploration needs.
 
-* The dataset contains 2708 machine learning papers and 10556 citation links between the papers.
-* Each publication in the dataset is described by a 0/1-valued word vector indicating the absence/presence of the corresponding word from a dictionary.
-* The dictionary consists of 1433 unique words.
-
-Follow the instructions in the notebook titled Data Ingestion to load the example dataset.
+If you have previously set up ML Workbench via xref:getting-started:sandbox.adoc[the sandbox option], you can skip these steps since all tutorials and data are included in the sandbox.
 
 
-== Access tutorials
+== Tutorials
 
-To access the built-in tutorials, from the Jupyter Lab server page, click menu:File[New Launcher > TigerGraph ML Tutorial].
+TigerGraph's tutorials demonstrate each of the key Python functionalities of ML Workbench in the pyTigerGraph[gds] library.
+They include end-to-end working examples to showcase how to build and deploy a link prediction and node prediction application using cutting edge graph machine learning techniques such as GraphSage, Graph Attention Neural Network and Graph Convolutional Neural Network using the PyTorch Geometric and DGL ML frameworks.
 
-The dropdown menu gives you a list of tutorials, including tutorials that walk you through how to load and process data in the Workbench, as well as tutorials that walk you through training actual models with Graph Neural Network (GNN) using a sample dataset :
+To clone the tutorial repository, navigate to your notebook terminal and run this command:
 
-.Data loading and processing
-* Data ingestion.
-This notebook walks you through how to load the example Cora dataset into your TigerGraph database.
-* Data processing.
-This notebook demonstrates how to use xref:tgml:index.adoc[`tgml`] for common data processing tasks on graphs stored in TigerGraph.
-* Data loaders.
-This notebook demonstrates the use of different data loaders in xref:tgml:index.adoc[`tgml`].
-The job of a data loader is to pull data from the TigerGraph database.
+[source]
+git clone https://github.com/TigerGraph-DevLabs/mlworkbench-docs.git
 
-.GNN Model Training tutorials
-* Graph Convolutional Network (GCN).
-This tutorial walks through the training of link:https://arxiv.org/pdf/1609.02907.pdf[Graph Convolutional Networks (GCN)] with TigerGraph.
-* GraphSAGE.
-This tutorial walks through the training of link:https://arxiv.org/abs/1706.02216[GraphSAGE] models with TigerGraph.
-* Graph Attention Network.
-This tutorial walks through the training of link:https://arxiv.org/abs/1710.10903[Graph Attention Networks] with TigerGraph.
+== Sample Data
 
-[#_train_your_first_model]
-== Train your first model
+Our tutorial notebooks refer to two real datasets and a synthetic dataset.
+We leveraged the link:https://github.com/kimiyoung/planetoid/[Cora] dataset to build a node classification application and a link prediction application using GNNs.
 
-You can use any of the training notebooks to guide yourself through the training.
-Here we provide a video walk-through of the GraphSAGE tutorial:
+We also have the link:https://www.imdb.com/interfaces/[IMDB] dataset for heterogeneous graphs.
 
-.GraphSAGE Tutorial Walk-through
-video::ohwYjB_TydM[youtube,width=700,height=400]
+Otherwise, you can follow our notebook link:https://github.com/TigerGraph-DevLabs/mlworkbench-docs/blob/main/tutorials/basics/0_data_ingestion.ipynb[here] to download and import the sample dataset to your DB instance by following the section “Cora Dataset “ and “IMDB Dataset”.
+
+Use this link to download the example graphs: link:https://tigergraph-public-data.s3.us-west-1.amazonaws.com/example_graphs/example_graphs.tar.gz[Download Example Graphs]
+
 

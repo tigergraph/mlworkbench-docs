@@ -1,0 +1,14 @@
+= pyTigerGraph[gds] Module Reference
+
+The centerpiece of the ML Workbench is its Python client: pyTigerGraph[gds].
+
+This Python package contains all the essential utilities you need to bootstrap your Graph Machine Learning journey with these key functions:
+
+* Data loading/export
+* Graph partitioning for preparing your training, validation, and test data set for your supervised graph machine learning model
+* Featurizer for generating unique graph features
+* Subgraph sampling for your stochastic training process.
+
+
+This reference describes the submodules, classes, and methods that are available within the pyTigerGraph[gds] package.
+Please refer to the official pyTigerGraph documentation under the section "GDS Functions" to learn more about each of these capabilities with working examples and code snippets: xref:0.9@pytigergraph:gds:index.adoc[]
