@@ -45,7 +45,7 @@ These two folders are synced and hence allow you to save any file even after the
 However, the folder on the host (`~/tgsandbox`) has to be writable by the user inside the container.
 Normally, this can be ensured by making the folder public, e.g., `chmod 777  ~/tgsandbox`.
 If you are using Windows, change the path using Windows file system conventions.
-For example, `c:\tgsandbox instead of ~/tgsandbox`.
+For example, `C:\tgsandbox` instead of `~/tgsandbox`.
 --
 +
 This command prints the link to the JupyterLab workbench in a format similar to `127.0.0.1:8888/lab?token=`. Use this link in your browser to access the workbench, which is a customized version of JupyterLab.
@@ -80,4 +80,4 @@ video::7vnxNPWxoVQ[youtube,width=700,height=400]
 
 == Next steps
 
-* xref:tutorials:index.adoc#_train_your_first_model[Train your first model].
+* xref:tutorials:index.adoc[Train your first model] by following the tutorials.
