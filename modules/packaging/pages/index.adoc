@@ -1,4 +1,4 @@
-= Packaging
+= Editions
 
 TigerGraph ML Workbench comes in two flavors - Developer Edition and Enterprise Edition.
 While both editions offer the same useful Python-level features for your data science needs, the Enterprise edition offers more powerful features to support production-level model training on enterprise-level data sets.

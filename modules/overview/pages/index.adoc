@@ -54,8 +54,8 @@ The `tgml` package provides utilities such as vertex set splitting for training,
 As `tgml` is a Python package, it can be installed anywhere Python is used.
 
 === UDF on TigerGraph DB
-In order for pyTigerGraph[gds] to work with the TigerGraph Database, some of its functionality such as dataloading and the featurizer, require certain User Defined Functions (UDFs) to be installed on the TigerGraph Database instance.
-See xref:getting-started:install-udfs.adoc[the UDF page] to learn more about how to deploy these UDFs to your database.
+In order for pyTigerGraph[gds] to work with the TigerGraph Database, some of its functionality, such as dataloading and the featurizer, require certain user defined functions (UDFs) to be installed on the TigerGraph Database instance.
+See xref:getting-started:install-udfs.adoc[the UDF page] to learn how to deploy these UDFs to your database before using pyTigerGraph[gds].
 
 == Graph neural networks and their applications
 

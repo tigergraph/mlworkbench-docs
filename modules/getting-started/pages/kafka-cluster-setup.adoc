@@ -1,4 +1,4 @@
-= Set up ML Workbench with a Kafka Cluster
+= Set up ML Workbench Enterprise Edition
 
 ML Workbench offers two different communication methods for exporting data from your TigerGraph Database instance to your ML development environment: HTTPS and Kafka streaming.
 

@@ -2,19 +2,26 @@
 
 If you have a running Jupyter lab server or you are using the Jupyter lab on Microsoft Azure,  AWS Sagemaker, or Google Vertex AI, you can still take advantage of our ML Workbench by installing its Jupyter lab extension and/or the Python package.
 
-From your Python environment, run the following command to install pyTigerGraph[gds]:
+== Installation
+
+. Run the following terminal command to install pyTigerGraph[gds]:
 
 [source]
 pip install pyTigerGraph[gds]
+
+Some terminals may require you to enclose the package in quotes: `pip install "pyTigerGraph[gds]"`.
+
 
 Alternately, use conda to conda install our Python environment:
 
 [source]
 conda env create -f https://raw.githubusercontent.com/TigerGraph-DevLabs/mlworkbench-docs/main/conda_envs/tigergraph-torch-cpu.yml
 
-Use this command to get the jupyterlab extension (for jupyterlab 3.0+ only):
+[start=2]
+. Use this command to get the JupyterLab extension (for JupyterLab 3.0+ only):
 
 [source]
 pip install tigergraph-mlworkbench
 
-After installation, follow the instructions, use our tutorials and download our latest notebook examples and data sets: xref:tutorials:index.adoc[]
+[start=3]
+. After installation, go to our xref:tutorials:index.adoc[] section. Follow the instructions, use our tutorials and download our latest notebook examples and data sets there to practice using the ML Workbench.
