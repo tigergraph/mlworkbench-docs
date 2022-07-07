@@ -38,4 +38,5 @@ conda env create -f https://github.com/TigerGraph-DevLabs/mlworkbench-docs/blob/
 pip install tigergraph-mlworkbench
 ----
 
-After installation, follow the instructions, use our tutorials and download our latest notebook examples and data sets: xref:tutorials:index.adoc[]
+[start=3]
+. After installation, go to our xref:tutorials:index.adoc[] section. Follow the instructions, use our tutorials and download our latest notebook examples and data sets there to practice using the ML Workbench.

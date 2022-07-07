@@ -11,4 +11,4 @@ This Python package contains all the essential utilities you need to bootstrap y
 
 
 This reference describes the submodules, classes, and methods that are available within the pyTigerGraph[gds] package.
-Please refer to the official pyTigerGraph documentation under the section "GDS Functions" to learn more about each of these capabilities with working examples and code snippets: xref:0.9@pytigergraph:gds:index.adoc[]
+Please refer to the official pyTigerGraph documentation under the section "GDS Functions" to learn more about each of these capabilities with working examples and code snippets: xref:pytigergraph:gds:index.adoc[]

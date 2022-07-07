@@ -1,7 +1,7 @@
 = Standalone Installation
 :description: This page provides instructions on running the ML Workbench locally from either a Docker image or on your machine.
 
-If you already have an existing TigerGraph solution locally, you can try out ML Workbench with your own database using a Docker image, a Mac OS installer, and a Linux installer.
+If you already have an existing TigerGraph solution locally, you can try out ML Workbench with your own database using a Docker image and a Mac OS or Linux installer.
 
 == Docker image
 
