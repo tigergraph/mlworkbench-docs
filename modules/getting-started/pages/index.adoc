@@ -13,6 +13,6 @@ The sandbox image comes with a free version of TigerGraph preloaded with a sampl
 
 * If you are not using JupyterLab at all, but still want to perform machine learning tasks with the graph data in your TigerGraph database, you can use xref:0.9@pytigergraph:getting-started:index.adoc[pyTigergraph].
 
-== xref:tutorials:index.adoc[Train your first model]
+== Train your first model
 Follow the xref:tutorials:index.adoc[tutorials and examples] in our provided notebooks to train your first model.
-We have provided a video walk-through for training the GraphSAGE model.
+

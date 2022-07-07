@@ -27,7 +27,7 @@ TigerGraph ML Workbench on Cloud also provides an end-to-end solution from devel
 TigerGraph ML Workbench is designed to be infrastructure- and ML framework-agnostic, working on-prem or in a private cloud.
 It is compatible with other popular ML frameworks such as PyTorch Geometric, DGL, and TensorFlow. It can be plugged into your existing on-prem infrastructure, or in the Cloud with Amazon SageMaker, Google Vertex AI or Microsoft Azure.
 
-video::7CgBMPsckUs[youtube]
+video::FwzbGq_XMVw[youtube]
 
 == High-level architecture
 

@@ -15,8 +15,14 @@ They include end-to-end working examples to showcase how to build and deploy a l
 
 To clone the tutorial repository, navigate to your notebook terminal and run this command:
 
-[source]
-git clone https://github.com/TigerGraph-DevLabs/mlworkbench-docs.git
+[source.wrap,console]
+----
+$ git clone https://github.com/TigerGraph-DevLabs/mlworkbench-docs.git
+----
+
+Once completing the clone, the tutorial folder is added to your IDE:
+
+image::tutorials_cloned.png[Tutorials folder]
 
 == Sample Data
 
