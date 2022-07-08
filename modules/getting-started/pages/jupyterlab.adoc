@@ -26,17 +26,43 @@ GPU::
 --
 [source.wrap,console]
 ----
-conda env create -f https://github.com/TigerGraph-DevLabs/mlworkbench-docs/blob/demos/conda_envs/tigergraph-torch-gpu.yml
+conda env create -f https://raw.githubusercontent.com/TigerGraph-DevLabs/mlworkbench-docs/main/conda_envs/tigergraph-torch-gpu.yml
 ----
 --
 ====
 +
-. Use this command to get the jupyterlab extension (for jupyterlab 3.0+ only):
+. Run `source activate tigergraph-torch-cpu` or `source activate tigergraph-torch-gpu` to activate your environment depending on if you installed a CPU or GPU environment.
+. Run the following command to install the Python kernel:
++
+[tabs]
+====
+CPU::
++
+--
+[.wrap,console]
+----
+python -m ipykernel install --user --name tigergraph-torch-cpu --display-name "TigerGraph Pytorch (cpu)"
+----
+--
+GPU::
++
+--
+[.wrap,console]
+----
+python -m ipykernel install --user --name tigergraph-torch-gpu --display-name "TigerGraph Pytorch (gpu)"
+----
+--
+====
+. Run the following command to install the JupyterLab extension:
 +
 [source,console]
 ----
 pip install tigergraph-mlworkbench
 ----
+The JupyterLab extension only works on JupyterLab 3.0 or above.
+If you are using a version of JupyterLab that is older than 3.0,
 
-[start=3]
-. After installation, go to our xref:tutorials:index.adoc[] section. Follow the instructions, use our tutorials and download our latest notebook examples and data sets there to practice using the ML Workbench.
+== Next steps
+
+After installation, go to our xref:tutorials:index.adoc[] section.
+Follow the instructions, use our tutorials and download our latest notebook examples and data sets there to practice using the ML Workbench.
