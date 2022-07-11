@@ -26,4 +26,17 @@ Yes. With the ML Workbench V1 GA release, we now support GNN training on a heter
 
 ==  Can I leverage the existing algorithms in the Graph Data Science Library to generate graph features that would be appropriate for GNN training?
 Yes. You can directly leverage our existing graph algorithms or customize your own features and export them for GNN training.
-One caveat is that these features will need to be pre-populated prior to loading to your ML dev pipelines.
+Please note that these features will need to be pre-populated prior to loading to your ML development pipelines.
+
+== Can I use a password instead of a token to log in to JupyterLab?
+
+Yes. With the token, you can set a password for JupyterLab.
+
+Log out from JupyterLab and you will see the page to set a password with your token.
+After setting the password, restart JupyterLab for the change to take effect.
+
+If you are running Jupyter lab inside a Docker container, you can restart the container by running the command `docker restart <Container ID>`.
+
+== Can I install pyTigerGraph on a Mac with an M1 processor?
+
+Yes. You can install pyTigerGraph as normal by running `pip install pyTigerGraph` or  `pip install pyTigerGraph[gds]`. Use a `pip` version of v21 or later.

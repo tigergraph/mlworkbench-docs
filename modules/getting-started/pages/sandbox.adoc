@@ -41,7 +41,7 @@ You can use `docker logs` to retrieve the URL for JupyterLab.
 The command sets the name to `tgsandbox`, but you can change this to another name.
 * `--ulimit`: the limit of number of open file descriptors per process.
 * `-v`: mount a folder on the host (`~/tgsandbox`) to a folder in the container (`/home/tigergraph/tgsandbox`).
-These two folders are synced and hence allow you to save any file even after the container is removed.
+These two folders are synced, allowing you to save any file even after the container is removed.
 However, the folder on the host (`~/tgsandbox`) has to be writable by the user inside the container.
 Normally, this can be ensured by making the folder public, e.g., `chmod 777  ~/tgsandbox`.
 If you are using Windows, change the path using Windows file system conventions.
