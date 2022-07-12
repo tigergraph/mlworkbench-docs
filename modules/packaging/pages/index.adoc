@@ -1,0 +1,106 @@
+= Editions
+
+TigerGraph ML Workbench comes in two flavors - Developer Edition and Enterprise Edition.
+While both editions offer the same useful Python-level features for your data science needs, the Enterprise edition offers more powerful features to support production-level model training on enterprise-level data sets.
+
+The tables below can help you compare the key differences between the two editions.
+
+== Feature Availability
+[cols="1,1,1"]
+|====
+| |Developer |Enterprise
+
+|Compatibility
+a|* TigerGraph Database
+* Amazon SageMaker, Azure ML, GCP Vertex
+* PyG, DGL ML Framework
+
+a|* TigerGraph Database
+* Amazon SageMaker, Azure ML, GCP Vertex
+* PyG, DGL ML Framework
+
+|Onboarding
+a|* ML Workbench Docker Images
+* MacOS and Linux Installers
+* pip install & conda install
+a|* ML Workbench Docker Images
+* MacOS and Linux Installers
+* pip install & conda install
+
+
+|Capabilities
+a|Python-level capabilities with pyTigerGraph:
+
+* Graph data partitioning
+* Graph Data Loading & Export (HTTP)
+* Subgraph sampling
+* Data Batching
+* Graph feature generation
+* GNN: Homogeneous Graph Support
+* GNN: Node Prediction support
+* GNN: Heterogeneous Graph Support
+* GNN: Link Prediction Support
+* GNN Inference with real-time data
+
+a|Python-level capabilities with pyTigerGraph:
+
+* Graph data partitioning
+* Graph Data Loading & Export (HTTP & Kafka)
+* Subgraph sampling
+* Data Batching
+* Graph feature generation
+* GNN: Homogeneous Graph Support
+* GNN: Node Prediction support
+* GNN: Heterogeneous Graph Support
+* GNN: Link Prediction Support
+* GNN Inference with real-time data
+
+| Data Export Method
+| HTTP only
+| Reliable and efficient data export via both HTTP and Kafka
+
+| Data Export Size
+| Limited to 2GB
+| Unlimited
+
+|Parallel Training
+|No
+|Yes
+
+|Support
+|Community support
+a|* 10 hr Professional Service / Consulting on Solution Building
+* Standard support SLA with 12 x 5
+|====
+
+== Customer Scenarios
+
+[cols="1,1,1"]
+|====
+| | Developer Edition | Enterprise Edition
+
+|Purpose
+a|* Learning Graph Databases
+* Learning Graph Data Science
+* Building proofs of concept
+| Production deployment of Graph ML Models
+
+|Audience
+a| * Students
+* Researchers
+* ML Practitioners
+| Enterprise data science teams
+
+|Infrastructure Readiness
+|Local machines / Internal ML infra (self-managed)
+|Local machines / Internal ML Infra (self-managed)
+
+|Data Size
+|Small data set (<2GB)
+|Production / Enterprise level data
+
+|Performance requirements
+a| * Low requirements for training time
+* Low requirements for model accuracy / predictability
+a| * High requirements for training time (near real time)
+* High requirements for model accuracy / predictability

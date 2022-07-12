@@ -1,0 +1,17 @@
+= Set up ML Workbench Enterprise Edition
+
+ML Workbench offers two different communication methods for exporting data from your TigerGraph Database instance to your ML development environment: HTTPS and Kafka streaming.
+
+HTTPS data is limited to 2GB of data export at a time, while Kafka streaming does not have this limitation.
+Kafka streaming is only available for the Enterprise Edition.
+
+== Setup
+
+If you have already xref:install-udfs.adoc[set up the User-Defined Functions (UDFs)], no additional setup is required to use the HTTPS method.
+
+If you plan to use Kafka on the Enterprise Edition to stream data out from a TigerGraph database, you need to provide the Kafka credentials so that data can be exported correctly.
+Please ensure that you have installed the Enterprise Edition of the UDF dataloader function.
+
+The ML Workbench supports the `SASL_PLAIN` authentication method.
+
+There are several examples in link:https://github.com/TigerGraph-DevLabs/mlworkbench-docs/blob/main/tutorials/basics/3_neighborloader.ipynb[this tutorial] to showcase how to configure the dataloader to work with your Kafka cluster.

@@ -1,7 +1,0 @@
-= Integrate the Workbench with an Existing Jupyter Server
-
-If you already have an existing Jupyter server in your own environment, you can integrate the ML Workbench with your Jupyter server:
-
-** xref:jupyterlab-server/sagemaker.adoc[]
-** xref:jupyterlab-server/google-vertex-ai.adoc[]
-** xref:jupyterlab-server/self-hosted.adoc[]

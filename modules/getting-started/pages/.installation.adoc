@@ -6,7 +6,7 @@ This page provides the instructions to install TigerGraph ML Workbench.
 == Prerequisites
 * Supported OS: macOS and Linux
 * Port 8888 needs to be open on the machine hosting the Jupyter server to access JupyterLab.
-* Required packages
+* Required packages:
 ** git
 
 == Procedure
@@ -21,12 +21,13 @@ You will be asked to review the terms and conditions, as well as choose a locati
 In a new terminal tab, run `jupyter lab` to start the jupyter lab server.
 You will see a URL you can use to visit the server in a browser. Or if you would like to access jupyter lab from a remote browser, run `jupyter lab --ip=0.0.0.0 --no-browser` instead.
 
-== Video walk-through
-Here is a video walk-through of the installation process:
+== Video walkthrough
+Here is a video walkthrough of the installation process:
 
 video::7vnxNPWxoVQ[youtube,start=262,width=700,height=400]
 
 
 == Next steps
 
+* xref:install-udfs.adoc[]
 * xref:deploy-gdps.adoc[Connect your Workbench to a TigerGraph server]
