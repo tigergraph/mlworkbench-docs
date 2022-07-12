@@ -21,7 +21,7 @@ If the Docker container is running remotely, open port 8888 on the remote machin
 
 == Mac OS installer
 
-. Download the installer at this link: link:https://tg-mlworkbench.s3.us-west-1.amazonaws.com/jupyterlab/MLWorkbench-1.0.0-Linux-x86_64.sh[Download MLWorkbench-1.0.0-Linux-x86_64.sh]
+. Download the installer at this link: link:https://tg-mlworkbench.s3.us-west-1.amazonaws.com/jupyterlab/MLWorkbench-1.0.0-MacOSX-x86_64.sh[Download MLWorkbench-1.0.0-MacOSX-x86_64.sh]
 . Open a Terminal window in the folder where the installer was downloaded.
 . Run the command `bash MLWorkbench-1.0.0-MacOSX-x86_64.sh` and follow the prompts to install.
 
@@ -39,7 +39,7 @@ JupyterLab only has access to the folder where it is launched. If you need to ac
 
 == Linux installer
 
-. Download the installer at this link: link:https://tg-mlworkbench.s3.us-west-1.amazonaws.com/jupyterlab/MLWorkbench-1.0.0-MacOSX-x86_64.sh[Download MLWorkbench-1.0.0-MacOSX-x86_64.sh]
+. Download the installer at this link: link:https://tg-mlworkbench.s3.us-west-1.amazonaws.com/jupyterlab/MLWorkbench-1.0.0-Linux-x86_64.sh[Download MLWorkbench-1.0.0-Linux-x86_64.sh]
 . Open the terminal and navigate to where the installer was downloaded.
 . Run the command `bash MLWorkbench-1.0.0-Linux-x86_64.sh` and follow the prompts to install.
 

@@ -6,7 +6,7 @@ TigerGraph has a robust set of tutorials and training data sets available to lea
 This section describes how to access these resources for your exploration needs.
 
 If you have previously set up ML Workbench via xref:getting-started:sandbox.adoc[the sandbox option], you can skip these steps since all tutorials and data are included in the sandbox.
-This section describes the process of running the tutorials on local TigerGraph instances.
+This section describes the process of running the tutorials on local or cloud TigerGraph instances.
 
 == Tutorials
 
@@ -22,12 +22,13 @@ The tutorials are hosted on GitHub link:https://github.com/TigerGraph-DevLabs/ml
 $ git clone https://github.com/TigerGraph-DevLabs/mlworkbench-docs.git
 ----
 
-Once completing the clone, the tutorial folder is added to your IDE:
+[start=2]
+. In that same directory, run `jupyter lab`, which will create a new JupyterLab instance that you can use to browse the folders and open the tutorial files.
 
 image::tutorials_cloned.png[Tutorials folder]
 
-[start=2]
-. In that same directory, run `jupyter lab`, which will create a new JupyterLab instance that you can use to browse the folders and open the tutorial files.
+To run the tutorials on a TigerGraph Cloud solution, xref:cloud:start:overview.adoc[create a new solution on TigerGraph Cloud] to follow along.
+You may also refer to the pyTigerGraph documentation on cloud connections: xref:pytigergraph:getting-started:connection.adoc[]
 
 == Sample Data
 
