@@ -6,7 +6,7 @@ You can choose to install on the base kernel or using a Conda environment.
 
 == Base kernel installation
 
-From JupyterLab, open a new terminal and run the following command to install pyTigerGraph[gds]:
+From JupyterLab, open a new terminal and run the following command to install pyTigerGraph:
 [source,console]
 ----
 pip install pyTigerGraph[gds]
