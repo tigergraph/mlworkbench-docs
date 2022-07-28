@@ -1,0 +1,16 @@
+= Create a New Model
+:experimental:
+
+Setting up your own model server with a pretrained machine learning model is simple. This page explains the process and illustrates it with a sample model and dataset from TigerGraph.
+
+== Prerequisites
+
+
+== Create a New Model
+
+. Click btn:[+ New Model Server] at the top of the model list.
+. In YAML format, enter the attributes and location of the model
+. Wait for ML Workbench to provision the necessary infrastructure
+
+==
+

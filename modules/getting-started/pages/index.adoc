@@ -1,11 +1,31 @@
 = Getting started
-:sectnums:
 
 The following steps will guide you through some key aspects of setting up TigerGraph ML Workbench.
 There are several paths forward to get started with ML Workbench, and the options are presented below.
 At the conclusion of the Getting Started sequence, you’ll have reached an excellent starting point for further, more detail-driven activities.
 
-== Getting TigerGraph ML Workbench
+== TigerGraph ML Workbench on Cloud
+
+The Cloud version of ML Workbench comes packaged by default for any TigerGraph Cloud instance.
+
+It is built on a Kubernetes/Kubeflow framework that enables notebook creation, Tensorboards, and model serving from one integrated platform.
+
+This documentation describes some of the most common functions for performing machine learning operations with a TigerGraph Cloud instance.
+For more detailed documentation of the Kubeflow platform, please see the link:https://www.kubeflow.org/docs/started/[Kubeflow documentation.]
+
+=== Example Business Workflow
+
+This is an example workflow to illustrate a use case for each component of ML Workbench on Cloud.
+
+. A business organization uses xref:cloud:start:overview.adoc[TigerGraph Cloud] to create a database for their complex data.
+. To solve a business problem with the data stored in their Cloud database, they decide to build a machine learning model.
+. They use the ML Workbench xref:notebooks:index.adoc[Notebook] feature to create a Python notebook connected to their TigerGraph instance in order to train the model.
+. A xref:tensorboard:index.adoc[Tensorboard] helps them visualize the process of training the model, and xref:auto-ml:index.adoc[] helps them tune the hyperparameters.
+. Once the model is trained, they can interact with it using their custom Python code in the Notebooks or use it as an API with the xref:model-serving:index.adoc[Model Server].
+
+
+
+== TigerGraph ML Workbench on Server
 * If you are new to TigerGraph, we recommend xref:sandbox.adoc[running TigerGraph server and the Workbench together in a sandbox container].
 The sandbox image comes with a free version of TigerGraph preloaded with a sample data set, and ML Workbench preconfigured.
 * If you already have a running TigerGraph instance, you can xref:standalone.adoc[install ML Workbench] on your machine as a standalone application.

@@ -1,0 +1,49 @@
+= Model Serving
+:experimental:
+
+Model serving is a way to make a pre-trained machine learning model available as a service.
+
+ML Workbench uses the link:https://www.kubeflow.org/docs/external-add-ons/kserve/webapp/[KServe Models UI] to display the KubeFlow InferenceServices, which is another term for using a trained model as a service.
+
+== Introduction
+
+Click the Models tab on the left sidebar to access the list of model servers.
+
+Each model server is created by defining, in YAML format, a list of attributes that tell the backend about the model and how to access it.
+ML Workbench creates a standard API for each model so that new data can be sent to the model for predictions.
+
+Server scaling happens by default without any user input to dynamically spend resources on certain models.
+
+The attributes shown for each model server are as follows:
+
+|===
+|Attribute | Explanation
+
+|Status | Whether the model server is ready for API requests
+|Name  | A user-generated name for the model server
+|Age |
+|Predictor |
+|Runtime |
+|Protocol |
+|Storage URI | The location of the trained model, usually on cloud storage or Kubernetes PVC
+|===
+
+== Model server details
+
+Once a model server is running, click on it to expand the view and reveal additional information.
+
+* Overview
+** InferenceService’s current and past statuses
+** Metadata
+** Internal and external API endpoints
+
+
+* Details
+** Model name and namespace (the name of your TigerGraph Cloud organization)
+** Container specifications
+
+* Logs
+** Model container log
+
+* YAML
+** The original InferenceService Kubernetes CDR specification as a YAML file

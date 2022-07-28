@@ -1,0 +1,29 @@
+= ML Workbench Glossary
+
+This page serves as a glossary for the terms used in the ML Workbench documentation. For a general TigerGraph glossary, see the xref:tigergraph-server:reference:glossary.adoc[TigerGraph Server Glossary].
+
+== AutoML
+
+== InferenceService
+
+== Katib
+
+== Kubeflow
+
+== Kubernetes
+
+== KServe
+
+== Model Serving
+
+== Notebook
+
+== Pipeline
+
+== PVC
+
+== PyTigerGraph
+
+== Tensorboard
+
+== Volume

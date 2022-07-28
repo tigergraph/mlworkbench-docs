@@ -1,2 +1,3 @@
 * xref:index.adoc[]
 * xref:reference.adoc[]
+* xref:resource-quotas.adoc[]

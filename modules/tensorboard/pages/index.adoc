@@ -1,0 +1,7 @@
+= Tensorboards
+
+Tensorboards are visualizations of the machine learning model training process.
+
+== Create a Tensorboard
+
+== Example
