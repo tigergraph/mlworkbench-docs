@@ -7,5 +7,9 @@ nav:
 - modules/overview/nav.adoc
 - modules/getting-started/nav.adoc
 - modules/tutorials/nav.adoc
-- modules/faq/nav.adoc
 - modules/packaging/nav.adoc
+- modules/notebooks/nav.adoc
+- modules/tensorboard/nav.adoc
+- modules/model-serving/nav.adoc
+- modules/auto-ml/nav.adoc
+- modules/faq/nav.adoc
