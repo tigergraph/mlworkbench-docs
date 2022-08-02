@@ -2,13 +2,16 @@
 :experimental:
 
 TensorBoards are visualizations of the machine learning model training process.
+They work by continually reading log files while a model is training.
 
-As you train a model using a notebook, you can connect your model log files and data set to a TensorBoard to see its progress as it trains.
+As you train a model using a notebook, you can connect your model log files and data set to a TensorBoard to see its progress in graph form as it trains.
 
 == Create a TensorBoard
 
 . Click on the btn:[+ New TensorBoard] button in the upper right corner of the Tensorboards tab.
 . Enter the name.
-. Choose the location of your data either as an Object Store link or a PVC and mount path
+. Choose the location of your data either as an Object Store link or a PVC and mount path. For a TigerGraph Cloud solution, the log files will be in a PVC.
+
+After a few moments for initialization, the new TensorBoard appears in the list. Click btn:[Connect] to open a new tab to view the TensorBoard.
 
 == Example

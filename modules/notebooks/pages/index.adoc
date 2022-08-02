@@ -1,7 +1,7 @@
 = Notebooks
 :experimental:
 
-Notebooks on ML Workbench are web-based development environments run inside a Kubernetes cluster.
+Jupyter Notebooks on ML Workbench are web-based development environments run inside a Kubernetes cluster.
 
 The ML Workbench notebooks are Kubeflow notebooks, so setting them up follows the same principles as outlined in the link:https://www.kubeflow.org/docs/components/notebooks/quickstart-guide/[Kubeflow Quickstart Guide].
 
