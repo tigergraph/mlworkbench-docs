@@ -1,7 +1,14 @@
-= Tensorboards
+= TensorBoards
+:experimental:
 
-Tensorboards are visualizations of the machine learning model training process.
+TensorBoards are visualizations of the machine learning model training process.
 
-== Create a Tensorboard
+As you train a model using a notebook, you can connect your model log files and data set to a TensorBoard to see its progress as it trains.
+
+== Create a TensorBoard
+
+. Click on the btn:[+ New TensorBoard] button in the upper right corner of the Tensorboards tab.
+. Enter the name.
+. Choose the location of your data either as an Object Store link or a PVC and mount path
 
 == Example

@@ -1,7 +1,7 @@
 = Create a New Model
 :experimental:
 
-Setting up your own model server with a pretrained machine learning model is simple. This page explains the process and illustrates it with a sample model and dataset from TigerGraph.
+This page explains the process of setting up a new model and illustrates it with a sample model and dataset from TigerGraph.
 
 == Prerequisites
 

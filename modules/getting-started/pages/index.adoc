@@ -6,7 +6,7 @@ At the conclusion of the Getting Started sequence, you’ll have reached an exce
 
 == TigerGraph ML Workbench on Cloud
 
-The Cloud version of ML Workbench comes packaged by default for any TigerGraph Cloud instance.
+The Cloud version of ML Workbench is available by invitation only for a TigerGraph Cloud instance.
 
 It is built on a Kubernetes/Kubeflow framework that enables notebook creation, Tensorboards, and model serving from one integrated platform.
 

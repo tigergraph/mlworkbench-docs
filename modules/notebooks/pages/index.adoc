@@ -21,4 +21,3 @@ Provisioning a notebook and making it accessible takes a few minutes.
 
 Using a notebook hosted on ML Workbench Cloud is the same as using a notebook set up from scratch using a local install of ML Workbench.
 Follow the xref:tutorials:index.adoc[Tutorials] to learn more and explore the capabilities.
-
