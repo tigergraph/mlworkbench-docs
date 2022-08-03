@@ -1,1 +1,0 @@
-* xref:model-serving:index.adoc[]

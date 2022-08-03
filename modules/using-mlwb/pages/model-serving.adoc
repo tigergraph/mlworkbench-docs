@@ -29,6 +29,18 @@ The attributes shown for each model server are as follows:
 |Storage URI | The location of the trained model, usually on cloud storage or Kubernetes PVC
 |===
 
+== Create a New Model
+
+=== Prerequisites
+
+
+
+=== Procedure
+
+. Click btn:[+ New Model Server] at the top of the model list.
+. In YAML format, enter the attributes and location of the model.
+. Wait for ML Workbench to provision the necessary infrastructure.m
+
 == Model server details
 
 Once a model server is running, click on it to expand the view and reveal additional information.

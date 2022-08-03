@@ -1,1 +1,0 @@
-* xref:auto-ml:index.adoc[]

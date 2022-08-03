@@ -1,4 +1,4 @@
-= Getting started
+= Setup
 
 The following steps will guide you through some key aspects of setting up TigerGraph ML Workbench.
 There are several paths forward to get started with ML Workbench, and the options are presented below.
