@@ -55,7 +55,7 @@ As `tgml` is a Python package, it can be installed anywhere Python is used.
 
 === UDF on TigerGraph DB
 In order for pyTigerGraph to work with the TigerGraph Database, some of its functionality, such as dataloading and the featurizer, require certain user defined functions (UDFs) to be installed on the TigerGraph Database instance.
-See xref:getting-started:install-udfs.adoc[the UDF page] to learn how to deploy these UDFs to your database before using pyTigerGraph.
+See xref:getting-started:activate.adoc[the UDF page] to learn how to deploy these UDFs to your database before using pyTigerGraph.
 
 == Graph neural networks and their applications
 

@@ -5,9 +5,10 @@ display_version: 'mlwb-cloud-features-DOC-1247'
 start_page: overview:index.adoc
 nav:
 - modules/overview/nav.adoc
+- "Test"
 - modules/getting-started/nav.adoc
 - modules/tutorials/nav.adoc
-- modules/packaging/nav.adoc
+- modules/editions/nav.adoc
 - modules/notebooks/nav.adoc
 - modules/tensorboard/nav.adoc
 - modules/model-serving/nav.adoc

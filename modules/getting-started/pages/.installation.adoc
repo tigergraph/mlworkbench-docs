@@ -29,5 +29,5 @@ video::7vnxNPWxoVQ[youtube,start=262,width=700,height=400]
 
 == Next steps
 
-* xref:install-udfs.adoc[]
+* xref:activate.adoc[]
 * xref:deploy-gdps.adoc[Connect your Workbench to a TigerGraph server]

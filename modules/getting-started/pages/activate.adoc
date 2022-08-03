@@ -1,4 +1,4 @@
-= Install UDFs
+= Activate ML Workbench
 
 After the client-side ML Workbench setup is complete, the next step is to install a set of User Defined Functions (UDFs) to your TigerGraph database instances.
 These UDFs are prerequisites for some of the ML Workbench core functionality.
