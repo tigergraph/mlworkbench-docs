@@ -21,19 +21,19 @@ The attributes shown for each model server are as follows:
 |Attribute | Explanation
 
 |Status | Whether the model server is ready for API requests
-|Name  | A user-generated name for the model server
-|Age |
-|Predictor |
-|Runtime |
-|Protocol |
-|Storage URI | The location of the trained model, usually on cloud storage or Kubernetes PVC
+|Name  | User-generated name for the model server
+|Age | Time since the model server was created
+|Predictor | Name of the dataset used for the model
+|Runtime | Runtime version
+|Protocol | Version of the model that is being served
+|Storage URI | Location of the trained model, usually on cloud storage or Kubernetes PVC
 |===
 
 == Create a New Model
 
 === Prerequisites
 
-
+* A trained model accessible on cloud storage or a Kubernetes PVC
 
 === Procedure
 
@@ -60,3 +60,18 @@ Once a model server is running, click on it to expand the view and reveal additi
 
 * YAML
 ** The original InferenceService Kubernetes CDR specification as a YAML file
+
+== Example
+
+
+[source, yaml]
+----
+apiVersion: "serving.kserve.io/v1beta1"
+kind: "InferenceService"
+metadata:
+  name: "sklearn-iris"
+spec:
+  predictor:
+    sklearn:
+      storageUri: "gs://kfserving-examples/models/sklearn/1.0/model"
+----
