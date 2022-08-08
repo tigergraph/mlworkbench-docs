@@ -1,0 +1,21 @@
+= Activate
+
+After the on-prem ML Workbench setup is complete, the next step is to activate ML Workbench on your on-prem TigerGraph database instance.
+This is a prerequisite for some of the ML Workbench core functionality.
+
+[NOTE]
+If you have any existing UDFs in your TigerGraph instance, back them up before installation by making a copy of the existing UDF file.
+
+== Developer Edition
+
+. Request the Developer Edition from the TigerGraph product page.
+. Follow the instructions in your email to download and install ML Workbench.
+. Go to link:https://act.tigergraphlabs.com/[https://act.tigergraphlabs.com/] to download the activator.
+. Run the activator according to the instructions on the Activator page.
+
+== Enterprise Edition
+
+. Purchase the Enterprise Edition from the TigerGraph sales team.
+. The sales team will contact you with a username and password for you to enter on the link:https://act.tigergraphlabs.com/[Activator page].
+. After entering the username and password, the Enterprise Activator will become available.
+. Download the activator and run it according to the instructions on the Activator page.
