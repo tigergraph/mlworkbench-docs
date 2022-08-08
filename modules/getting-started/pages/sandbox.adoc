@@ -80,4 +80,6 @@ video::7vnxNPWxoVQ[youtube,width=700,height=400]
 
 == Next steps
 
-* xref:tutorials:index.adoc[Train your first model] by following the tutorials.
+The next step after installation is xref:activate.adoc[activation].
+
+Then you can xref:tutorials:index.adoc[train your first model] by following the tutorials.

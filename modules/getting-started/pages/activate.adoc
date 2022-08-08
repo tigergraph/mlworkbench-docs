@@ -1,28 +1,21 @@
-= Activate ML Workbench
+= Activate
 
-After the client-side ML Workbench setup is complete, the next step is to install a set of User Defined Functions (UDFs) to your TigerGraph database instances.
-These UDFs are prerequisites for some of the ML Workbench core functionality.
-
-Both of the required UDFs can be installed with our UDF installer function from pyTigerGraph.
+After the on-prem ML Workbench setup is complete, the next step is to activate ML Workbench on your on-prem TigerGraph database instance.
+This is a prerequisite for some of the ML Workbench core functionality.
 
 [NOTE]
-The installer function will attempt to append the pyTigerGraph UDFs to any existing UDFs in the TigerGraph database, preserving user-created UDFs.
-Even so, it is recommended to back up existing UDFs before installation.
+If you have any existing UDFs in your TigerGraph instance, back them up before installation by making a copy of the existing UDF file.
 
-== UDFs for the Graph Data Science library
-If you are planning to run any graph algorithms from our Graph Data Science library for graph feature engineering, follow the “UDF for built-in Graph Algorithms” section in link:https://github.com/TigerGraph-DevLabs/mlworkbench-docs/blob/main/tutorials/basics/2.1_UDF_installer.ipynb[this tutorial].
+== Developer Edition
 
-== UDFs for the dataloader
-One of the key functionality of the  ML Workbench is the ability to export your connected data set stored in the TigerGraph database to your ML development environment and to transform your connected data set to be compatible with other popular ML frameworks such as pyTorch.
-Please follow the “UDF for dataloader” section in link:https://github.com/TigerGraph-DevLabs/mlworkbench-docs/blob/main/tutorials/basics/2.1_UDF_installer.ipynb[this tutorial].
+. Request the Developer Edition from the TigerGraph product page.
+. Follow the instructions in your email to download and install ML Workbench.
+. Go to link:https://act.tigergraphlabs.com/[https://act.tigergraphlabs.com/] to download the activator.
+. Run the activator according to the instructions on the Activator page.
 
-[NOTE]
-====
-There are two versions of the UDF dataloader:
+== Enterprise Edition
 
-* ML Workbench Developer Edition
-* ML Workbench Enterprise Edition
-
-The Enterprise edition of the dataloader has added capability to stream large data sets over a Kafka cluster.
-====
-The tutorial contains the link to the UDF for the Developer Edition, and if you are interested in the Enterprise Edition of ML Workbench, please contact our sales team at tgsales@tigergraph.com
+. Purchase the Enterprise Edition from the TigerGraph sales team.
+. The sales team will contact you with a username and password for you to enter on the link:https://act.tigergraphlabs.com/[Activator page].
+. After entering the username and password, the Enterprise Activator will become available.
+. Download the activator and run it according to the instructions on the Activator page.
