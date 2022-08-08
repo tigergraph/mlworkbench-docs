@@ -54,3 +54,9 @@ The installation prompt asks whether you want to "initialize."
 If you would like to access JupyterLab from a remote browser, type `jupyter lab --ip=0.0.0.0 --no-browser` instead.
 
 JupyterLab only has access to the folder where it is launched. If you need to access files at a different location, launch JupyterLab in that location.
+
+== Next steps
+
+The next step after installation is xref:activate.adoc[activation].
+
+Then you can xref:tutorials:index.adoc[train your first model] by following the tutorials.
