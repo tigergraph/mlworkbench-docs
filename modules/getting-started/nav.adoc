@@ -3,4 +3,4 @@
 ** xref:standalone.adoc[]
 ** xref:jupyterlab.adoc[Jupyter Server]
 ** xref:kafka-cluster-setup.adoc[Kafka Cluster]
-** xref:install-udfs.adoc[]
+** xref:activate.adoc[]
