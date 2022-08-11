@@ -44,7 +44,7 @@ image::high-level-architecture-v1.png[]
 The ML Workbench Jupyter Plugin is a JupyterLab-based development environment with TigerGraph specific utilities and components, such as a server manager and link to GraphStudio.
 In addition, all Python libraries such as PyTorch Geometric, DGL, and TGML come pre-installed, so you don’t have to worry about setting up the right Python environment.
 
-The plugin is included in the xref:getting-started:sandbox.adoc[sandbox option] for getting started with ML Workbench.
+The plugin is included in the xref:on-prem:sandbox.adoc[sandbox option] for getting started with ML Workbench.
 
 === pyTigerGraph
 
@@ -54,7 +54,7 @@ As `tgml` is a Python package, it can be installed anywhere Python is used.
 
 === UDF on TigerGraph DB
 In order for pyTigerGraph to work with the TigerGraph Database, some of its functionality, such as dataloading and the featurizer, require certain user defined functions (UDFs) to be installed on the TigerGraph Database instance.
-See xref:getting-started:activate.adoc[the UDF page] to learn how to deploy these UDFs to your database before using pyTigerGraph.
+See xref:on-prem:activate.adoc[the UDF page] to learn how to deploy these UDFs to your database before using pyTigerGraph.
 
 == Graph neural networks and their applications
 

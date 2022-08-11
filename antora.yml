@@ -6,7 +6,7 @@ start_page: intro:index.adoc
 nav:
 - modules/intro/nav.adoc
 - modules/editions/nav.adoc
-- modules/using-mlwb/nav.adoc
-- modules/getting-started/nav.adoc
+- modules/on-cloud/nav.adoc
+- modules/on-prem/nav.adoc
 - modules/tutorials/nav.adoc
 - modules/faq/nav.adoc
