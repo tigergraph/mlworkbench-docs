@@ -1,11 +1,18 @@
 = Editions
 
-The standalone installation of TigerGraph ML Workbench comes in two flavors - Developer Edition and Enterprise Edition.
-While both editions offer the same useful Python-level features for your data science needs, the Enterprise edition offers more powerful features to support production-level model training on enterprise-level data sets.
+TigerGraph ML Workbench is available as a service through TigerGraph Cloud or standalone in two editions, Developer and Enterprise.
 
-The tables below can help you compare the key differences between the two editions.
+While both on-prem editions offer the same useful Python-level features for your data science needs, the Enterprise edition offers more powerful features to support production-level model training on enterprise-level data sets.
 
-== Feature Availability
+The tables below can help you compare the key differences between the editions.
+
+== ML Workbench on TigerGraph Cloud
+
+ML Workbench on TigerGraph Cloud is built on KubeFlow, allowing it to offer several unique AutoML and visualization features conveniently in a single web framework.
+
+== Developer and Enterprise On-Prem Editions
+
+=== Features
 [cols="1,1,1"]
 |====
 | |Developer |Enterprise
@@ -73,7 +80,7 @@ a|* 10 hr Professional Service / Consulting on Solution Building
 * Standard support SLA with 12 x 5
 |====
 
-== Customer Scenarios
+=== Customer Scenarios
 
 [cols="1,1,1"]
 |====

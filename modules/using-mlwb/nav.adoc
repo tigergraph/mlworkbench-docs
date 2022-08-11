@@ -1,4 +1,4 @@
-* Using ML Workbench
+* ML Workbench on Cloud
 ** xref:notebooks.adoc[]
 ** xref:tensorboard.adoc[]
 ** xref:model-serving.adoc[]

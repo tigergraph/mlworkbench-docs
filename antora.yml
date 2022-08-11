@@ -2,7 +2,7 @@ name: ml-workbench
 title: TigerGraph ML Workbench
 version: 'mlwb-cloud-features-DOC-1247'
 display_version: 'mlwb-cloud-features-DOC-1247'
-start_page: overview:index.adoc
+start_page: intro:index.adoc
 nav:
 - modules/intro/nav.adoc
 - modules/editions/nav.adoc

@@ -24,6 +24,12 @@ Provisioning a notebook and making it accessible takes a few minutes.
 
 == Using a Notebook
 
-Using a notebook hosted on ML Workbench Cloud is the same as using a notebook set up from scratch using a local install of ML Workbench.
+Using a notebook hosted on ML Workbench Cloud is the same as using a notebook set up from scratch using a local installation of ML Workbench.
+
+When you open a notebook, you should see a connection to the TigerGraph database available on the left side.
+If this does not appear, ensure that you have access to a TigerGraph Cloud solution.
+
+
+
 Follow the xref:tutorials:index.adoc[Tutorials] to learn more and explore the capabilities.
 

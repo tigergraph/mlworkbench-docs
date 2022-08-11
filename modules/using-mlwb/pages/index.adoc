@@ -1,0 +1,13 @@
+= Introduction
+
+ML Workbench on Cloud is designed to require minimal setup.
+
+== First Launch
+
+Access ML Workbench from the TigerGraph Cloud main page.
+
+[NOTE]
+Your TigerGraph Cloud account must have access to a TigerGraph Cloud solution in order to connect that solution to an ML Workbench notebook.
+
+The first time anyone in a new TigerGraph Cloud organization accesses ML Workbench, they will see a prompt for a namespace.
+This namespace is analogous to a project name managing the connection of one or several TigerGraph Cloud solutions with one or several ML Workbench tools.
