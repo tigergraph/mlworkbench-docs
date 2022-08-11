@@ -7,7 +7,7 @@
 :description: Overview of the TigerGraph ML Workbench.
 :figure-caption!:
 
-TigerGraph Machine Learning (ML) Workbench is a Jupyter-based Python development framework offered either as a fully-managed, on-cloud offering or as an integrated on-prem solution for direct integration with existing machine learning infrastructure.
+TigerGraph Machine Learning (ML) Workbench is an end-to-end graph machine learning platform orchestrated by KubeFlow.
 
 It is designed for data scientists and AI/ML practitioners to easily develop graph-based machine learning models with production-scale graph data stored in TigerGraph.
 It provides robust and efficient data pipelines at the Python level to interact with the TigerGraph database to perform common data processing functions such as:
@@ -17,21 +17,20 @@ It provides robust and efficient data pipelines at the Python level to interact 
 * graph feature generation
 * data batching and/or streaming for ML model development, training, and inference purposes.
 
-TigerGraph ML Workbench on Cloud also provides an end-to-end solution from development to deployment including a fully-managed Jupyter notebook instance with:
+ML Workbench on Cloud provides an ML solution from development to deployment including a fully-managed Jupyter notebook instance with:
 
 * on-demand computation
 * distributed AutoML for hyperparameter tuning
 * ML pipeline management & orchestration
-* model deployment and serverless production serving.
+* model deployment and serverless production serving
 
-TigerGraph ML Workbench is designed to be infrastructure- and ML framework-agnostic, working on-prem or in a private cloud.
-It is compatible with other popular ML frameworks such as PyTorch Geometric, DGL, and TensorFlow. It can be plugged into your existing on-prem infrastructure, or in the Cloud with Amazon SageMaker, Google Vertex AI or Microsoft Azure.
+ML Workbench also comes in standalone Developer or Enterprise editions as a Jupyter-based Python development framework for direct integration with existing machine learning infrastructure.
 
-video::FwzbGq_XMVw[youtube]
+It is compatible with other popular ML frameworks such as PyTorch Geometric, DGL, and TensorFlow as well as cloud infrastructure including Amazon SageMaker, Google Vertex AI and Microsoft Azure.
 
 == High-level architecture
 
-The TigerGraph ML Workbench contains three major components:
+TigerGraph ML Workbench Developer or Enterprise Edition contains three major components:
 
 * TigerLab, a JupyterLab-based IDE
 * pyTigerGraph, the Python client for GDPS

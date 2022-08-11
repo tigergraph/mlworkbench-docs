@@ -1,4 +1,4 @@
-= Resources
+= Tutorials and Sample Data
 :experimental:
 
 TigerGraph has a robust set of tutorials and training data sets available to learn ML Workbench.

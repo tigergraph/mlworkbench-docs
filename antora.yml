@@ -4,7 +4,7 @@ version: 'mlwb-cloud-features-DOC-1247'
 display_version: 'mlwb-cloud-features-DOC-1247'
 start_page: overview:index.adoc
 nav:
-- modules/overview/nav.adoc
+- modules/intro/nav.adoc
 - modules/editions/nav.adoc
 - modules/getting-started/nav.adoc
 - modules/using-mlwb/nav.adoc
