@@ -4,3 +4,4 @@
 ** xref:jupyterlab.adoc[Jupyter Server]
 ** xref:kafka-cluster-setup.adoc[Kafka Cluster]
 ** xref:activate.adoc[]
+** xref:architecture.adoc[Architecture Reference]

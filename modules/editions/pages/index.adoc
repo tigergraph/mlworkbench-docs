@@ -10,6 +10,13 @@ The tables below can help you compare the key differences between the editions.
 
 ML Workbench on TigerGraph Cloud is built on KubeFlow, allowing it to offer several unique AutoML and visualization features conveniently in a single web framework.
 
+TigerGraph’s Machine Learning Workbench is a fully-managed platform that accelerates development and deployment of graph-enhanced machine learning, which leverages the added insights from connected data and graph features for better predictions. ML Workbench delivers a scalable Graph ML model orchestrated by Kubeflow running on Kubernetes containers.
+
+Due to its accurate predictive power stemming from unique graph features and graph models, the workbench enables organizations to unlock even better insights and greater business impact at scale.
+
+Please see the link:https://www.tigergraph.com/ml-workbench/[official product page] for early access information.
+
+
 == Developer and Enterprise On-Prem Editions
 
 === Features
