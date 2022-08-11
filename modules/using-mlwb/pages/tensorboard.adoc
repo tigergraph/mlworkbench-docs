@@ -21,5 +21,3 @@ When you create a TensorBoard, point it to that log file directory so that it ca
 . Choose the location of your data either as an Object Store link or a PVC and mount path. For a TigerGraph Cloud solution, the log files will be in a PVC.
 
 After a few moments of initialization, the new TensorBoard appears in the list. Click btn:[Connect] to open a new tab to view the TensorBoard.
-
-== Example

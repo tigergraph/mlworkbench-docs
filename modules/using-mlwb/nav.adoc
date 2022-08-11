@@ -1,4 +1,4 @@
-* ML Workbench on Cloud
+* xref:index.adoc[Cloud Setup]
 ** xref:notebooks.adoc[]
 ** xref:tensorboard.adoc[]
 ** xref:model-serving.adoc[]
