@@ -9,6 +9,8 @@ It is built on a Kubernetes/Kubeflow framework that enables notebook creation, T
 This documentation describes some of the most common functions for performing machine learning operations with a TigerGraph Cloud instance.
 For more detailed documentation of the Kubeflow platform, please see the link:https://www.kubeflow.org/docs/started/[Kubeflow documentation.]
 
+image::mlwb-home.png[Screenshot of the MLWB home page upon first launch]
+
 === Example Business Workflow
 
 This is an example workflow to illustrate a use case for each component of ML Workbench on Cloud.

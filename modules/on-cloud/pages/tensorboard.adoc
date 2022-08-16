@@ -6,15 +6,19 @@ They work by continually reading log files while a model is training.
 
 As you train a model using a notebook, you can connect your model log files and data set to a TensorBoard to see its progress in graph form as it trains.
 
+image::tensorboards.png[Screenshot of the TensorBoards page upon first launch]
+
 == Setup
 
 Before you create a TensorBoard, you need to specify the directory where your log files will be stored.
 
-In a Notebook, change the `log_dir` variable to point at a data store. This could be a new Volume on ML Workbench or external cloud storage.
+In a Notebook, change the `log_dir` variable to point at a data store. This could be a new Volume on ML Workbench or on external cloud storage.
 
 When you create a TensorBoard, point it to that log file directory so that it can interpret the log files and display the model training progress visually.
 
 == Create a TensorBoard
+
+image::new-tensorboard.png[]
 
 . Click on the btn:[+ New TensorBoard] button in the upper right corner of the Tensorboards tab.
 . Enter the name.

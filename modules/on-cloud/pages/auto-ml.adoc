@@ -7,6 +7,8 @@ AutoML is a subset of machine learning with the goal of reducing the expertise n
 
 ML Workbench uses the open-source link:https://www.kubeflow.org/docs/components/katib/overview/[Katib project through Kubeflow] to simplify process of running machine learning experiments.
 
+image::experiments.png[Screenshot of the Experiments page upon first launch]
+
 == Tutorial notebook
 
 We have a sample Docker file and notebook for learning to use AutoML (Katib) here: link:https://github.com/TigerGraph-DevLabs/mlworkbench-docs/tree/main/tutorials/advanced/katib[Hyperparameter Tuning with Katib]. The notebook is a self-contained tutorial package that guides you through learning to use the functionality.

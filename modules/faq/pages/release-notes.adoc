@@ -1,0 +1,21 @@
+= Release Notes
+
+
+== TigerGraph ML Workbench 1.0 (August 2022)
+
+=== New features
+
+Soft launch of TigerGraph ML Workbench on Cloud, an end-to-end Kubeflow-managed cloud platform for training and serving machine learning models.
+
+* Complete KubeFlow integration
+* Fully-managed infrastructure orchestrated by Kubernetes
+* Connection to TigerGraph Cloud Solutions
+* Cloud-hosted Jupyter Notebooks
+* TensorBoard integration
+* Experiments with AutoML (beta)
+
+=== Known Issues
+
+* When creating a new Notebook, the user is prompted for Configurations and Affinity/Tolerations.
+These have no effect on the notebook.
+

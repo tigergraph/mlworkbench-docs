@@ -6,6 +6,8 @@ Model serving is a way to make a pre-trained machine learning model available as
 ML Workbench uses the link:https://www.kubeflow.org/docs/external-add-ons/kserve/webapp/[KServe Models UI] to display the KubeFlow InferenceServices.
 An InferenceService is a Kubernetes CustomResource (CR) that enables running inference requests on a trained model.
 
+image::model-servers.png[Screenshot of the Model Servers page upon first launch]
+
 == Introduction
 
 Click the Models tab on the left sidebar to access the list of model servers.

@@ -5,6 +5,9 @@ Jupyter Notebooks on ML Workbench are web-based development environments run ins
 
 The ML Workbench notebooks are Kubeflow notebooks, so setting them up follows the same principles as outlined in the link:https://www.kubeflow.org/docs/components/notebooks/quickstart-guide/[Kubeflow Quickstart Guide].
 
+image::notebooks.png[Screenshot of the Notebooks page upon first launch]
+
+
 == Prerequisites
 
 In order to connect an ML Workbench notebook to a TigerGraph Cloud solution, your TigerGraph Cloud account must have access to the solution.
