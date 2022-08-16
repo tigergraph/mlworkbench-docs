@@ -1,13 +1,12 @@
 = High-level Architecture
 
-TigerGraph ML Workbench Developer or Enterprise Edition contains three major components:
+TigerGraph ML Workbench Developer or Enterprise Edition contains two major components:
 
-* TigerLab, a JupyterLab-based IDE
+* A JupyterLab-based IDE
 * pyTigerGraph, the Python client for GDPS
-* User Defined Functions (UDFs) on TigerGraph DB
 
 .High level architecture
-image::high-level-architecture-v1.png[]
+image::high-level-architecture-v1.png[Diagram of ML Workbench architecture]
 
 
 === ML Workbench Jupyter Plugin
