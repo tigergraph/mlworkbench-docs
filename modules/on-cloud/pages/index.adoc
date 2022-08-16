@@ -1,0 +1,34 @@
+= On-Cloud Setup
+
+ML Workbench on Cloud is designed to require minimal setup.
+
+The Cloud version of ML Workbench is available by invitation only for a TigerGraph Cloud instance.
+
+It is built on a Kubernetes/Kubeflow framework that enables notebook creation, Tensorboards, and model serving from one integrated platform.
+
+This documentation describes some of the most common functions for performing machine learning operations with a TigerGraph Cloud instance.
+For more detailed documentation of the Kubeflow platform, please see the link:https://www.kubeflow.org/docs/started/[Kubeflow documentation.]
+
+image::mlwb-home.png[Screenshot of the MLWB home page upon first launch]
+
+=== Example Business Workflow
+
+This is an example workflow to illustrate a use case for each component of ML Workbench on Cloud.
+
+. A business organization uses xref:cloud:start:overview.adoc[TigerGraph Cloud] to create a database for their complex data.
+. To solve a business problem with the data stored in their Cloud database, they decide to build a machine learning model.
+. They use the ML Workbench xref:notebooks.adoc[Notebook] feature to create a Python notebook connected to their TigerGraph instance in order to train the model.
+. A xref:tensorboard.adoc[Tensorboard] helps them visualize the process of training the model, and xref:auto-ml.adoc[] helps them tune the hyperparameters.
+. Once the model is trained, they can interact with it using their custom Python code in the Notebooks or use it as an API with the xref:model-serving.adoc[Model Server].
+
+
+== First launch
+
+Access ML Workbench from the TigerGraph Cloud main page.
+
+[NOTE]
+Your TigerGraph Cloud account must have access to a TigerGraph Cloud solution in order to connect that solution to an ML Workbench notebook.
+
+The first time anyone in a new TigerGraph Cloud organization accesses ML Workbench, they will see a prompt for a namespace.
+This namespace is analogous to a project name, managing the connection of one or several TigerGraph Cloud solutions with one or several ML Workbench tools.
+

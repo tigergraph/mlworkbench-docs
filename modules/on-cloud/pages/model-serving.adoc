@@ -1,0 +1,79 @@
+= Model Serving
+:experimental:
+
+Model serving is a way to make a pre-trained machine learning model available as a service.
+
+ML Workbench uses the link:https://www.kubeflow.org/docs/external-add-ons/kserve/webapp/[KServe Models UI] to display the KubeFlow InferenceServices.
+An InferenceService is a Kubernetes CustomResource (CR) that enables running inference requests on a trained model.
+
+image::model-servers.png[Screenshot of the Model Servers page upon first launch]
+
+== Introduction
+
+Click the Models tab on the left sidebar to access the list of model servers.
+
+Each model server is created by defining a list of attributes that describe how to access the model in YAML format.
+ML Workbench creates a standard API for each model so that new data can be sent to the model for predictions.
+
+Server scaling happens by default without any user input to dynamically spend resources on certain models.
+
+The attributes shown for each model server are as follows:
+
+|===
+|Attribute | Explanation
+
+|Status | Whether the model server is ready for API requests
+|Name  | User-generated name for the model server
+|Age | Time since the model server was created
+|Predictor | Name of the dataset used for the model
+|Runtime | Runtime version
+|Protocol | Version of the model that is being served
+|Storage URI | Location of the trained model, usually on cloud storage or Kubernetes PVC
+|===
+
+== Create a New Model
+
+=== Prerequisites
+
+* A trained model accessible on cloud storage or a Kubernetes PVC
+
+=== Procedure
+
+. Click btn:[+ New Model Server] at the top of the model list.
+. In YAML format, enter the attributes and location of the model.
+. Wait for ML Workbench to provision the necessary infrastructure.m
+
+== Model server details
+
+Once a model server is running, click on it to expand the view and reveal additional information.
+
+* Overview
+** InferenceService’s current and past statuses
+** Metadata
+** Internal and external API endpoints
+
+
+* Details
+** Model name and namespace (the name of your TigerGraph Cloud organization)
+** Container specifications
+
+* Logs
+** Model container log
+
+* YAML
+** The original InferenceService Kubernetes CDR specification as a YAML file
+
+== Example
+
+
+[source, yaml]
+----
+apiVersion: "serving.kserve.io/v1beta1"
+kind: "InferenceService"
+metadata:
+  name: "sklearn-iris"
+spec:
+  predictor:
+    sklearn:
+      storageUri: "gs://kfserving-examples/models/sklearn/1.0/model"
+----

@@ -1,0 +1,22 @@
+= High-level Architecture
+
+TigerGraph ML Workbench Developer or Enterprise Edition contains two major components:
+
+* A JupyterLab-based IDE
+* pyTigerGraph, the Python client for GDPS
+
+.High level architecture
+image::high-level-architecture-v1.png[Diagram of ML Workbench architecture]
+
+
+=== ML Workbench Jupyter Plugin
+The ML Workbench Jupyter Plugin is a JupyterLab-based development environment with TigerGraph specific utilities and components, such as a server manager and link to GraphStudio.
+In addition, all Python libraries such as PyTorch Geometric, DGL, and TGML come pre-installed, so you don’t have to worry about setting up the right Python environment.
+
+The plugin is included in the xref:on-prem:sandbox.adoc[sandbox option] for getting started with ML Workbench.
+
+=== pyTigerGraph
+
+pyTigerGraph is a Python package installed on the computer or server that does the machine learning training.
+The `tgml` package provides utilities such as vertex set splitting for training, validation, and testing, as well as graph data loaders for both PyTorch Geometric (PyG) and Deep Graph Library (DGL).
+As `tgml` is a Python package, it can be installed anywhere Python is used.

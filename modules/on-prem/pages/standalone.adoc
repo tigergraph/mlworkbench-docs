@@ -57,6 +57,8 @@ JupyterLab only has access to the folder where it is launched. If you need to ac
 
 == Next steps
 
-The next step after installation is xref:activate.adoc[activation].
+After installation, the next step is to xref:activate.adoc[].
 
-Then you can xref:tutorials:index.adoc[train your first model] by following the tutorials.
+You can then go to our xref:tutorials:index.adoc[] section.
+Follow the instructions, use our tutorials and download our latest notebook examples and data sets there to practice using the ML Workbench.
+

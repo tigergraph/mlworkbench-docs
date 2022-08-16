@@ -1,11 +1,11 @@
-= Resources
+= Tutorials and Sample Data
 :experimental:
 
 TigerGraph has a robust set of tutorials and training data sets available to learn ML Workbench.
 
 This section describes how to access these resources for your exploration needs.
 
-If you have previously set up ML Workbench via xref:getting-started:sandbox.adoc[the sandbox option], you can skip these steps since all tutorials and data are included in the sandbox.
+If you have previously set up ML Workbench via xref:on-prem:sandbox.adoc[the sandbox option], you can skip these steps since all tutorials and data are included in the sandbox.
 This section describes the process of running the tutorials on local or cloud TigerGraph instances.
 
 == Tutorials
@@ -13,7 +13,7 @@ This section describes the process of running the tutorials on local or cloud Ti
 TigerGraph's tutorials demonstrate each of the key Python functionalities of ML Workbench in the pyTigerGraph library.
 They include end-to-end working examples to showcase how to build and deploy a link prediction and node prediction application using cutting edge graph machine learning techniques such as GraphSage, Graph Attention Neural Network and Graph Convolutional Neural Network using the PyTorch Geometric and DGL ML frameworks.
 
-The tutorials are hosted on GitHub link:https://github.com/TigerGraph-DevLabs/mlworkbench-docs/[here]. To access them in a local JupyterLab instance, ensure that you have JupyterLab xref:getting-started:jupyterlab.adoc[and the Python packages installed], then follow these instructions:
+The tutorials are hosted on GitHub link:https://github.com/TigerGraph-DevLabs/mlworkbench-docs/[here]. To access them in a local JupyterLab instance, ensure that you have JupyterLab xref:on-prem:jupyterlab.adoc[and the Python packages installed], then follow these instructions:
 
 . Clone the tutorial repository. Use your terminal to navigate to a directory where you want to save the tutorial files and run this command:
 
