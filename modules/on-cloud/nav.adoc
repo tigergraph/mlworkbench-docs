@@ -1,4 +1,4 @@
-* xref:index.adoc[Cloud Setup]
+* xref:index.adoc[Cloud Setup (Preview)]
 ** xref:notebooks.adoc[]
 ** xref:tensorboard.adoc[]
 ** xref:model-serving.adoc[]

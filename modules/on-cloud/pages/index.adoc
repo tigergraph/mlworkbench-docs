@@ -1,8 +1,10 @@
 = On-Cloud Setup
+:description: Setup instructions for ML Workbench on TigerGraph Cloud.
 
 ML Workbench on Cloud is designed to require minimal setup.
 
-The Cloud version of ML Workbench is available by invitation only for a TigerGraph Cloud instance.
+Currently in its preview release, the Cloud version of ML Workbench is available by invitation only for a TigerGraph Cloud instance.
+If you are interested in experimenting or developing with the preview release of ML Workbench on Cloud, please contact sales@tigergraph.com.
 
 It is built on a Kubernetes/Kubeflow framework that enables notebook creation, Tensorboards, and model serving from one integrated platform.
 
