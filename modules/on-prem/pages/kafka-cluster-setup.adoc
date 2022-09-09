@@ -1,16 +1,60 @@
-= Set up ML Workbench Enterprise Edition
+= Set up Workbench with Kafka Streaming (Enterprise Only)
+:sectnums:
+:description: Steps to set up ML Workbench with Kafka streaming.
 
-ML Workbench offers two different communication methods for exporting data from your TigerGraph Database instance to your ML development environment: HTTPS and Kafka streaming.
-
+ML Workbench offers two different data transfer protocols for exporting data from your TigerGraph Server instance: HTTPS and Kafka streaming.
 HTTPS data is limited to 2GB of data export at a time, while Kafka streaming does not have this limitation.
-Kafka streaming is only available for the Enterprise Edition.
+Kafka streaming is only available for the Enterprise edition.
 
-== Setup
+NOTE: The ML Workbench supports the `SASL_PLAIN` authentication method for data streaming from Kafka.
 
-If you have already xref:activate.adoc[activated ML Workbench], no additional setup is required to use the HTTPS method.
+The default configurations of this procedure installs Kafka, ML Workbench, as well as TigerGraph Server.
+If you already have instances of these services running, you can remove the corresponding service from the configuration.
 
-If you plan to use Kafka on the Enterprise Edition to stream data out from a TigerGraph database, you need to provide the Kafka credentials so that data can be exported correctly.
+== Prerequisites
+* Docker is installed on your machine.
+* Your machine needs to have the following ports open:
+** 2181.
+** 19092.
+** 9092. if you configure Kafka to be listening on another port, then whichever taht port is must be open instead of 9092.
+* You have purchased the ML Workbench Enterprise Edition.
 
-The ML Workbench supports the `SASL_PLAIN` authentication method.
+NOTE: This procedure uses `docker-compose` and therefore requires Docker to be installed on your machine.
+If you need to set up Kafka Streaming without using Docker, please open a support ticket.
 
-There are several examples in link:https://github.com/TigerGraph-DevLabs/mlworkbench-docs/blob/main/tutorials/basics/3_neighborloader.ipynb[this tutorial] to showcase how to configure the dataloader to work with your Kafka cluster.
+== Procedure
+
+=== Install Kafka and Workbench
+The first step is to install Kafka on your machine.
+If you already have a running Kafka cluster, you can skip this step.
+
+. Download link:{attachmentsdir}/docker-compose.yaml[docker-compose.yaml].
+* The default configurations assume that you do not have a running TigerGraph instance or installed ML Workbench on your machine.
+. If you already have a TigerGraph Server instance running, or you have already installed ML Workbench, remove the services `tigergraph` or `mlwb` from the yaml file, respectively.
+. Replace `<public-ip-address>` on line 24 with the IP address of your machine.
+This IP address needs to be accessible both by your TigerGraph Server instance and ML Workbench.
+. In the same directory as the `docker-compose.yaml` file, run `docker-compose up -d`.
+
+
+=== Configure Workbench to use Kafka Streaming
+
+
+After xref:pytigergraph:getting-started:connection.adoc#_connect_to_a_graph_on_a_non_cloud_tigergraph_instance[configuring the connection between the Workbench and your TigerGraph instance], provide the address of your Kafka instance to the ML Workbench:
+
+[.wrap,python]
+----
+conn.gds.configureKafka(kafka_address="<kafka-ip-address>:9092") <1>
+----
+<1> Replace `<kafka-ip-address>` with the address you provided in the `docker-compose.yaml` file.
+
+=== Activate ML Workbench Enterprise edition
+
+You can skip this step if you have already activated the Enterprise Edition.
+
+Only the Enterprise edition of ML Workbench can stream data via Kafka from a TigerGraph Server instance.
+If you have purchased the Enterprise edition, you can use the credentials you received from the TigerGraph Sales team to obtain the activator and how to use it to activate the Enterprise edition.
+
+
+== Examples
+
+Refer to link:https://github.com/TigerGraph-DevLabs/mlworkbench-docs/blob/main/tutorials/basics/3_neighborloader.ipynb[the Data Loading tutorial] for more examples on how to configure the dataloader to work with your Kafka cluster.
