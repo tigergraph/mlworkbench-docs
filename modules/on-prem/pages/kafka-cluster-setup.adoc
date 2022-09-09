@@ -18,7 +18,7 @@ The ML Workbench supports the `SASL_PLAIN` authentication method.
 
 Method 1: Setting up Kafka using docker-compose 
 
-1. docker-compose file link:https://github.com/zhixian-tg/mlworkbench-docs/blob/main/modules/on-prem/pages/docker-compose.yaml [docker-compose.yaml]
+1. docker-compose file link:https://github.com/zhixian-tg/mlworkbench-docs/blob/main/modules/on-prem/pages/docker-compose.yaml[docker-compose.yaml]
 
 2. install kafka on your machine / VM
 `docker-compose up -d`
