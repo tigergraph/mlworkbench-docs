@@ -34,5 +34,4 @@ Note: you need to open these ports in the firewall setting: 2181, 19092, 9092 (o
 
 === Method 2: Setting up Kafka cluster (TODO)
 
-== 
-There are several examples in link:https://github.com/TigerGraph-DevLabs/mlworkbench-docs/blob/main/tutorials/basics/3_neighborloader.ipynb[this tutorial] to showcase how to configure the dataloader to work with your Kafka cluster.
+== Tutorials (TODO)
