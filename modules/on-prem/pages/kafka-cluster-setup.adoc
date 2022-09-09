@@ -5,7 +5,7 @@ ML Workbench offers two different communication methods for exporting data from 
 HTTPS data is limited to 2GB of data export at a time, while Kafka streaming does not have this limitation.
 Kafka streaming is only available for the Enterprise Edition.
 
-== Setup
+== Activate ML Workbench
 
 If you have already xref:activate.adoc[activated ML Workbench], no additional setup is required to use the HTTPS method.
 
@@ -13,4 +13,22 @@ If you plan to use Kafka on the Enterprise Edition to stream data out from a Tig
 
 The ML Workbench supports the `SASL_PLAIN` authentication method.
 
+
+== Setting up Kafka
+
+Method 1: Setting up Kafka using docker-compose 
+
+1. docker-compose file docker-compose.yaml[docker-compose.yaml]
+
+2. install kafka on your machine / VM
+`docker-compose up -d`
+
+3. add kafka into your notebook config
+
+`conn.gds.configureKafka(kafka_address="<your-kafka-ip-address>:9092")`
+
+
+Method 2: Setting up Kafka cluster (TODO)
+
+== 
 There are several examples in link:https://github.com/TigerGraph-DevLabs/mlworkbench-docs/blob/main/tutorials/basics/3_neighborloader.ipynb[this tutorial] to showcase how to configure the dataloader to work with your Kafka cluster.
