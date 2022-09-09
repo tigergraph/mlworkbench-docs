@@ -16,13 +16,12 @@ The ML Workbench supports the `SASL_PLAIN` authentication method.
 
 == Setting up Kafka
 
-Method 1: Setting up Kafka using docker-compose 
+=== Method 1: Setting up Kafka using docker-compose 
 
 1. docker-compose file link:https://github.com/zhixian-tg/mlworkbench-docs/blob/main/modules/on-prem/pages/docker-compose.yaml[docker-compose.yaml]
 
 2. install kafka on your machine / VM
-`docker-compose up -d`
-
+`docker-compose up -d`  
 Note: you need to open these ports in the firewall setting: 2181, 19092, 9092 (or whichever port is specified as an external listener)
 
 3. add kafka into your notebook config
@@ -30,7 +29,7 @@ Note: you need to open these ports in the firewall setting: 2181, 19092, 9092 (o
 `conn.gds.configureKafka(kafka_address="<your-kafka-ip-address>:9092")`
 
 
-Method 2: Setting up Kafka cluster (TODO)
+=== Method 2: Setting up Kafka cluster (TODO)
 
 == 
 There are several examples in link:https://github.com/TigerGraph-DevLabs/mlworkbench-docs/blob/main/tutorials/basics/3_neighborloader.ipynb[this tutorial] to showcase how to configure the dataloader to work with your Kafka cluster.
