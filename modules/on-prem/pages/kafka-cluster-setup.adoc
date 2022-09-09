@@ -20,8 +20,11 @@ The ML Workbench supports the `SASL_PLAIN` authentication method.
 
 1. docker-compose file link:https://github.com/zhixian-tg/mlworkbench-docs/blob/main/modules/on-prem/pages/docker-compose.yaml[docker-compose.yaml]
 
+Note: change <public-ip-address> to your own public ip address
+
 2. install kafka on your machine / VM
 `docker-compose up -d`  
+
 Note: you need to open these ports in the firewall setting: 2181, 19092, 9092 (or whichever port is specified as an external listener)
 
 3. add kafka into your notebook config
