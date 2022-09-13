@@ -2,11 +2,11 @@
 :sectnums:
 :description: Steps to set up ML Workbench with Kafka streaming.
 
-ML Workbench offers two different data transfer protocols for exporting data from your TigerGraph Server instance: HTTPS and Kafka streaming.
-HTTPS data is limited to 2GB of data export at a time, while Kafka streaming does not have this limitation.
+ML Workbench offers two different data transfer protocols for exporting data from your TigerGraph Server instance: HTTP and Kafka streaming.
+HTTP data is limited to 2GB of data export at a time, while Kafka streaming does not have this limitation.
 Kafka streaming is only available for the Enterprise edition.
 
-NOTE: The ML Workbench supports the `SASL_PLAIN` authentication method for data streaming from Kafka.
+NOTE: The ML Workbench supports `PLAINTEXT`, `SASL_PLAINTEXT`, and `SASL_SSL` authentication methods with your kafka cluster.
 
 The default configurations of this procedure installs Kafka, ML Workbench, as well as TigerGraph Server.
 If you already have instances of these services running, you can remove the corresponding service from the configuration.
