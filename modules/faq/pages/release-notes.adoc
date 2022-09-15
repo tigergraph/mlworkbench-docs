@@ -1,5 +1,25 @@
 = Release Notes
 
+== TigerGraph ML Workbench 1.1 (September 2022)
+
+=== New features
+
+* TensorFlow support for homogeneous GNNs via the Spektral library
+* Heterogeneous Graph Dataloading support for DGL
+* Support for lists of strings in dataloaders
+* Activator for both Developer and Enterprise editions of the ML Workbench (see link:https://act.tigergraphlabs.com[] for details)
+
+=== Updated features
+
+* Fixed KeyError when creating a data loader on a graph where `PrimaryIdAsAttribute` is `False`
+* Error catch if Kafka dataloader doesn't run in asynchronous mode
+* Schema now refreshes during dataloader instantiation and featurizer attribute addition
+* Connection instantiation time reduced
+* Reinstall query if it is disabled
+* Confirm Kafka topic is created before subscription
+* Streamlined Kafka resource usage
+* Allow multiple consumers on the same data
+* Improved deprecation warnings
 
 == TigerGraph ML Workbench 1.0 (August 2022)
 
