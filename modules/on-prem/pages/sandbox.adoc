@@ -5,7 +5,7 @@
 
 This page walks you through running the TigerGraph ML Workbench in a Docker container.
 
-To help you get started quickly, we provide a “sandbox” Docker image that has the TigerGraph database, GDPS, and ML Workbench pre-installed.
+To help you get started quickly, we provide a “sandbox” Docker image that has the TigerGraph database and ML Workbench pre-installed.
 The link:https://graphsandnetworks.com/the-cora-dataset/[“Cora” dataset] and the link:https://www.imdb.com/interfaces/[IMDB datasets] used for tutorials are also preloaded into the database.
 
 Use this link to download Docker if needed: link:https://docs.docker.com/get-docker/[Get Docker]
@@ -34,7 +34,6 @@ You can use `docker logs` to retrieve the URL for JupyterLab.
 * `-p`: map a port of the host (14022) to a port of the container (22).
 ** Port 22: SSH server
 ** Ports 9000 and 14240: TigerGraph database
-** Port 8000: GDPS
 ** Port 8888: ML Workbench
 ** Port 6006: Tensorboard.
 * `--name`: name of the container.

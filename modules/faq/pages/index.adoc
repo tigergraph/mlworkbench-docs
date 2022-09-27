@@ -16,7 +16,6 @@ Our team is actively working on bringing GNN training and inference into TigerGr
 
 ==  I have TigerGraph DB set up with AWS. Would ML Workbench still work with a 3rd party Cloud provider?
 Yes. ML Workbench is compatible with TigerGraph database setups both on your own on-prem servers and with a 3rd party cloud such as AWS or GCP.
-The GDPS component must be deployed onto the same server as the TigerGraph database for ML Workbench to be able to communicate with your database instances.
 
 ==  Does ML Workbench work with TigerGraph Cloud?
 Yes. ML Workbench works with your TigerGraph Cloud instances. You can simply make a connection to your cloud instances by providing the login credentials.
