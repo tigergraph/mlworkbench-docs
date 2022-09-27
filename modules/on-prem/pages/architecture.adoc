@@ -3,7 +3,7 @@
 TigerGraph ML Workbench Developer or Enterprise Edition contains two major components:
 
 * A JupyterLab-based IDE
-* pyTigerGraph, the Python client for GDPS
+* pyTigerGraph, the Python client
 
 .High level architecture
 image::high-level-architecture-v1.png[Diagram of ML Workbench architecture]
