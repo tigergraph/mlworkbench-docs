@@ -1,6 +1,6 @@
 = Release Notes
 
-== TigerGraph ML Workbench 1.1 (September 2022)
+== TigerGraph ML Workbench 1.1 (October 2022)
 
 === New features
 

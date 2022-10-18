@@ -22,7 +22,7 @@ TigerGraph recommends allocating at least 8 CPUs and 16 GB of memory.
 +
 [.wrap,console]
 ----
-docker run -it -p 14022:22 -p 8888:8888 -p 9000:9000 -p 14240:14240 -p 6006:6006  --name tgsandbox --ulimit nofile=1000000:1000000 -v ~/tgsandbox:/home/tigergraph/tgsandbox/save tigergraphml/sandbox:1.0.0
+docker run -it -p 14022:22 -p 8888:8888 -p 9000:9000 -p 14240:14240 -p 6006:6006  --name tgsandbox --ulimit nofile=1000000:1000000 -v ~/tgsandbox:/home/tigergraph/tgsandbox/save tigergraphml/sandbox:1.1.0
 ----
 +
 --
@@ -31,7 +31,7 @@ Here is a breakdown of the parameters in the previous command:
 * `-it`: run the container interactively and allocate a pseudo-TTY.
 If you'd rather run the container non-interactively, use `-d` instead.
 You can use `docker logs` to retrieve the URL for JupyterLab.
-* `-p`: map a port of the host (14022) to a port of the container (22).
+* `-p`: map a port of the host (e.g., 14022) to a port of the container (e.g., 22).
 ** Port 22: SSH server
 ** Ports 9000 and 14240: TigerGraph database
 ** Port 8888: ML Workbench

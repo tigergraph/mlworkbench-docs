@@ -39,7 +39,7 @@ services:
         hard: 1000000
 
   mlwb:
-    image: tigergraphml/mlworkbench:1.0.0-pytorch
+    image: tigergraphml/mlworkbench:1.1.0
     container_name: mlworkbench
     ports:
       - "8888:8888"
