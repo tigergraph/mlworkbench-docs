@@ -37,7 +37,7 @@ If you would like to access JupyterLab from a remote browser, type `jupyter lab 
 
 JupyterLab only has access to the folder where it is launched. If you need to access files at a different location, launch JupyterLab in that location.
 
-To completely uninstall, remove the folder where you installed the workbench, clean the `.zshrc` file in your home directory if you allowed the installer to initialize your system, and remove the `$HOME/.jupyter/lab/user-settings/@tigergraph` folder.
+To completely uninstall, remove the folder where you installed the workbench, delete the "conda initialized" section in the `.zshrc` file in your home directory if you allowed the installer to initialize your system, and remove the `$HOME/.jupyter/lab/user-settings/@tigergraph` folder.
 
 == Linux installer
 
@@ -57,7 +57,7 @@ If you would like to access JupyterLab from a remote browser, type `jupyter lab 
 
 JupyterLab only has access to the folder where it is launched. If you need to access files at a different location, launch JupyterLab in that location.
 
-To completely uninstall, remove the folder where you installed the workbench, clean the shell profile (normally the `.bashrc` file in your home directory) if you allowed the installer to initialize your system, and remove the `$HOME/.jupyter/lab/user-settings/@tigergraph` folder.
+To completely uninstall, remove the folder where you installed the workbench, delete the "conda initialized" section in the shell profile (normally the `.bashrc` file in your home directory) if you allowed the installer to initialize your system, and remove the `$HOME/.jupyter/lab/user-settings/@tigergraph` folder.
 
 == Next steps
 
