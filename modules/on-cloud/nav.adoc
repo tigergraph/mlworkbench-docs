@@ -1,5 +1,7 @@
-* xref:index.adoc[Cloud Setup (Preview)]
-** xref:notebooks.adoc[]
-** xref:tensorboard.adoc[]
-** xref:model-serving.adoc[]
-** xref:auto-ml.adoc[Experiments (AutoML)]
+* Cloud
+** xref:on-tgcloud.adoc[On tgcloud.io]
+** xref:mlwb-service.adoc[MLWB Service (Preview)]
+*** xref:notebooks.adoc[]
+*** xref:tensorboard.adoc[]
+*** xref:model-serving.adoc[]
+*** xref:auto-ml.adoc[Experiments (AutoML)]
