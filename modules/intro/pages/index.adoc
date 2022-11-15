@@ -17,12 +17,11 @@ It provides robust and efficient data pipelines at the Python level to interact 
 * graph feature generation
 * data batching and/or streaming for ML model development, training, and inference purposes.
 
-xref:on-cloud:mlwb-service.adoc[The Kubeflow implementation of ML Workbench] is available in a fully-managed Jupyter notebook instance with:
-
-* on-demand computation
-* distributed AutoML for hyperparameter tuning
-* ML pipeline management & orchestration
-* model deployment and serverless production serving
+//xref:on-cloud:mlwb-service.adoc[The Kubeflow implementation of ML Workbench] is available in a fully-managed Jupyter notebook instance with:
+//* on-demand computation
+//* distributed AutoML for hyperparameter tuning
+//* ML pipeline management & orchestration
+//* model deployment and serverless production serving
 
 ML Workbench also comes in standalone Developer or Enterprise editions as a Jupyter-based Python development framework for direct integration with existing machine learning infrastructure.
 
