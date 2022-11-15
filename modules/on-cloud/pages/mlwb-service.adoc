@@ -1,5 +1,5 @@
 = ML Workbench On-Cloud Setup (Preview)
-:description: Setup instructions for ML Workbench on TigerGraph Cloud.
+:description: Setup instructions for ML Workbench as a service.
 
 ML Workbench Service on Cloud is designed to require minimal setup.
 
