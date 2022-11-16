@@ -13,34 +13,16 @@ This section describes the process of running the tutorials on local or cloud Ti
 TigerGraph's tutorials demonstrate each of the key Python functionalities of ML Workbench in the pyTigerGraph library.
 They include end-to-end working examples to showcase how to build and deploy a link prediction and node prediction application using cutting edge graph machine learning techniques such as GraphSage, Graph Attention Neural Network and Graph Convolutional Neural Network using the PyTorch Geometric and DGL ML frameworks.
 
-The tutorials are hosted on GitHub link:https://github.com/TigerGraph-DevLabs/mlworkbench-docs/[here]. To access them in a local JupyterLab instance, ensure that you have JupyterLab xref:on-prem:jupyterlab.adoc[and the Python packages installed], then follow these instructions:
+The tutorials are hosted on GitHub link:https://github.com/tigergraph/graph-ml-notebooks[here]. To access them in a local JupyterLab instance, ensure that you have JupyterLab xref:on-prem:jupyterlab.adoc[and the Python packages installed], then follow these instructions:
 
 . Clone the tutorial repository. Use your terminal to navigate to a directory where you want to save the tutorial files and run this command:
 
 [source.wrap,console]
 ----
-$ git clone https://github.com/TigerGraph-DevLabs/mlworkbench-docs.git
+$ git clone https://github.com/tigergraph/graph-ml-notebooks.git
 ----
 
 [start=2]
 . In that same directory, run `jupyter lab`, which will create a new JupyterLab instance that you can use to browse the folders and open the tutorial files.
 
 image::tutorials_cloned.png[Tutorials folder]
-
-To run the tutorials on a TigerGraph Cloud solution, xref:cloud:start:overview.adoc[create a new solution on TigerGraph Cloud] to follow along.
-You may also refer to the pyTigerGraph documentation on cloud connections: xref:pytigergraph:getting-started:connection.adoc[]
-
-== Sample Data
-
-Our tutorial notebooks refer to two real datasets and a synthetic dataset.
-We leveraged the link:https://github.com/kimiyoung/planetoid/[Cora] dataset to build a node classification application and a link prediction application using GNNs.
-
-We also have the link:https://www.imdb.com/interfaces/[IMDB] dataset for heterogeneous graphs.
-
-Otherwise, you can follow our link:https://github.com/TigerGraph-DevLabs/mlworkbench-docs/blob/main/tutorials/basics/0_data_ingestion.ipynb[our first tutorial notebook] to download and import the sample dataset to your DB instance by following the section “Cora Dataset“ and “IMDB Dataset”.
-
-Be sure to familiarize yourself with the process of connecting pyTigerGraph to a TigerGraph instance. See xref:pytigergraph:getting-started:index.adoc[Getting Started with pyTigerGraph] for instructions.
-
-Use this link to download the example graphs for a local TigerGraph instance: link:https://tigergraph-public-data.s3.us-west-1.amazonaws.com/example_graphs/example_graphs.tar.gz[Download Example Graphs]
-
-

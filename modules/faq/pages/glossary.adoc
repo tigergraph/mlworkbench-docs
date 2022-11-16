@@ -14,7 +14,7 @@ For further details about specific KubeFlow or Kubernetes services, see their re
 
 A general term for research and projects with the goal of automating the process of creating a machine learning model from the source data.
 
-== InferenceService
+//== InferenceService
 
 == Katib
 
@@ -23,11 +23,11 @@ Katib is the core of the Experiments (AutoML) tab in ML Workbench.
 
 For more information, see link:https://www.kubeflow.org/docs/components/katib/overview/[the official Katib documentation.]
 
-== Kubeflow
+//== Kubeflow
 
-== Kubernetes
-
-== KServe
+//== Kubernetes
+//
+//== KServe
 
 == Model Serving
 

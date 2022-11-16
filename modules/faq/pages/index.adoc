@@ -16,9 +16,9 @@ Our team is actively working on bringing GNN training and inference into TigerGr
 
 ==  I have TigerGraph DB set up with AWS. Would ML Workbench still work with a 3rd party Cloud provider?
 Yes. ML Workbench is compatible with TigerGraph database setups both on your own on-prem servers and with a 3rd party cloud such as AWS or GCP.
-
-==  Does ML Workbench work with TigerGraph Cloud?
-Yes. ML Workbench works with your TigerGraph Cloud instances. You can simply make a connection to your cloud instances by providing the login credentials.
+//
+//==  Does ML Workbench work with TigerGraph Cloud?
+//Yes. ML Workbench works with your TigerGraph Cloud instances. You can simply make a connection to your cloud instances by providing the login credentials.
 
 ==  The data set used in your Cora example notebooks forms a homogeneous graph. Can we train GNN using heterogeneous graph data?
 Yes. With the ML Workbench V1 GA release, we now support GNN training on a heterogeneous graph. Please check out our examples using the IMDB data set.
