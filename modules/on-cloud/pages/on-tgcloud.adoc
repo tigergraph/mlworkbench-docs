@@ -24,6 +24,7 @@ From the Tools dropdown menu on a provisioned cluster, choose btn:[Machine Learn
 image::mlwb-dropdown.png[]
 
 You can also view a list of all clusters by going to the Tools menu on the left (or any nine-dot TigerGraph Suite button) and going to ML Workbench.
+These options only appear with Machine Learning Workbench-enabled clusters running TigerGraph version 3.8.0 or newer.
 
 image::family-of-apps.png[]
 
