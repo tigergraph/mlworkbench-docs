@@ -28,6 +28,10 @@ These options only appear with Machine Learning Workbench-enabled clusters runni
 
 image::family-of-apps.png[]
 
+[NOTE]
+If you access a cluster with ML Workbench through its `<domain>.tgcloud.io` domain name, it will not appear in the TigerGraph Suite display.
+It can still be accessed through the Tools menu.
+
 Click on btn:[ML Workbench] to see a list of clusters with ML Workbench enabled.
 
 image::mlwb-connect-to-cluster.png[]
