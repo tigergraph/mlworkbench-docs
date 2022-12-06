@@ -1,10 +1,8 @@
 = Activate ML Workbench
 
 After the on-prem ML Workbench setup is complete, the next step is to activate ML Workbench on your on-prem TigerGraph database instance.
-This is a prerequisite for some ML Workbench core functionality.
-
-[NOTE]
-If you have any existing UDFs in your TigerGraph instance, back them up before installation by making a copy of the existing UDF file.
+This is a prerequisite for some ML Workbench core functionality. The activator requires GLIBC >= 2.25. Please upgrade your GLIBC if you 
+get "GLIBC not found" error.
 
 == Developer Edition
 

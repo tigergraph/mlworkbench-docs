@@ -11,7 +11,7 @@ In the console, run this command:
 
 [source, bash]
 ----
-docker run -it -p 8888:8888 --name mlworkbench -v ~/mlworkbench:/home/tigergraph/save tigergraphml/mlworkbench:1.0.0
+docker run -it -p 8888:8888 --name mlworkbench -v ~/mlworkbench:/home/tigergraph/save tigergraphml/mlworkbench:1.1.0
 ----
 
 This command prints the link to the JupyterLab workbench in a format similar to `127.0.0.1:8888/lab?token=`. Use this link in your browser to access the workbench, which is a customized version of JupyterLab.
@@ -21,14 +21,14 @@ If the Docker container is running remotely, open port 8888 on the remote machin
 
 == Mac OS installer
 
-. Download the installer at this link: link:https://tg-mlworkbench.s3.us-west-1.amazonaws.com/jupyterlab/MLWorkbench-1.0.0-MacOSX-x86_64.sh[Download MLWorkbench-1.0.0-MacOSX-x86_64.sh]
+. Download the installer at this link: link:https://tg-mlworkbench.s3.us-west-1.amazonaws.com/jupyterlab/MLWorkbench-1.1.0-MacOSX-x86_64.sh[Download MLWorkbench-1.1.0-MacOSX-x86_64.sh]
 . Open a Terminal window in the folder where the installer was downloaded.
-. Run the command `bash MLWorkbench-1.0.0-MacOSX-x86_64.sh` and follow the prompts to install.
+. Run the command `bash MLWorkbench-1.1.0-MacOSX-x86_64.sh` and follow the prompts to install.
 
 The installation prompt asks whether you want to "initialize."
 
 * If you agree to initialize, it will change your default Python environment to the workbench.
-* If you decline, the ML workbench still functions, but you will need to activate the Python environment before going to the JupyterLab.
+* If you decline, the ML workbench still functions, but you will need to activate the mlworkbench conda environment before launching JupyterLab. 
 
 [start=4]
 . Relaunch Terminal for the PATH change to take effect.
@@ -37,16 +37,18 @@ If you would like to access JupyterLab from a remote browser, type `jupyter lab 
 
 JupyterLab only has access to the folder where it is launched. If you need to access files at a different location, launch JupyterLab in that location.
 
+To completely uninstall, remove the folder where you installed the workbench, delete the "conda initialized" section in the `.zshrc` file in your home directory if you allowed the installer to initialize your system, and remove the `$HOME/.jupyter/lab/user-settings/@tigergraph` folder.
+
 == Linux installer
 
-. Download the installer at this link: link:https://tg-mlworkbench.s3.us-west-1.amazonaws.com/jupyterlab/MLWorkbench-1.0.0-Linux-x86_64.sh[Download MLWorkbench-1.0.0-Linux-x86_64.sh]
+. Download the installer at this link: link:https://tg-mlworkbench.s3.us-west-1.amazonaws.com/jupyterlab/MLWorkbench-1.1.0-Linux-x86_64.sh[Download MLWorkbench-1.1.0-Linux-x86_64.sh]
 . Open the terminal and navigate to where the installer was downloaded.
-. Run the command `bash MLWorkbench-1.0.0-Linux-x86_64.sh` and follow the prompts to install.
+. Run the command `bash MLWorkbench-1.1.0-Linux-x86_64.sh` and follow the prompts to install.
 
 The installation prompt asks whether you want to "initialize."
 
 * If you agree to initialize, it will change your default Python environment to the workbench.
-* If you decline, the ML workbench still functions, but you will need to type the full path of the `jupyter` executable to start it.
+* If you decline, the ML workbench still functions, but you will need to activate the mlworkbench conda environment before launching JupyterLab.
 
 [start=4]
 . Relaunch the terminal for the PATH change to take effect.
@@ -54,6 +56,8 @@ The installation prompt asks whether you want to "initialize."
 If you would like to access JupyterLab from a remote browser, type `jupyter lab --ip=0.0.0.0 --no-browser` instead.
 
 JupyterLab only has access to the folder where it is launched. If you need to access files at a different location, launch JupyterLab in that location.
+
+To completely uninstall, remove the folder where you installed the workbench, delete the "conda initialized" section in the shell profile (normally the `.bashrc` file in your home directory) if you allowed the installer to initialize your system, and remove the `$HOME/.jupyter/lab/user-settings/@tigergraph` folder.
 
 == Next steps
 
