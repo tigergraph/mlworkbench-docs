@@ -1,14 +1,14 @@
 = Editions
 
-TigerGraph ML Workbench is available as a service through TigerGraph Cloud or standalone in two editions, Developer and Enterprise.
+TigerGraph ML Workbench is available as a service through TigerGraph Cloud or standalone in two editions, Community and Enterprise.
 
-While both on-prem editions offer the same useful Python-level features for your data science needs, the Enterprise edition offers more powerful features to support production-level model training on enterprise-level data sets.
+While both on-prem editions offer useful Python-level features for your data science needs, the Enterprise edition offers more powerful features to support production-level model training on enterprise-level data sets.
 
 The tables below can help you compare the key differences between the editions.
 
 == ML Workbench on TigerGraph Cloud
 
-ML Workbench on TigerGraph Cloud is available through a xref:on-cloud:on-tgcloud.adoc[Cloud Starter Kit] selected when you provision a new Cloud instance.
+The Enterprise Edition ML Workbench on TigerGraph Cloud is available through a xref:on-cloud:on-tgcloud.adoc[Cloud Starter Kit] selected when you provision a new Cloud instance.
 This is a direct link to a ML Workbench instance with a Jupyter Notebook introduction for you to begin with the xref:tutorials:index.adoc[tutorials] or with your own data.
 
 //The second is currently invitation-only. Built on KubeFlow, it offers several unique AutoML and visualization features conveniently in a single web framework.
@@ -20,12 +20,12 @@ This is a direct link to a ML Workbench instance with a Jupyter Notebook introdu
 //Please see the link:https://www.tigergraph.com/ml-workbench/[official product page] for early access information.
 
 
-== Developer and Enterprise On-Prem Editions
+== Community and Enterprise On-Prem Editions
 
 === Features
 [cols="1,1,1"]
 |====
-| |Developer |Enterprise
+| |Community |Enterprise
 
 |Compatibility
 a|* TigerGraph Database
@@ -94,7 +94,7 @@ a|* 10 hr Professional Service / Consulting on Solution Building
 
 [cols="1,1,1"]
 |====
-| | Developer Edition | Enterprise Edition
+| | Community Edition | Enterprise Edition
 
 |Purpose
 a|* Learning Graph Databases
