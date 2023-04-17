@@ -1,5 +1,29 @@
 = Release Notes
 
+== TigerGraph ML Workbench 1.3
+
+=== New features
+
+* Two new xref:1.3@pytigergraph:gds:dataloaders.adoc[data loader classes]: `HGTLoader` and `NodePiece`.
+* Callback functions to all xref:1.3@pytigergraph:gds:gds.adoc[data loader factories]: users can write functions to process the batch in a background thread before it is passed into the training loop.
+* A delimiter parameter to all xref:1.3@pytigergraph:gds.adoc[data loader factories]: users can choose what delimiter they want to separate attributes they are loading from the graph.
+* `customizeHeader()` function to change default timeout and response size values.
+
+=== Updated features
+
+* Template query support in the xref:1.3@pytigergraph:gds:featurizer.adoc[featurizer] (requires TigerGraph Database version 3.9+).
+* Data splitters to automatically perform a schema change if needed to add attributes to the database.
+* Support for multi-edges in the `upsertEdges()` function.
+* Better error messaging.
+
+=== Fixes
+
+* Fixed SSL certificate handling when custom certificate is used.
+* Removed ANSI escape characters from output of `.gsql()` calls.
+* Improved the logic for shuffling vertices in dataloaders when `filter_by` attribute was used.
+* Improved the batching algorithm in dataloaders so that the output batches have a consistent batch size.
+* Changed `getVertexCount()` endpoint to more scalable solution.
+
 == TigerGraph ML Workbench 1.1 (September 2022)
 
 === New features
