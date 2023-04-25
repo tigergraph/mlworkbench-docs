@@ -1,6 +1,6 @@
 = High-level Architecture
 
-TigerGraph ML Workbench Developer or Enterprise Edition contains two major components:
+TigerGraph ML Workbench Community or Enterprise Edition contains two major components:
 
 * A JupyterLab-based IDE
 * pyTigerGraph, the Python client
