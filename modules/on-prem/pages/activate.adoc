@@ -10,9 +10,9 @@ To activate ML Workbench on-prem, UDFs must be enabled by a TigerGraph server us
 Follow the instructions here to enable UDFs: xref:gsql-ref:querying:func/query-user-defined-functions.adoc#enable-uploading-udfs-through-gsql[Enable User-Defined Functions].
 It is recommended that you disable UDFs again after activating ML Workbench for security reasons.
 
-== Developer Edition
+== Community Edition
 
-. Request the Developer Edition from the TigerGraph product page.
+. Request the Community Edition from the TigerGraph product page.
 . Follow the instructions in your email to download and install ML Workbench.
 . Go to link:https://act.tigergraphlabs.com/[https://act.tigergraphlabs.com/] to download the activator.
 . Run the activator according to the instructions on the Activator page.

@@ -30,7 +30,7 @@
 * TensorFlow support for homogeneous GNNs via the Spektral library
 * Heterogeneous Graph Dataloading support for DGL
 * Support for lists of strings in dataloaders
-* Activator for both Developer and Enterprise editions of the ML Workbench (see link:https://act.tigergraphlabs.com[] for details)
+* Activator for both Community and Enterprise editions of the ML Workbench (see link:https://act.tigergraphlabs.com[] for details)
 
 === Updated features
 
