@@ -4,9 +4,9 @@ After the on-prem ML Workbench setup is complete, the next step is to activate M
 This is a prerequisite for some ML Workbench core functionality. The activator requires GLIBC >= 2.25. Please upgrade your GLIBC if you 
 get "GLIBC not found" error.
 
-== Developer Edition
+== Community Edition
 
-. Request the Developer Edition from the TigerGraph product page.
+. Request the Community Edition from the TigerGraph product page.
 . Follow the instructions in your email to download and install ML Workbench.
 . Go to link:https://act.tigergraphlabs.com/[https://act.tigergraphlabs.com/] to download the activator.
 . Run the activator according to the instructions on the Activator page.

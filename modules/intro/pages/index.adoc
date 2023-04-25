@@ -9,7 +9,7 @@
 
 TigerGraph Machine Learning Workbench is a platform designed for data scientists and AI/ML practitioners to easily develop graph-based machine learning models with production-scale graph data stored in TigerGraph.
 
-It is available as a service through TigerGraph Cloud or standalone in two editions, Developer and Enterprise.
+It is available as a service through TigerGraph Cloud or standalone in two editions, Community and Enterprise.
 It provides robust and efficient data pipelines at the Python level to interact with the TigerGraph database to perform common data processing functions such as:
 
 * data partitioning
@@ -24,7 +24,7 @@ ML Workbench on Cloud provides an ML solution from development to deployment inc
 * ML pipeline management & orchestration
 * model deployment and serverless production serving
 
-ML Workbench also comes in standalone Developer or Enterprise editions as a Jupyter-based Python development framework for direct integration with existing machine learning infrastructure.
+ML Workbench also comes in standalone Community or Enterprise editions as a Jupyter-based Python development framework for direct integration with existing machine learning infrastructure.
 
 It is compatible with other popular ML frameworks such as PyTorch Geometric, DGL, and TensorFlow as well as cloud infrastructure including Amazon SageMaker, Google Vertex AI and Microsoft Azure.
 
