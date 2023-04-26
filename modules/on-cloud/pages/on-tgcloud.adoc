@@ -1,36 +1,33 @@
 = ML Workbench on TigerGraph Cloud
-:experimental:
 
-ML Workbench is offered as a starter kit on xref:cloud:start:overview.adoc[] when creating a new cluster.
+The ML Workbench can be included when you create a new database instance on TigerGraph Cloud.
 
-This page explains how to set up a new cluster with ML Workbench enabled and access the starter kit.
+== Create a Cloud Cluster with ML Workbench
 
-== Set up an ML Workbench-enabled cluster
+. Go to https://tgcloud.io.  Log on to your account or xref:cloud:start:overview.adoc#_get_started_with_tigergraph_cloud[sign up].
 
-Follow the instructions in xref:cloud:solutions:create-a-solution.adoc[] to log in to TigerGraph Cloud and begin setting up a new cluster.
+. Enter your payment information.
 
-At the bottom of the stage, under *Advanced settings*, click the switch labeled btn:[Enable Machine Learning Workbench].
+. Click the btn:[Create Cluster] button.
 
-image::create-cluster-mlwb.png[]
+. From the menu at the top, select btn:[ML Workbench], then follow the same instructions as for xref:cloud:solutions:create-a-solution.adoc[creating an enterprise-tier instance].
 
-This limits the starter kits to just one, the Graph Machine Learning in Practice starter kit.
-
-With this option selected, finish creating your cluster and wait for it to be provisioned.
+image::create-cluster-mlwb-3.9.png[]
+It will take a few minutes for your instance to be ready.
 
 == Go to ML Workbench on TigerGraph Cloud
 
-From the Tools dropdown menu on a provisioned cluster, choose btn:[Machine Learning Workbench].
+When your new instance is ready, it will be listed on the My Clusters page, probably at the top because it is the newest one.
 
-image::mlwb-dropdown.png[]
+image::mlwb-dropdown-3.9.png[]
 
-You can also view a list of all clusters by going to the Tools menu on the left (or any nine-dot TigerGraph Suite button) and going to ML Workbench.
+From the Tools dropdown menu, choose btn:[Machine Learning Workbench].
+
+Alternately, you can view a list of all clusters by going to the Tools menu on the left (or any nine-dot TigerGraph Suite button) and going to ML Workbench.
 These options only appear with Machine Learning Workbench-enabled clusters running TigerGraph version 3.8.0 or newer.
 
 image::family-of-apps.png[]
 
-[NOTE]
-If you access a cluster with ML Workbench through its `<domain>.tgcloud.io` domain name, it will not appear in the TigerGraph Suite display.
-It can still be accessed through the Tools menu.
 
 Click on btn:[ML Workbench] to see a list of clusters with ML Workbench enabled.
 
@@ -38,6 +35,9 @@ image::mlwb-connect-to-cluster.png[]
 
 == Get started with ML Workbench
 
-Included with the ML Workbench is a Jupyter notebook readme to help you get started. It has all necessary ML Workbench notebooks to learn the basics so that you can begin running machine learning applications on TigerGraph Cloud.
+Included with the ML Workbench is a Jupyter notebook README file to help you get started:
+
+* Set up secure access between your ML Workbench and your database.
+* Learn the basics so that you can begin running machine learning applications on TigerGraph Cloud.
 
 image::mlwb-ipynb-main.png[]
