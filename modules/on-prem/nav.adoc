@@ -2,6 +2,6 @@
 ** xref:sandbox.adoc[]
 ** xref:standalone.adoc[Install Workbench on macOS or Linux]
 ** xref:jupyterlab.adoc[Set up Workbench on  Jupyter Server]
-** xref:kafka-cluster-setup.adoc[]
 ** xref:activate.adoc[]
-** xref:architecture.adoc[Architecture Reference]
+** xref:kafka-cluster-setup.adoc[]
+//** xref:architecture.adoc[Architecture Reference]

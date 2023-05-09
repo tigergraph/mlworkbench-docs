@@ -1,7 +1,7 @@
 = Machine Learning Workbench FAQs
 
-== Does ML Workbench need to be configured differently for a TigerGraph database instance on a cluster?
-No. Whether your TigerGraph database instance is set up on a single machine or on a cluster, the setup process for ML Workbench is the same.
+== Does ML Workbench work with both single-server and multi-node TigerGraph databases?
+Yes. Whether your TigerGraph database instance is set up on a single machine or on a cluster, the setup process for ML Workbench is the same.
 
 == Can I use ML Workbench to train a graph neural network (GNN) using a GPU?
 Yes. ML Workbench supports both CPU and GPUs for training a GNN.

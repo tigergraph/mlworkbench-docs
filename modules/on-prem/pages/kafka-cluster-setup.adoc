@@ -53,7 +53,7 @@ conn.gds.configureKafka(kafka_address="<kafka-ip-address>:9092") <1>
 You can skip this step if you have already activated the Enterprise Edition.
 
 Only the Enterprise edition of ML Workbench can stream data via Kafka from a TigerGraph Server instance.
-If you have purchased the Enterprise edition, you can use the credentials you received from the TigerGraph Sales team to obtain the activator and how to use it to activate the Enterprise edition.
+If you have purchased the Enterprise edition, you can use the credentials you received from the TigerGraph Sales team to obtain the activator and how to use it to xref:on-prem:activate.adoc[activate] the Enterprise edition.
 
 
 == Examples

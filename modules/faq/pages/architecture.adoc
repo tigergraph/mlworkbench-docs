@@ -1,4 +1,5 @@
 = High-level Architecture
+:page-aliases: ml-workbench:on-prem:architecture.adoc
 
 TigerGraph ML Workbench Community or Enterprise Edition contains two major components:
 

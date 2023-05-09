@@ -1,4 +1,4 @@
-= Get started with ML Workbench Sandbox Image
+= Get Started with ML Workbench Sandbox
 :sectnums:
 :description: This page provides instructions on running the ML Workbench from a sandbox Docker image.
 :page-aliases: docker.adoc
