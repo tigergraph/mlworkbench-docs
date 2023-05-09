@@ -1,20 +1,27 @@
-= ML Workbench Local Setup
+= ML Workbench On-Prem
 
 The following steps will guide you through some key aspects of setting up TigerGraph ML Workbench on a local server or private cloud, distinct from the TigerGraph Cloud integration.
 There are several paths forward to get started with ML Workbench, and the options are presented below.
 
 At the conclusion of the Getting Started sequence, you’ll have reached an excellent starting point for further, more detail-driven activities.
 
-== Instructions
-* If you are new to TigerGraph, we recommend xref:sandbox.adoc[running TigerGraph Server and the Workbench together in a sandbox container].
+== Set Up Your Workbench
+
+Select one of the following installation approaches based on your situation:
+
+. If you are new to TigerGraph, we recommend xref:sandbox.adoc[running TigerGraph Server and the Workbench together in a sandbox container].
 The sandbox image comes with a free version of TigerGraph preloaded with a sample data set and ML Workbench preconfigured.
-* If you already have a running TigerGraph instance, you can xref:standalone.adoc[install ML Workbench] on your machine as a standalone application.
-* If you already have your own TigerGraph instance and a JupyterLab server, either self-hosted or on a cloud machine learning environment, you can download our Python library and Jupyter extension to xref:jupyterlab.adoc[integrate the Workbench with your JupyterLab].
+. If you already have a running TigerGraph instance, you can xref:standalone.adoc[install ML Workbench] on your Linux or MacOS machine as a standalone application.
+. If you already have your own TigerGraph instance and a JupyterLab server, either self-hosted or on a cloud machine learning environment, you can download our Python library and Jupyter extension to xref:jupyterlab.adoc[integrate the Workbench with your JupyterLab].
 
-* If you are not using JupyterLab at all, but still want to perform machine learning tasks with the graph data in your TigerGraph database, you can use xref:pytigergraph:getting-started:index.adoc[pyTigergraph].
+. If you are not using JupyterLab at all, but still want to perform machine learning tasks with the graph data in your TigerGraph database, you can use xref:pytigergraph:getting-started:index.adoc[pyTigergraph].
 
-== After setup
+== Set up Kafka Streaming
+
+If you are using ML Workbench Enterprise Edition, you have the option of
+xref:on-prem:kafka-cluster-setup.adoc[configuring Kafka data streaming] between the database and the workbench.
+
+== Activate Your Workbench
 After installation, xref:activate.adoc[activate] your product with the appropriate license (see xref:editions:index.adoc[]).
 
 Follow the xref:tutorials:index.adoc[tutorials and examples] in our provided notebooks to train your first model.
-
