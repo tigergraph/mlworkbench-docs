@@ -7,6 +7,8 @@
 :description: Overview of the TigerGraph ML Workbench.
 :figure-caption!:
 
+xref:faq:release-notes.adoc[ML Workbench Release Notes]
+
 TigerGraph Machine Learning Workbench is a platform designed for data scientists and AI/ML practitioners to easily develop graph-based machine learning models with production-scale graph data stored in TigerGraph.
 
 It is available as a service through TigerGraph Cloud (xref:on-cloud:on-tgcloud.adoc[accessible through a Cloud Starter Kit]) or standalone in two editions, Community and Enterprise.
