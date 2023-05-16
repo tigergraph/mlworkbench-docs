@@ -25,7 +25,7 @@ There is a incompatibility between v1.3 and v1.4 of pyTigerGraph and the corresp
     - Use dataloaders on multiple machines to pull batches from the same Kafka queue. Helpful for data distributed model training.
 
 * Additional Dataloader Support
-(See xref:1.3@pytigergraph:release-notes:index.adoc[pyTigerGraph Release Notes])
+(See xref:1.4@pytigergraph:release-notes:index.adoc[pyTigerGraph Release Notes])
 
 - `DATETIME` support in dataloaders.
 - Optional `distributed_query` parameter in dataloaders if running on distributed database clusters.
