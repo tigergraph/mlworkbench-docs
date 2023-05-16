@@ -1,35 +1,43 @@
 = Release Notes
 
 == TigerGraph ML Workbench 1.4
-Released May 8th, 2023. Updates made at the pyTigerGraph layer are denoted with (pyTigerGraph), and ML Workbench functionality is denoted with (ML Workbench).
+Released May 16th, 2023.
 
-**Note:** if you are using the Graph Data Science dataloaders, continue to use the latest pyTigerGraph 1.3.x version until you have upgraded your ML Workbench installation to v1.4.
+Updates made at the pyTigerGraph layer are denoted with (pyTigerGraph), and ML Workbench functionality is denoted with (ML Workbench).
+
+NOTE: If you are using the Graph Data Science dataloaders, you must upgrade both the ML Workbench and pyTigerGraph to 1.4 at the same time.
 There is a incompatibility between v1.3 and v1.4 of pyTigerGraph and the corresponding ML Workbench versions. 
 
 === New features
 * Built in Graph ML models and Trainer (pyTigerGraph)
-    - Various GraphSAGE models for vertex classification and regression, as well as link prediction
-    - NodePiece MLP model for vertex classification.
-    - General purpose trainer to enable training of Graph ML models in a concise fashion.
+- xref:pytigergraph:gds:graphsage.adoc[Various GraphSAGE models] for vertex classification and regression, as well as link prediction.
+- xref:pytigergraph:gds:nodepiece.adoc[NodePiece MLP model] for vertex classification.
+- xref:pytigergraph:gds:trainer.adoc[General purpose trainer] to enable training of Graph ML models in a concise fashion.
+
 * Transforms (pyTigerGraph)
-    - `PyGTemporalTransform` to create a sequence of subgraphs for a given batch of data, in a temporal manner. 
-    - `NodePieceMLPTransform` to transform a batch produced by a NodePiece dataloader into a batch that can be fed into a PyTorch multilayer perceptron.
+- xref:pytigergraph:gds:pyg_transforms.adoc[`PyGTemporalTransform`] to create a sequence of subgraphs for a given batch of data, in a temporal manner.
+- xref:pytigergraph:gds:nodepiece_transforms.adoc[`NodePieceMLPTransform`] to transform a batch produced by a NodePiece dataloader into a batch that can be fed into a PyTorch multilayer perceptron.
+
 * SSL Support in Kafka Dataloaders (ML Workbench & pyTigerGraph)
-    - Supporsts two-way SSL encryption via Kerberos
+    - Two-way SSL encryption via Kerberos.
+
 * Collaborative dataloaders (ML Workbench & pyTigerGraph)
-    - Use dataloaders on multiple machines to pull batches from the same Kafka queu. Helpful for data distributed model training.
-* Datetime support in dataloaders (pyTigerGraph)
-    - Output `DATETIME` attributes from the database using the dataloaders. Exports as UNIX epoch timestamps.
-* Optional `distributed_query` parameter in dataloaders if running on distributed database clusters. (pyTigerGraph)
-* `stop()` function in dataloaders (pyTigerGraph)
-    - Kill the query producing batches for the dataloader immediately. Helpful for stopping the production of batches sent to Kafka after breaking out of a training loop.
+    - Use dataloaders on multiple machines to pull batches from the same Kafka queue. Helpful for data distributed model training.
+
+* Additional Dataloader Support
+(See xref:1.3@pytigergraph:release-notes:index.adoc[pyTigerGraph Release Notes])
+
+- `DATETIME` support in dataloaders.
+- Optional `distributed_query` parameter in dataloaders if running on distributed database clusters.
+- `stop()` function in dataloaders.
 
 
 === Updated features
-* Dataloader factory function in pyTigerGraph produces multiple dataloaders if `filter_by` is a list of different filters. (pyTIgerGraph)
-* Improved the scalability of the NodePiece dataloader (pyTigerGraph)
+* Dataloader factory produces multiple dataloaders if `filter_by` is a list of different filters. (pyTigerGraph)
+* Improved the scalability of the NodePiece dataloader. (pyTigerGraph)
 
 == TigerGraph ML Workbench 1.3
+Released April 2023
 
 === New features
 
