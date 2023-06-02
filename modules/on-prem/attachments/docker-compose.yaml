@@ -20,14 +20,14 @@ services:
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT,EXTERNAL:PLAINTEXT
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:19092,PLAINTEXT_INTERNAL://kafka:29092,EXTERNAL://<public-ip-address>:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: INTERNAL://kafka:19092,EXTERNAL://<public-ip-address>:9092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
 
   tigergraph:
-    image: docker.tigergraph.com/tigergraph:3.6.1
+    image: docker.tigergraph.com/tigergraph:3.9.1
     container_name: tigergraph
     ports:
       - "9000:9000"
@@ -39,7 +39,7 @@ services:
         hard: 1000000
 
   mlwb:
-    image: tigergraphml/mlworkbench:1.0.0-pytorch
+    image: tigergraphml/mlworkbench:1.4.0
     container_name: mlworkbench
     ports:
       - "8888:8888"
