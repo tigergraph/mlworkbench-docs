@@ -1,6 +1,6 @@
 = ML Workbench for an Existing Jupyter Server
 
-If you have a running Jupyter lab server or you are using the Jupyter lab on Microsoft Azure,  AWS Sagemaker, or Google Vertex AI, you can still take advantage of our ML Workbench by installing its Jupyter lab extension and/or the Python package.
+If you have a running Jupyter lab server or you are using the Jupyter lab on Microsoft Azure,  AWS Sagemaker, or Google Vertex AI, you can still take advantage of our ML Workbench by installing the Python package.
 
 You can choose to install on the base kernel or using a Conda environment.
 
@@ -59,21 +59,6 @@ python -m ipykernel install --user --name tigergraph-torch-gpu --display-name "T
 ----
 --
 ====
-
-== JupyterLab extension
-
-Open a new terminal and run the following command to install the JupyterLab extension:
-
-[source,console]
-----
-pip install tigergraph-mlworkbench
-----
-The JupyterLab extension only works on JupyterLab 3.0 or above.
-
-You can check that the extension has been installed by running the command `pip show tigergraph-mlworkbench`.
-
-If the TigerGraph sidebar icon in JupyterLab doesn't appear after installing the extension, make sure it was installed to the base kernel instead of to an environment.
-Refreshing the browser after installation may be necessary to see the icon.
 
 == Next steps
 
