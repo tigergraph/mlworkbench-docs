@@ -22,7 +22,7 @@ TigerGraph recommends allocating at least 8 CPUs and 16 GB of memory.
 +
 [.wrap,console]
 ----
-docker run -it -p 14022:22 -p 8888:8888 -p 9000:9000 -p 14240:14240 -p 6006:6006  --name tgsandbox --ulimit nofile=1000000:1000000 -v ~/tgsandbox:/home/tigergraph/tgsandbox/save tigergraphml/sandbox:1.0.0
+docker run -it -p 14022:22 -p 8888:8888 -p 9000:9000 -p 14240:14240 -p 6006:6006  --name tgsandbox --ulimit nofile=1000000:1000000 -v ~/tgsandbox:/home/tigergraph/tgsandbox/save tigergraphml/sandbox:1.4.0
 ----
 +
 --
