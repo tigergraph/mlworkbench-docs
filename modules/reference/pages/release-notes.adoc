@@ -1,6 +1,86 @@
 = Release Notes
 :page-aliases:ml-workbench:reference:release-notes.adoc
 
+== TigerGraph ML Workbench 1.4
+Released May 16th, 2023.
+
+Updates made at the pyTigerGraph layer are denoted with (pyTigerGraph), and ML Workbench functionality is denoted with (ML Workbench).
+
+NOTE: If you are using the Graph Data Science dataloaders, you must upgrade both the ML Workbench and pyTigerGraph to 1.4 at the same time.
+There is an incompatibility between v1.3 and v1.4 of pyTigerGraph and the corresponding ML Workbench versions.
+
+=== New features
+* Built in Graph ML models and Trainer (pyTigerGraph)
+- xref:pytigergraph:gds:graphsage.adoc[Various GraphSAGE models] for vertex classification and regression, as well as link prediction.
+- xref:pytigergraph:gds:nodepiece.adoc[NodePiece MLP model] for vertex classification.
+- xref:pytigergraph:gds:trainer.adoc[General purpose trainer] to enable training of Graph ML models in a concise fashion.
+
+* Transforms (pyTigerGraph)
+- xref:pytigergraph:gds:pyg_transforms.adoc[`PyGTemporalTransform`] to create a sequence of subgraphs for a given batch of data, in a temporal manner.
+- xref:pytigergraph:gds:nodepiece_transforms.adoc[`NodePieceMLPTransform`] to transform a batch produced by a NodePiece dataloader into a batch that can be fed into a PyTorch multilayer perceptron.
+
+* SSL Support in Kafka Dataloaders (ML Workbench & pyTigerGraph)
+- Two-way SSL encryption via Kerberos.
+
+* Collaborative dataloaders (ML Workbench & pyTigerGraph)
+- Use dataloaders on multiple machines to pull batches from the same Kafka queue. Helpful for data distributed model training.
+
+* Additional Dataloader Support
+(See xref:1.4@pytigergraph:release-notes:index.adoc[pyTigerGraph Release Notes])
+
+- `DATETIME` support in dataloaders.
+- Optional `distributed_query` parameter in dataloaders if running on distributed database clusters.
+- `stop()` function in dataloaders.
+
+
+=== Updated features
+* Dataloader factory produces multiple dataloaders if `filter_by` is a list of different filters. (pyTigerGraph)
+* Improved the scalability of the NodePiece dataloader. (pyTigerGraph)
+
+== TigerGraph ML Workbench 1.3
+Released April 2023
+
+=== New features
+
+* Two new xref:1.3@pytigergraph:gds:dataloaders.adoc[data loader classes]: `HGTLoader` and `NodePiece`.
+* Callback functions to all xref:1.3@pytigergraph:gds:gds.adoc[data loader factories]: users can write functions to process the batch in a background thread before it is passed into the training loop.
+* A delimiter parameter to all xref:1.3@pytigergraph:gds:gds.adoc[data loader factories]: users can choose what delimiter they want to separate attributes they are loading from the graph.
+
+=== Updated features
+
+* Template query support in the xref:1.3@pytigergraph:gds:featurizer.adoc[featurizer] (requires TigerGraph Database version 3.9+).
+* Data splitters to automatically perform a schema change if needed to add attributes to the database.
+* Support for multi-edges in the `upsertEdges()` function.
+* Better error messaging.
+
+=== Fixes
+
+* Fixed SSL certificate handling when custom certificate is used.
+* Removed ANSI escape characters from output of `.gsql()` calls.
+* Improved the logic for shuffling vertices in dataloaders when `filter_by` attribute was used.
+* Improved the batching algorithm in dataloaders so that the output batches have a consistent batch size.
+* Changed `getVertexCount()` endpoint to more scalable solution.
+
+== TigerGraph ML Workbench 1.1 (September 2022)
+
+=== New features
+
+* TensorFlow support for homogeneous GNNs via the Spektral library
+* Heterogeneous Graph Dataloading support for DGL
+* Support for lists of strings in dataloaders
+* Activator for both Community and Enterprise editions of the ML Workbench (see link:https://act.tigergraphlabs.com[] for details)
+
+=== Updated features
+
+* Fixed KeyError when creating a data loader on a graph where `PrimaryIdAsAttribute` is `False`
+* Error catch if Kafka dataloader doesn't run in asynchronous mode
+* Schema now refreshes during dataloader instantiation and featurizer attribute addition
+* Connection instantiation time reduced
+* Reinstall query if it is disabled
+* Confirm Kafka topic is created before subscription
+* Streamlined Kafka resource usage
+* Allow multiple consumers on the same data
+* Improved deprecation warnings
 == TigerGraph ML Workbench 1.0 (August 2022)
 
 === New features
