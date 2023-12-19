@@ -1,4 +1,5 @@
 = pyTigerGraph Module Reference
+:page-aliases:ml-workbench:faq:reference.adoc
 
 The centerpiece of the ML Workbench is its Python client: pyTigerGraph.
 

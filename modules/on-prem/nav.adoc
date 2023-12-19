@@ -4,4 +4,4 @@
 ** xref:jupyterlab.adoc[Set up Workbench on  Jupyter Server]
 ** xref:kafka-cluster-setup.adoc[]
 ** xref:activate.adoc[]
-** xref:architecture.adoc[Architecture Reference]
+** xref:reference:architecture.adoc[Architecture Reference]

@@ -1,7 +1,0 @@
-* Reference
-** xref:index.adoc[]
-** xref:reference.adoc[]
-** xref:glossary.adoc[Glossary]
-** xref:resource-quotas.adoc[]
-** xref:release-notes.adoc[]
-** link:https://www.kubeflow.org/docs/[KubeFlow]

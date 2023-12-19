@@ -1,7 +1,7 @@
 name: ml-workbench
 title: TigerGraph ML Workbench
-version: 1.0
-display_version: '1.0'
+version: 1.4
+display_version: '1.4'
 start_page: intro:index.adoc
 nav:
 - modules/intro/nav.adoc
@@ -9,4 +9,4 @@ nav:
 - modules/on-cloud/nav.adoc
 - modules/on-prem/nav.adoc
 - modules/tutorials/nav.adoc
-- modules/faq/nav.adoc
+- modules/reference/nav.adoc

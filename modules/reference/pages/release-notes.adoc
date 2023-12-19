@@ -1,5 +1,5 @@
 = Release Notes
-
+:page-aliases:ml-workbench:reference:release-notes.adoc
 
 == TigerGraph ML Workbench 1.0 (August 2022)
 

@@ -1,4 +1,5 @@
 = Frequently Asked Questions (FAQ)
+:page-aliases: ml-workbench:faq/index.adoc
 
 == Does ML Workbench need to be configured differently for a TigerGraph database instance on a cluster?
 No. Whether your TigerGraph database instance is set up on a single machine or on a cluster, the setup process for ML Workbench is the same.
