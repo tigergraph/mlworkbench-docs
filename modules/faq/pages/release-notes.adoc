@@ -6,7 +6,7 @@ Released May 16th, 2023.
 Updates made at the pyTigerGraph layer are denoted with (pyTigerGraph), and ML Workbench functionality is denoted with (ML Workbench).
 
 NOTE: If you are using the Graph Data Science dataloaders, you must upgrade both the ML Workbench and pyTigerGraph to 1.4 at the same time.
-There is a incompatibility between v1.3 and v1.4 of pyTigerGraph and the corresponding ML Workbench versions. 
+There is an incompatibility between v1.3 and v1.4 of pyTigerGraph and the corresponding ML Workbench versions.
 
 === New features
 * Built in Graph ML models and Trainer (pyTigerGraph)

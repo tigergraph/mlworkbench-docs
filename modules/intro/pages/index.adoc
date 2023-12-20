@@ -1,4 +1,5 @@
 = TigerGraph ML Workbench
+:page-aliases: ml-workbench:overview.adoc
 :fn-pintrest: footnote:[Ying, Rex et al. “Graph Convolutional Neural Networks for Web-Scale Recommender Systems”, Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, 2018.]
 :fn-amazon: footnote:[Ankit Gandhi, Aakankasha, Sivaramakrishnan Kaveri, Vineet Chaoji, “Spatio-temporal multi-graph networks for demand forecasting in online marketplaces”]
 :fn-astrazeneca: footnote:[Benedek Rozemberczki, Stephen Bonner, Andriy Nikolov, Michael Ughetto, Sebastian Nilsson, Eliseo Papa, “A Unified View of Relational Deep Learning for Drug Pair Scoring”, CoRR, November 2021.]
@@ -11,7 +12,7 @@ xref:faq:release-notes.adoc[ML Workbench Release Notes]
 
 TigerGraph Machine Learning Workbench is a platform designed for data scientists and AI/ML practitioners to easily develop graph-based machine learning models with production-scale graph data stored in TigerGraph.
 
-It is available as a service through TigerGraph Cloud (xref:on-cloud:on-tgcloud.adoc[accessible through a Cloud Starter Kit]) or standalone in two editions, Community and Enterprise.
+It is available as a service through TigerGraph Cloud (xref:on-cloud:on-tgcloud.adoc[accessible through a Cloud Starter Kit]) or standalone in two editions, xref:ml-workbench:editions:index.adoc[Community and Enterprise].
 It provides robust and efficient data pipelines at the Python level to interact with the TigerGraph database to perform common data processing functions such as:
 
 * data partitioning
@@ -25,9 +26,24 @@ It provides robust and efficient data pipelines at the Python level to interact 
 //* ML pipeline management & orchestration
 //* model deployment and serverless production serving
 
-ML Workbench also comes in standalone Community or Enterprise editions as a Jupyter-based Python development framework for direct integration with existing machine learning infrastructure.
+ML Workbench also comes as a Jupyter-based Python development framework for direct integration with existing machine learning infrastructure.
 
 It is compatible with other popular ML frameworks such as PyTorch Geometric, DGL, and TensorFlow as well as cloud infrastructure including Amazon SageMaker, Google Vertex AI and Microsoft Azure.
+
+Read the xref:ml-workbench:faq:architecture.adoc[Architecture Overview] to learn about the workbench's major components and how it works with the TigerGraph database.
+
+image:faq:high-level-architecture-v1.png[Diagram of ML Workbench architecture]
+
+
+== Getting Started
+You can start either by using the xref:ml-workbench:on-cloud:on-tgcloud.adoc[TigerGraph Cloud] version or
+downloading and installing the xref:ml-workbench:on-prem:index.adoc[on-prem] version.
+
+xref:ml-workbench:tutorials:index.adoc[Tutorials and sample data] are available.
+You may also be interested in reference documents for
+xref:ml-workbench:faq:reference.adoc[the GDS Python module],
+xref:ml-workbench:faq:index.adoc[FAQs],
+and xref:ml-workbench:faq:release-notes.adoc[ML Workbench release notes].
 
 == Graph neural networks (GNNs) and their applications
 
