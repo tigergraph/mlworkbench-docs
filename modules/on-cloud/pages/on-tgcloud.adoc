@@ -1,5 +1,7 @@
 = ML Workbench on TigerGraph Cloud
 
+IMPORTANT: ML Workbench is disabled by default for Free, Professional, and Enterprise instances. To get started with the ML Bundle, please contact support@tigergraph.com.
+
 The ML Workbench can be included when you create a new database instance on TigerGraph Cloud.
 
 == Create a Cloud Cluster with ML Workbench
