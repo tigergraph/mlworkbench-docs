@@ -1,5 +1,5 @@
 = TigerGraph ML Workbench
-:page-aliases: ml-workbench:overview/index.adoc
+:page-aliases: ml-workbench:overview/index.adoc, ml-workbench:overview:index.adoc
 :fn-pintrest: footnote:[Ying, Rex et al. “Graph Convolutional Neural Networks for Web-Scale Recommender Systems”, Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, 2018.]
 :fn-amazon: footnote:[Ankit Gandhi, Aakankasha, Sivaramakrishnan Kaveri, Vineet Chaoji, “Spatio-temporal multi-graph networks for demand forecasting in online marketplaces”]
 :fn-astrazeneca: footnote:[Benedek Rozemberczki, Stephen Bonner, Andriy Nikolov, Michael Ughetto, Sebastian Nilsson, Eliseo Papa, “A Unified View of Relational Deep Learning for Drug Pair Scoring”, CoRR, November 2021.]
