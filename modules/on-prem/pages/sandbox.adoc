@@ -1,7 +1,7 @@
 = Get Started with ML Workbench Sandbox
 :sectnums:
 :description: This page provides instructions on running the ML Workbench from a sandbox Docker image.
-:page-aliases: docker.adoc
+:page-aliases: docker.adoc, getting-started:sandbox.adoc
 
 This page walks you through running the TigerGraph ML Workbench in a Docker container.
 
