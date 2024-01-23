@@ -1,1 +1,2 @@
 * xref:intro:index.adoc[Introduction]
+* xref:get-started.adoc[]
