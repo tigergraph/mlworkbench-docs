@@ -12,45 +12,45 @@
 TigerGraph Machine Learning Workbench is a platform designed for data scientists and AI/ML practitioners to easily develop graph-based machine learning models with production-scale graph data stored in TigerGraph.
 
 == Get to Know ML Workbench
-[.home-card,cols="2",grid=none,frame=none]
+[.home-card,cols="2",grid=none,frame=none, separator=¦]
 |===
-a|
+¦
 image:getstarted-homecard.png[alt=getstarted,width=74,height=74]
 *Get Started*
 
 Guides and information to help you get up and running.
 
-xref:get-started.adoc[Get Started ↗]
-xref:ml-workbench:faq:architecture.adoc[Architecture Overview ↗]
+xref:get-started.adoc[Get Started |]
+xref:ml-workbench:faq:architecture.adoc[Architecture Overview]
 
-a|
+¦
 image:edtions-homecard.png[alt=getstarted,width=74,height=74]
 *Editions*
 
-Workbench is available as a service through TigerGraph Cloud or standalone in two xref:ml-workbench:editions:index.adoc[Editions ↗] Community and Enterprise.
+Workbench is available as a service through TigerGraph Cloud or standalone in two xref:ml-workbench:editions:index.adoc[Editions]: Community and Enterprise.
 
-a|
+¦
 image:cloudIcon-homecard.png[alt=getstarted,width=74,height=74]
 *Cloud*
 
 ML Workbench can be included when you create a new database instance
-xref:ml-workbench:on-cloud:on-tgcloud.adoc[on TigerGraph Cloud ↗]
+xref:ml-workbench:on-cloud:on-tgcloud.adoc[on TigerGraph Cloud].
 
-a|
+¦
 image:onprem-homecard.png[alt=getstarted,width=74,height=74]
 *On-Prem*
 
-xref:ml-workbench:on-prem:index.adoc[On-Prem ↗]  local server or private cloud distinct from the TigerGraph Cloud integration.
+xref:ml-workbench:on-prem:index.adoc[On-Prem] local server or private cloud distinct from the TigerGraph Cloud integration.
 
 
-a|
+¦
 image:attrbutes-homecard.png[alt=getstarted,width=74,height=74]
 *Tutorials and Sample Data*
 
 TigerGraph has a robust set of tutorials and training data sets available to
-xref:ml-workbench:tutorials:index.adoc[learn ML Workbench ↗]
+xref:ml-workbench:tutorials:index.adoc[learn ML Workbench].
 
-a|
+¦
 image:documentation-homecard.png[alt=getstarted,width=74,height=74]
 *Release Notes and FAQs*
 
@@ -58,7 +58,7 @@ Find the most up-to-date news on ML Workbench or
 find answers to common questions.
 
 
-xref:ml-workbench:faq:release-notes.adoc[Release Notes ↗]
-xref:ml-workbench:faq:index.adoc[FAQ ↗]
-a|
+xref:ml-workbench:faq:release-notes.adoc[Release Notes |]
+xref:ml-workbench:faq:index.adoc[FAQ]
+¦
 |===
