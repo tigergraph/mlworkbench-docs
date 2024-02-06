@@ -47,7 +47,7 @@ xref:ml-workbench:on-prem:index.adoc[On-Prem] local server or private cloud dist
 image:attrbutes-homecard.png[alt=getstarted,width=74,height=74]
 *Tutorials and Sample Data*
 
-TigerGraph has a robust set of tutorials and training data sets available to
+A set of tutorials and training data sets to
 xref:ml-workbench:tutorials:index.adoc[learn ML Workbench].
 
 ¦
