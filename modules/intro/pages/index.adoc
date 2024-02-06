@@ -8,67 +8,57 @@
 :description: Overview of the TigerGraph ML Workbench.
 :figure-caption!:
 
-xref:faq:release-notes.adoc[ML Workbench Release Notes]
 
 TigerGraph Machine Learning Workbench is a platform designed for data scientists and AI/ML practitioners to easily develop graph-based machine learning models with production-scale graph data stored in TigerGraph.
 
-It is available as a service through TigerGraph Cloud (xref:on-cloud:on-tgcloud.adoc[accessible through a Cloud Starter Kit]) or standalone in two editions, xref:ml-workbench:editions:index.adoc[Community and Enterprise].
-It provides robust and efficient data pipelines at the Python level to interact with the TigerGraph database to perform common data processing functions such as:
+== Get to Know ML Workbench
+[.home-card,cols="2",grid=none,frame=none, separator=¦]
+|===
+¦
+image:getstarted-homecard.png[alt=getstarted,width=74,height=74]
+*Get Started*
 
-* data partitioning
-* subgraph sampling
-* graph feature generation
-* data batching and/or streaming for ML model development, training, and inference purposes.
+Guides and information to help you get up and running.
 
-//xref:on-cloud:mlwb-service.adoc[The Kubeflow implementation of ML Workbench] is available in a fully-managed Jupyter notebook instance with:
-//* on-demand computation
-//* distributed AutoML for hyperparameter tuning
-//* ML pipeline management & orchestration
-//* model deployment and serverless production serving
+xref:get-started.adoc[Get Started |]
+xref:ml-workbench:faq:architecture.adoc[Architecture Overview]
 
-ML Workbench also comes as a Jupyter-based Python development framework for direct integration with existing machine learning infrastructure.
+¦
+image:edtions-homecard.png[alt=getstarted,width=74,height=74]
+*Editions*
 
-It is compatible with other popular ML frameworks such as PyTorch Geometric, DGL, and TensorFlow as well as cloud infrastructure including Amazon SageMaker, Google Vertex AI and Microsoft Azure.
+Workbench is available as a service through TigerGraph Cloud or standalone in two xref:ml-workbench:editions:index.adoc[Editions]: Community and Enterprise.
 
-Read the xref:ml-workbench:faq:architecture.adoc[Architecture Overview] to learn about the workbench's major components and how it works with the TigerGraph database.
+¦
+image:cloudIcon-homecard.png[alt=getstarted,width=74,height=74]
+*Cloud*
 
-image:faq:high-level-architecture-v1.png[Diagram of ML Workbench architecture]
+ML Workbench can be included when you create a new database instance
+xref:ml-workbench:on-cloud:on-tgcloud.adoc[on TigerGraph Cloud].
+
+¦
+image:onprem-homecard.png[alt=getstarted,width=74,height=74]
+*On-Prem*
+
+xref:ml-workbench:on-prem:index.adoc[On-Prem] local server or private cloud distinct from the TigerGraph Cloud integration.
 
 
-== Getting Started
-You can start either by using the xref:ml-workbench:on-cloud:on-tgcloud.adoc[TigerGraph Cloud] version or
-downloading and installing the xref:ml-workbench:on-prem:index.adoc[on-prem] version.
+¦
+image:attrbutes-homecard.png[alt=getstarted,width=74,height=74]
+*Tutorials and Sample Data*
 
-xref:ml-workbench:tutorials:index.adoc[Tutorials and sample data] are available.
-You may also be interested in reference documents for
-xref:ml-workbench:faq:reference.adoc[the GDS Python module],
-xref:ml-workbench:faq:index.adoc[FAQs],
-and xref:ml-workbench:faq:release-notes.adoc[ML Workbench release notes].
+A set of tutorials and training data sets to
+xref:ml-workbench:tutorials:index.adoc[learn ML Workbench].
 
-== Graph neural networks (GNNs) and their applications
+¦
+image:documentation-homecard.png[alt=getstarted,width=74,height=74]
+*Release Notes and FAQs*
 
-GNNs tend to outperform other machine learning techniques when there are well-defined relationships between data as it directly models the connectivity of your graph data.
-In recent research, GNNs have proven their success across various business domains and applications.
-With TigerGraph ML Workbench, you can now easily explore the potentials of GNN for your domains.
+Find the most up-to-date news on ML Workbench or
+find answers to common questions.
 
-Here are some papers and resources to spark ideas in a range of applications and industries:
 
-Recommendation Engines::
-Pinterest introduced PinSAGE{fn-pintrest}, an architecture that can serve real-time recommendations to their users, resulting in a 10-30% improvement compared to other deep learning methods when evaluated in A/B testing.
-
-Supply Chain::
-Amazon released a GNN architecture{fn-amazon} that incorporates temporal information with GNNs for demand forecasting.
-The method models interactions between products and their sellers on Amazon in a graph, resulting in a 16% improvement over other state-of-the-art forecasting methods.
-
-Healthcare::
-AstraZeneca has used graph neural networks like GraphSAGE to generate knowledge graph embeddings for predicting possible drug-drug interactions such as possible synergies between drugs, as well as possible polypharmacy side effects{fn-astrazeneca}.
-Additionally, the possibility of repurposing drugs to treat COVID has been studied using a drug repurposing knowledge graph and GNNs{fn-repurposing}.
-
-Financial Institutions::
-GCNs have been studied for predicting money-laundering behavior in Bitcoin transaction networks, and have been shown to perform admirably compared to other approaches{fn-finance}.
-
-If you are interested in learning more about the fundamental research on different variations of GNNs, here is a list of helpful publications:
-
-* link:https://arxiv.org/abs/1609.02907[Graph Convolutional Neural Networks]
-* link:https://arxiv.org/abs/1710.10903[Graph Attention Network]
-* link:https://arxiv.org/abs/1706.02216[GraphSage]
+xref:ml-workbench:faq:release-notes.adoc[Release Notes |]
+xref:ml-workbench:faq:index.adoc[FAQ]
+¦
+|===

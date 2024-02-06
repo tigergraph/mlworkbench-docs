@@ -6,3 +6,4 @@
 //** xref:resource-quotas.adoc[]
 ** xref:release-notes.adoc[]
 //** link:https://www.kubeflow.org/docs/[KubeFlow]
+** xref:ml-workbench:editions:legacy-tg-versions.adoc[]

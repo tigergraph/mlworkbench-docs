@@ -1,0 +1,54 @@
+= Getting Started
+
+//xref:on-cloud:mlwb-service.adoc[The Kubeflow implementation of ML Workbench] is available in a fully-managed Jupyter notebook instance with:
+//* on-demand computation
+//* distributed AutoML for hyperparameter tuning
+//* ML pipeline management & orchestration
+//* model deployment and serverless production serving
+
+Ml Workbench is compatible with other popular ML frameworks such as PyTorch Geometric, DGL, and TensorFlow as well as cloud infrastructure including Amazon SageMaker, Google Vertex AI and Microsoft Azure.
+It provides robust and efficient data pipelines at the Python level to interact with the TigerGraph database to perform common data processing functions such as:
+
+* data partitioning
+* subgraph sampling
+* graph feature generation
+* data batching and/or streaming for ML model development, training, and inference purposes.
+
+You can start either by using the xref:ml-workbench:on-cloud:on-tgcloud.adoc[TigerGraph Cloud] version or
+downloading and installing the xref:ml-workbench:on-prem:index.adoc[on-prem] version.
+ML Workbench also comes as a Jupyter-based Python development framework for direct integration with existing machine learning infrastructure.
+
+
+xref:ml-workbench:tutorials:index.adoc[Tutorials and sample data] are available.
+You may also be interested in reference documents for
+xref:ml-workbench:faq:reference.adoc[the GDS Python module],
+xref:ml-workbench:faq:index.adoc[FAQs],
+and xref:ml-workbench:faq:release-notes.adoc[ML Workbench release notes].
+
+== Graph neural networks (GNNs) and their applications
+
+GNNs tend to outperform other machine learning techniques when there are well-defined relationships between data as it directly models the connectivity of your graph data.
+In recent research, GNNs have proven their success across various business domains and applications.
+With TigerGraph ML Workbench, you can now easily explore the potentials of GNN for your domains.
+
+Here are some papers and resources to spark ideas in a range of applications and industries:
+
+Recommendation Engines::
+Pinterest introduced PinSAGE{fn-pintrest}, an architecture that can serve real-time recommendations to their users, resulting in a 10-30% improvement compared to other deep learning methods when evaluated in A/B testing.
+
+Supply Chain::
+Amazon released a GNN architecture{fn-amazon} that incorporates temporal information with GNNs for demand forecasting.
+The method models interactions between products and their sellers on Amazon in a graph, resulting in a 16% improvement over other state-of-the-art forecasting methods.
+
+Healthcare::
+AstraZeneca has used graph neural networks like GraphSAGE to generate knowledge graph embeddings for predicting possible drug-drug interactions such as possible synergies between drugs, as well as possible polypharmacy side effects{fn-astrazeneca}.
+Additionally, the possibility of repurposing drugs to treat COVID has been studied using a drug repurposing knowledge graph and GNNs{fn-repurposing}.
+
+Financial Institutions::
+GCNs have been studied for predicting money-laundering behavior in Bitcoin transaction networks, and have been shown to perform admirably compared to other approaches{fn-finance}.
+
+If you are interested in learning more about the fundamental research on different variations of GNNs, here is a list of helpful publications:
+
+* link:https://arxiv.org/abs/1609.02907[Graph Convolutional Neural Networks]
+* link:https://arxiv.org/abs/1710.10903[Graph Attention Network]
+* link:https://arxiv.org/abs/1706.02216[GraphSage]
