@@ -5,7 +5,7 @@ This page lists all LTS (Long-Term Support) and previous versions of ML Workbenc
 
 == LTS Versions
 
-* xref:ml-workbench:intro:index.adoc[1.4]
+* xref:1.4@ml-workbench:intro:index.adoc[1.4]
 
 == Other Versions
 

@@ -1,4 +1,4 @@
-= Release Notes
+= ML Workbench Release Notes
 
 == TigerGraph ML Workbench 1.4
 Released May 16th, 2023.
