@@ -1,14 +1,9 @@
 = Legacy Version Documentation
 
-This page lists all LTS (Long-Term Support) and previous versions of ML Workbench.
+This page lists previous versions of ML Workbench.
 
+Documentation will be available on our legacy documentation website.
 
-== LTS Versions
-
-* xref:1.4@ml-workbench:intro:index.adoc[1.4]
-
-== Other Versions
-
-* xref:1.3@ml-workbench:intro:index.adoc[1.3]
-* xref:1.2@ml-workbench:intro:index.adoc[1.2]
-* xref:1.1@ml-workbench:intro:index.adoc[1.1]
+* 1.3
+* 1.2
+* 1.1
