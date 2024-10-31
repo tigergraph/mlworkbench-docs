@@ -1,5 +1,5 @@
 name: ml-workbench
-title: TigerGraph ML Workbench
+title: TigerGraph ML Workbench 1.4
 version: 1.4
 display_version: '1.4'
 start_page: intro:index.adoc
