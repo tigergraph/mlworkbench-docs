@@ -13,7 +13,7 @@ For more detailed documentation of the Kubeflow platform, please see the link:ht
 
 image::mlwb-home.png[Screenshot of the MLWB home page upon first launch]
 
-=== Example Business Workflow
+== Example Business Workflow
 
 This is an example workflow to illustrate a use case for each component of ML Workbench on Cloud.
 
