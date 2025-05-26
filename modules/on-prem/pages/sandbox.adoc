@@ -11,7 +11,7 @@ The link:https://graphsandnetworks.com/the-cora-dataset/[“Cora” dataset] and
 Use this link to download Docker if needed: link:https://docs.docker.com/get-docker/[Get Docker]
 
 == Prerequisites
-* You machine meets the xref:install:hw-and-sw-requirements.adoc[].
+* You machine meets the xref:tigergraph-server:installation:hw-and-sw-requirements.adoc[].
 ** Make sure you are allocating enough CPU and memory to your Docker containers.
 TigerGraph recommends allocating at least 8 CPUs and 16 GB of memory.
 * Docker Desktop is running on your machine.
