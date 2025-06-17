@@ -1,10 +1,5 @@
 = Getting Started
-
-//xref:on-cloud:mlwb-service.adoc[The Kubeflow implementation of ML Workbench] is available in a fully-managed Jupyter notebook instance with:
-//* on-demand computation
-//* distributed AutoML for hyperparameter tuning
-//* ML pipeline management & orchestration
-//* model deployment and serverless production serving
+:description: Getting Started with TigerGraph ML Workbench
 
 Ml Workbench is compatible with other popular ML frameworks such as PyTorch Geometric, DGL, and TensorFlow as well as cloud infrastructure including Amazon SageMaker, Google Vertex AI and Microsoft Azure.
 It provides robust and efficient data pipelines at the Python level to interact with the TigerGraph database to perform common data processing functions such as:
@@ -14,7 +9,7 @@ It provides robust and efficient data pipelines at the Python level to interact 
 * graph feature generation
 * data batching and/or streaming for ML model development, training, and inference purposes.
 
-You can start either by using the xref:ml-workbench:on-cloud:on-tgcloud.adoc[TigerGraph Cloud] version or
+You can start by
 downloading and installing the xref:ml-workbench:on-prem:index.adoc[on-prem] version.
 ML Workbench also comes as a Jupyter-based Python development framework for direct integration with existing machine learning infrastructure.
 

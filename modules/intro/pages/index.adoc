@@ -11,6 +11,15 @@
 
 TigerGraph Machine Learning Workbench is a platform designed for data scientists and AI/ML practitioners to easily develop graph-based machine learning models with production-scale graph data stored in TigerGraph.
 
+[IMPORTANT]
+====
+The ML Workbench is retiring, as an improved approach for GNN model training will soon be introduced.
+
+Its Python functions for graph feature extraction and graph embedding are still available directly through the xref:pytigergraph:gds[pyTigerGraph GDS library].
+
+The Enterprise edition is no longer being offered. The Community edition is available on an as-is basis but is no longer being maintained.
+
+====
 == Get to Know ML Workbench
 [.home-card,cols="2",grid=none,frame=none, separator=¦]
 |===
@@ -23,24 +32,12 @@ Guides and information to help you get up and running.
 xref:get-started.adoc[Get Started |]
 xref:ml-workbench:faq:architecture.adoc[Architecture Overview]
 
-¦
-image:edtions-homecard.png[alt=getstarted,width=74,height=74]
-*Editions*
-
-Workbench is available as a service through TigerGraph Cloud or standalone in two xref:ml-workbench:editions:index.adoc[Editions]: Community and Enterprise.
-
-¦
-image:cloudIcon-homecard.png[alt=getstarted,width=74,height=74]
-*Cloud*
-
-ML Workbench can be included when you create a new database instance
-xref:ml-workbench:on-cloud:on-tgcloud.adoc[on TigerGraph Cloud].
 
 ¦
 image:onprem-homecard.png[alt=getstarted,width=74,height=74]
 *On-Prem*
 
-xref:ml-workbench:on-prem:index.adoc[On-Prem] local server or private cloud distinct from the TigerGraph Cloud integration.
+xref:ml-workbench:on-prem:index.adoc[On-Prem] local server or private cloud
 
 ¦
 image:attrbutes-homecard.png[alt=getstarted,width=74,height=74]

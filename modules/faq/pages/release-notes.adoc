@@ -1,7 +1,11 @@
 = ML Workbench Release Notes
 
-== TigerGraph ML Workbench 1.4
-Released May 16th, 2023.
+== TigerGraph ML Workbench 1.4 Legacy
+June 17, 2025
+
+[IMPORTANT]
+THe TigerGraph ML Workbench is being retired and will be replaced with an improved GNN training intergration.
+
 
 Updates made at the pyTigerGraph layer are denoted with (pyTigerGraph), and ML Workbench functionality is denoted with (ML Workbench).
 
@@ -42,8 +46,8 @@ Released April 2023
 === New features
 
 * Two new xref:pytigergraph:gds:dataloaders.adoc[data loader classes]: `HGTLoader` and `NodePiece`.
-* Callback functions to all xref:pytigergraph:gds:gds.adoc[data loader factories]: users can write functions to process the batch in a background thread before it is passed into the training loop.
-* A delimiter parameter to all xref:pytigergraph:gds:gds.adoc[data loader factories]: users can choose what delimiter they want to separate attributes they are loading from the graph.
+* Callback functions to all xref:pytigergraph:gds:factory-functions.adoc[data loader factories]: users can write functions to process the batch in a background thread before it is passed into the training loop.
+* A delimiter parameter to all xref:pytigergraph:gds:factory-functions.adoc[data loader factories]: users can choose what delimiter they want to separate attributes they are loading from the graph.
 
 === Updated features
 
