@@ -1,6 +1,6 @@
 name: ml-workbench
 title: TigerGraph ML Workbench
-version: 1.4C
+version: '1.4C'
 display_version: '1.4 Community'
 start_page: intro:index.adoc
 nav:
